@@ -4,19 +4,24 @@ include_once("conn.php");
 
 $sql = "CREATE TABLE IF NOT EXISTS posts (
         id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
-        author VARCHAR(100) NOT NULL,
+        username VARCHAR(100) UNIQUE NOT NULL,
         title VARCHAR(500) NOT NULL,
+        short_desc VARCHAR(500),
         content VARCHAR(65000),
-        approval int(1) DEFAULT 0,
-        post_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+        img BLOB NOT NULL,
+        approval tinyint DEFAULT 0,
+        post_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+        views INT(11) NOT NULL DEFAULT 0
     )";
 
 $sql2 = "CREATE TABLE IF NOT EXISTS userDB(
         username VARCHAR(100) UNIQUE NOT NULL PRIMARY KEY,
+        is_admin tinyint DEFAULT 0,
         firstname VARCHAR(30) NOT NULL,
         lastname VARCHAR(30),
         email VARCHAR(100) NOT NULL UNIQUE,
-        role_type ENUM('editor', 'admin')
+        pass VARCHAR(200) NOT NULL,
+        created TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     )";
 
     if($conn->query($sql) === TRUE) {

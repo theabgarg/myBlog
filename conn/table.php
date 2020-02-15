@@ -23,7 +23,7 @@ $sql2 = "CREATE TABLE IF NOT EXISTS userDB(
         echo "1st Table created successfully ";
     }
     else{
-        echo "error creating tables: " . $conn->error;
+        echo "error creating 1st tables: " . $conn->error;
     }
 
 
@@ -31,7 +31,7 @@ $sql2 = "CREATE TABLE IF NOT EXISTS userDB(
         echo "2nd Table created successfully";
     }
     else{
-        echo "error creating tables: " . $conn->error;
+        echo "error creating 2nd tables: " . $conn->error;
     }
 
 ?>

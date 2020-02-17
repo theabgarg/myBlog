@@ -17,8 +17,7 @@ $sql = "CREATE TABLE IF NOT EXISTS posts (
 $sql2 = "CREATE TABLE IF NOT EXISTS userDB(
         username VARCHAR(100) UNIQUE NOT NULL PRIMARY KEY,
         is_admin tinyint DEFAULT 0,
-        firstname VARCHAR(30) NOT NULL,
-        lastname VARCHAR(30),
+        fullname VARCHAR(30) NOT NULL,
         email VARCHAR(100) NOT NULL UNIQUE,
         pass VARCHAR(200) NOT NULL,
         created TIMESTAMP DEFAULT CURRENT_TIMESTAMP

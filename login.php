@@ -1,6 +1,7 @@
 <?php
 
-include('api/user.api.php');
+include_once('conn/conn.php');
+include_once('api/user.api.php');
 
     if (isset($_POST['submit'])) {
         $username = $_POST['uname'];
@@ -9,7 +10,12 @@ include('api/user.api.php');
         $login = $newUser->verifyUser($username, $password);
         if($login){
             session_start();
-            $_SESSION['username'] = $newuser->
+            $_SESSION['username'] = $newUser->getUsername();
+            $_SESSION['name'] = $newUser->getName();
+            $_SESSION['email'] = $newUser->getEmail();
+        }
+        else{
+            echo "nikal lavde!!!";
         }
     }
 

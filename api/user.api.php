@@ -26,6 +26,18 @@ class user{
         $this->email = $email;
     }
 
+    function getUsername(){
+        return $this->username;
+    }
+
+    function getName(){
+        return $this->name;
+    }
+
+    function getEmail(){
+        return $this->email;
+    }
+
     function encPass($password){
         $password = base64_encode(md5($password));
         $this->password = $password;
@@ -34,7 +46,7 @@ class user{
     function verifyToken() {
         if(isset($this->token)){
             $sql ="SELECT * FROM auth WHERE token = '$this->token'";
-            $result = $conn->query($sql);
+            $result = $GLOBALS['conn']->query($sql);
             if ($result->num_rows > 0) {
                 $row = $result->fetch_assoc();
                 if ($row['valid'] === 1){
@@ -55,12 +67,12 @@ class user{
 
     function verifyUsername($username){
         $sql = "SELECT * FROM userDB WHERE username = '$username'";
-        if ($result = $conn->query($sql)){
+        if ($result = $GLOBALS['conn']->query($sql)){
             if ($result->num_rows > 0) {
                 return false;
             }
             else{
-                retutn true;
+                return true;
             }
         }
         else{
@@ -72,7 +84,7 @@ class user{
         setToken($token);
         $tokenValidity = verifyToken();
         if($tokenValidity){
-            encpass($password);
+            encPass($password);
             $usernameAvailaibility = verifyUsername($username);
             if ($usernameAvailaibility) {
                 if($name != null && $email != null){
@@ -80,11 +92,11 @@ class user{
                     $username', '1', '$name', '$email', '$this->password')";
                     $sql .= "UPDATE auth SET valid=0 WHERE token = '$this->token'";
 
-                    if($conn->multi_query($sql)){
+                    if($GLOBALS['conn']->multi_query($sql)){
                         return "user added successfully";
                     }
                     else{
-                        return "Error Occured while registering! : ". $conn->error;
+                        return "Error Occured while registering! : ". $GLOBALS['conn']->error;
                     }
                 }
                 else{
@@ -103,13 +115,13 @@ class user{
 
     function deleteUser($username){
         $sql = "SELECT * FROM userDB WHERE username = '$username'";
-        if($conn->query($sql)){
+        if($GLOBALS['conn']->query($sql)){
             $sql = "DELETE FROM userDB WHERE username = '$username'";
-            if ($conn->query($sql)){
+            if ($GLOBALS['conn']->query($sql)){
                 return "user deleted successfully";
             }
             else{
-                return "Error Occured while deleting the User! : " . $conn->error;
+                return "Error Occured while deleting the User! : " . $GLOBALS['conn']->error;
             }
         }
         else{
@@ -118,11 +130,11 @@ class user{
     }
 
     function verifyUser($username, $password){
-        encpass($password);
+        $this->encPass($password);
         $password = $this->password;
         $sql = "SELECT * FROM userDB WHERE (username='$username' OR email = '$username') AND pass='$password'";
-        $result = $conn->query($sql);
-        if($result->num_rows > 0){
+        $result = $GLOBALS['conn']->query($sql);
+        if($result && $result->num_rows > 0){
             return true;
             $row = $result->fetch_assoc();
             setUsername($row['useranme']);
@@ -143,15 +155,15 @@ class user{
     }
 
     function editUsername($username, $newUsername){
-        $sql = "SELECT * FROM userDB WHERE username = '$username";
-        if($result = $conn->query($sql)){
+        $sql = "SELECT * FROM userDB WHERE username = '$username'";
+        if($result = $GLOBALS['conn']->query($sql)){
             if($result->num_rows > 0){
                 $sql = "UPDATE userDB SET username='$newUsername' WHERE username = '$username'";
-                if($conn->query($sql)){
+                if($GLOBALS['conn']->query($sql)){
                     return "username changed successfully!";
                 }
                 else{
-                    return "Error Occured!".$conn->error;
+                    return "Error Occured!".$GLOBALS['conn']->error;
                 }
             }
             else{
@@ -159,7 +171,7 @@ class user{
             }
         }
         else{
-            return "Error Occured! ".$conn->error;
+            return "Error Occured! ".$GLOBALS['conn']->error;
         }
     }
 }

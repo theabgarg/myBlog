@@ -7,6 +7,7 @@ class Blog{
     private $content;
     private $published;
 
+    
     function getPosts($username){
         $sql = "SELECT * FROM posts WHERE username = '$this->username'";
         $result = $GLOBALS['conn']->query($sql);

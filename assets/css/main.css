@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+nav{
+    background-color: #101010;
+    width: 100%;
+    height: 50px;
+    display: block;
+}
+
+.inner_header{
+    width:1000px;
+    background-color: #101010;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo_container{
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo_container h1{
+    height: 100%;
+    display: table-cell;
+    color: cornsilk;
+    vertical-align: middle;
+}
+
+.navigation{
+    float: right;
+    height: 100%;
+}
+
+.navigation a{
+    display: table;
+    float: left;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.navigation a li{
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    font-weight: bold;
+    height: 100%;
+    font-size: 16px;
+    font-family: monospace;
+}
+
+.navigation a:last-child{
+    padding-right: 0px;
+}

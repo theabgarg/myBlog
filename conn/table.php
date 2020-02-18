@@ -14,7 +14,7 @@ $sql = "CREATE TABLE IF NOT EXISTS posts (
         views INT(11) NOT NULL DEFAULT 0
     )";
 
-$sql2 = "CREATE TABLE IF NOT EXISTS userDB(
+$sql .= "CREATE TABLE IF NOT EXISTS userDB(
         username VARCHAR(100) UNIQUE NOT NULL PRIMARY KEY,
         is_admin tinyint DEFAULT 0,
         fullname VARCHAR(30) NOT NULL,
@@ -23,19 +23,17 @@ $sql2 = "CREATE TABLE IF NOT EXISTS userDB(
         created TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     )";
 
-    if($conn->query($sql) === TRUE) {
-        echo "1st Table created successfully ";
+$sql .= "CREATE TABLE IF NOT EXISTS auth(
+        id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+        token VARCHAR(100) UNIQUE NOT NULL,
+        valid tinyint DEFAULT 0
+    )";
+
+    if($conn->multi_query($sql) === TRUE) {
+        echo "Tables created successfully ";
     }
     else{
-        echo "error creating 1st tables: " . $conn->error;
-    }
-
-
-    if($conn->query($sql2) === TRUE) {
-        echo "2nd Table created successfully";
-    }
-    else{
-        echo "error creating 2nd tables: " . $conn->error;
+        echo "error creating tables: " . $conn->error;
     }
 
 ?>

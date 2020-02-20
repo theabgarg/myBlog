@@ -91,7 +91,7 @@ class user{
 
     function addUser($token, $username, $name, $email, $password){
         $this->setToken($token);
-        $tokenValidity = verifyToken();
+        $tokenValidity = $this->verifyToken();
         if($tokenValidity){
             $this->encPass($password);
             $usernameAvailaibility = $this->verifyUsername($username);

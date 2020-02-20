@@ -21,9 +21,9 @@
 </head>
 <body>
     <script>header();</script>
-    <div class="users_post"></div>
-    <div class="unpublished_posts"></div>
-
+    <div class="sidebar">
+        <a href=""><li>manage posts</li></a>
+    </div>
     <script>
         $(Document).ready(function(){
             $.ajax

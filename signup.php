@@ -36,6 +36,7 @@
         <input type="text" name="name" placeholder="name">
         <input type="email" name="email" placeholder="email@female.com">
         <input type="password" name="password" placeholder="password">
+        <input type="submit" value="submit">
     </form>
 </body>
 </html>

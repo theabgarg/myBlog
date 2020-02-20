@@ -21,7 +21,7 @@
         function generate(){
             var token = "<?php echo $newUser->authToken();?>";
             var htmldata = "https://cseprofessor.ml/signup?token=" + token;
-            document.write(htmldata);
+            $(".response").append(htmldata);
         }
     </script>
 

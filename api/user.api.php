@@ -90,6 +90,7 @@ class user{
     }
 
     function addUser($token, $username, $name, $email, $password){
+        $token = $this->deEncToken($token);
         $this->setToken($token);
         $tokenValidity = $this->verifyToken();
         if($tokenValidity){
@@ -163,6 +164,12 @@ class user{
         $GLOBALS['conn']->query($sql);
         $hexToken = base64_encode(bin2hex($binaryToken));
         return $hexToken;
+    }
+
+    function deEncToken($token){
+        $token = base64_decode($token);
+        $token = md5(hex2bin($token));
+        return $token;
     }
 
     function editUsername($username, $newUsername){

@@ -145,7 +145,7 @@ class user{
         $result = $GLOBALS['conn']->query($sql);
         if($result && $result->num_rows > 0){
             $row = $result->fetch_assoc();
-            $this->setUsername($row['useranme']);
+            $this->setUsername($row['username']);
             $this->setName($row['fullname']);
             $this->setEmail($row['email']);
             $this->setType($row['is_admin']);

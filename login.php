@@ -22,16 +22,16 @@ include_once('api/user.api.php');
                 header("location: ./admin/index.php");
             }
         }
-        elseif (isset($_SESSION['username'])) {
-            if($_SESSION['type'] == 0){
-                header("location: ./author/index.php");
-            }
-            elseif($_SESSION['type'] == 1){
-                header("location: ./admin/index.php");
-            }
-        }
         else{
             header("location: https://www.scamwatch.gov.au/types-of-scams");
+        }
+    }
+    elseif (isset($_SESSION['username'])) {
+        if($_SESSION['type'] == 0){
+            header("location: ./author/index.php");
+        }
+        elseif($_SESSION['type'] == 1){
+            header("location: ./admin/index.php");
         }
     }
 

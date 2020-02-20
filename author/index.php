@@ -21,13 +21,6 @@
 </head>
 <body>
     <script>header();</script>
-    <div class="sidebar">
-        <a href=""><li>manage posts</li></a>
-    </div>
-    <script>
-        $(Document).ready(function(){
-            $.ajax
-        });
-    </script>
+    
 </body>
 </html>

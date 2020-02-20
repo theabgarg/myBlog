@@ -11,6 +11,7 @@
         header("location: https://en.wikipedia.org/wiki/The_Last_Warning");
     }
     include("../api/user.api.php");
+    include("../conn/conn.php");
 
     $newUser = new user;
 ?>

@@ -9,7 +9,7 @@
     include("conn/conn.php");
     include("api/user.api.php");
 
-    if (isset($_POST['token'] && $_POST['username'] && $_POST['name'] && $_POST['email'] && $_POST['password'])) {
+    if (isset($_POST['token']) && isset($_POST['username']) && isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password'])) {
         $newUser = new user;
         $token = $_POST['token'];
         $username = $_POST['username'];

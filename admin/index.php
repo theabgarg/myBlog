@@ -24,17 +24,22 @@
             var button = '<button id="cpy-btn-btn" >copy token</button>';
             $(".response").append(button);
         }
+
+
         $('#cpy-btn-btn').click(function(){
             var aux = document.createElement("INPUT");
+            alert("created element");
             aux.setAttribute('value', htmldata);
+            alert("attribute set");
             document.body.appendChild(aux);
+            alert("append");
             aux.select();
+            alert("selected");
             document.execCommand('copy');
+            alert("copy command");
             document.body.removeChild(aux);
-        });
-
-
-            
+            alert("i ran");
+        });     
     </script>
 
 

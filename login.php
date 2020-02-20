@@ -22,7 +22,7 @@ include_once('api/user.api.php');
                 header("location: ./admin/index.php");
             }
         }
-        elseif (isset($_SESSION['username']) && isset($_SESSION['name'] && isset($_SESSION['email'] && isset($_SESSION['type'])) {
+        elseif (isset($_SESSION['username']) && isset($_SESSION['name']) && isset($_SESSION['email']) && isset($_SESSION['type'])) {
             if($_SESSION['type'] == 0){
                 header("location: ./author/index.php");
             }

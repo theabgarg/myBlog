@@ -31,7 +31,7 @@
 
     function generate(){
         var token = "<?php echo $newUser->authToken();?>";
-        htmldata = "https://cseprofessor.ml/signup?token=" + token;
+        htmldata = "https://cseprofessor.ml/signup.php?token=" + token;
         var button = '<button id="cpy-btn-btn" onclick="myFunction()">copy token</button>';
         $(".response").append(button);
     }

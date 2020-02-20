@@ -61,3 +61,7 @@ include_once('api/user.api.php');
 
     </body>
 </html>
+
+<?php
+    print_r($_SESSION);
+?>

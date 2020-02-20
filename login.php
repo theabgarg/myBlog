@@ -3,13 +3,14 @@
 include_once('conn/conn.php');
 include_once('api/user.api.php');
 
+session_start();
+
     if (isset($_POST['submit'])) {
         $username = $_POST['uname'];
         $password = $_POST['psw'];
         $newUser = new user;
         $login = $newUser->verifyUser($username, $password);
         if($login){
-            session_start();
             $_SESSION['username'] = $newUser->getUsername();
             $_SESSION['name'] = $newUser->getName();
             $_SESSION['email'] = $newUser->getEmail();

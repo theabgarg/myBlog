@@ -20,7 +20,7 @@
         $response = $newUser->addUser($token, $username, $name, $email, $password);
     }
     else{
-        echo "bhai detail tujhpe dhang se bhari nhi jaa rhi account bana k karega kya?????"
+        echo "bhai detail tujhpe dhang se bhari nhi jaa rhi account bana k karega kya?????";
     }
 ?>
 

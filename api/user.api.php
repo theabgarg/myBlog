@@ -144,12 +144,12 @@ class user{
         $sql = "SELECT * FROM userDB WHERE (username='$username' OR email = '$username') AND pass='$password'";
         $result = $GLOBALS['conn']->query($sql);
         if($result && $result->num_rows > 0){
-            return true;
             $row = $result->fetch_assoc();
             setUsername($row['useranme']);
             setName($row['fullname']);
             setEmail($row['email']);
             setType($row['is_admin']);
+            return true;
         }
         else{
             return false;

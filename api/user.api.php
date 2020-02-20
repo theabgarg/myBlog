@@ -160,6 +160,7 @@ class user{
         $binaryToken = random_bytes(32);
         $actualToken = md5($binaryToken);
         $sql = "INSERT INTO auth (token, valid) VALUES('$actualToken', '1')";
+        $GLOBALS['conn']->query($sql);
         $hexToken = base64_encode(bin2hex($binaryToken));
         return $hexToken;
     }

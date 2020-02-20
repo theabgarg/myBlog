@@ -21,27 +21,18 @@
         function generate(){
             var token = "<?php echo $newUser->authToken();?>";
             var htmldata = "https://cseprofessor.ml/signup?token=" + token;
-            var button = '<button id="cpy-btn-btn" >copy token</button>';
+            var button = '<button id="cpy-btn-btn" onclick="myFunction()">copy token</button>';
             $(".response").append(button);
         }
 
-
-        $(document).ready(function(){
-            $('#cpy-btn-btn').click(function(){
-            var aux = document.createElement("INPUT");
-            alert("created element");
-            aux.setAttribute('value', htmldata);
-            alert("attribute set");
-            document.body.appendChild(aux);
-            alert("append");
-            aux.select();
-            alert("selected");
-            document.execCommand('copy');
-            alert("copy command");
-            document.body.removeChild(aux);
-            alert("i ran");
-        });
-        });
+    function myFunction() {
+        var aux = document.createElement("INPUT");
+        aux.setAttribute('value', htmldata);
+        document.body.appendChild(aux);
+        aux.select();
+        document.execCommand('copy');
+        document.body.removeChild(aux);
+    }
              
     </script>
 

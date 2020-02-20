@@ -18,12 +18,15 @@
 <body>
 
 <script>
-        function generate(){
-            var token = "<?php echo $newUser->authToken();?>";
-            var htmldata = "https://cseprofessor.ml/signup?token=" + token;
-            var button = '<button id="cpy-btn-btn" onclick="myFunction()">copy token</button>';
-            $(".response").append(button);
-        }
+
+    var htmldata='a';
+
+    function generate(){
+        var token = "<?php echo $newUser->authToken();?>";
+        htmldata = "https://cseprofessor.ml/signup?token=" + token;
+        var button = '<button id="cpy-btn-btn" onclick="myFunction()">copy token</button>';
+        $(".response").append(button);
+    }
 
     function myFunction() {
         var aux = document.createElement("INPUT");

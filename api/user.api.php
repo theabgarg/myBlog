@@ -145,10 +145,10 @@ class user{
         $result = $GLOBALS['conn']->query($sql);
         if($result && $result->num_rows > 0){
             $row = $result->fetch_assoc();
-            setUsername($row['useranme']);
-            setName($row['fullname']);
-            setEmail($row['email']);
-            setType($row['is_admin']);
+            $this->setUsername($row['useranme']);
+            $this->setName($row['fullname']);
+            $this->setEmail($row['email']);
+            $this->setType($row['is_admin']);
             return true;
         }
         else{

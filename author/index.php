@@ -6,8 +6,6 @@
     else{
         header("location: ../login.php");
     }
-
-    
 ?>
 
 
@@ -23,6 +21,13 @@
 </head>
 <body>
     <script>header();</script>
-    
+    <div class="users_post"></div>
+    <div class="unpublished_posts"></div>
+
+    <script>
+        $(Document).ready(function(){
+            $.ajax
+        });
+    </script>
 </body>
 </html>

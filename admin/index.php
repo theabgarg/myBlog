@@ -21,7 +21,16 @@
         function generate(){
             var token = "<?php echo $newUser->authToken();?>";
             var htmldata = "https://cseprofessor.ml/signup?token=" + token;
-            $(".response").append(htmldata);
+            var button = '<button id="cpy-btn-btn" >copy token</button>';
+            $(".response").append(button);
+            $('#cpy-btn-btn').onclick(function(){
+                var aux = document.createElement("INPUT");
+                aux.setAttribute('value', htmldata);
+                document.body.appendChild(aux);
+                aux.select();
+                document.execCommand('copy');
+                document.body.removeChild(aux);
+            });
         }
     </script>
 

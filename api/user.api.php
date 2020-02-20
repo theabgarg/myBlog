@@ -90,11 +90,11 @@ class user{
     }
 
     function addUser($token, $username, $name, $email, $password){
-        setToken($token);
+        $this->setToken($token);
         $tokenValidity = verifyToken();
         if($tokenValidity){
-            encPass($password);
-            $usernameAvailaibility = verifyUsername($username);
+            $this->encPass($password);
+            $usernameAvailaibility = $this->verifyUsername($username);
             if ($usernameAvailaibility) {
                 if($name != null && $email != null){
                     $sql = "INSERT INTO userDB (username, is_admin, fullname, email, pass) VALUES('

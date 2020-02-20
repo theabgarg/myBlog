@@ -18,6 +18,8 @@
         $password = $_POST['password'];
 
         $response = $newUser->addUser($token, $username, $name, $email, $password);
+
+        echo $response;
     }
 ?>
 

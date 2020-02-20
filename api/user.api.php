@@ -157,7 +157,7 @@ class user{
     }
 
     function authToken(){
-        $binaryToken = random_bytes(64);
+        $binaryToken = random_bytes(32);
         $actualToken = md5($binaryToken);
         $sql = "INSERT INTO auth (token, valid) VALUES('$actualToken', '1')";
         $hexToken = base64_encode(bin2hex($binaryToken));

@@ -12,7 +12,7 @@ $sql = "CREATE TABLE IF NOT EXISTS posts (
         approval tinyint DEFAULT 0,
         post_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
         views INT(11) NOT NULL DEFAULT 0
-    )";
+    );";
 
 $sql .= "CREATE TABLE IF NOT EXISTS userDB(
         username VARCHAR(100) UNIQUE NOT NULL PRIMARY KEY,
@@ -21,7 +21,7 @@ $sql .= "CREATE TABLE IF NOT EXISTS userDB(
         email VARCHAR(100) NOT NULL UNIQUE,
         pass VARCHAR(200) NOT NULL,
         created TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-    )";
+    );";
 
 $sql .= "CREATE TABLE IF NOT EXISTS auth(
         id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,

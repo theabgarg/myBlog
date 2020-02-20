@@ -24,7 +24,7 @@
             var button = '<button id="cpy-btn-btn" >copy token</button>';
             $(".response").append(button);
         }
-        $('#cpy-btn-btn').onclick(function(){
+        $('#cpy-btn-btn').click(function(){
             var aux = document.createElement("INPUT");
             aux.setAttribute('value', htmldata);
             document.body.appendChild(aux);

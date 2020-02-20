@@ -26,7 +26,8 @@
         }
 
 
-        $('#cpy-btn-btn').click(function(){
+        $(document).ready(function(){
+            $('#cpy-btn-btn').click(function(){
             var aux = document.createElement("INPUT");
             alert("created element");
             aux.setAttribute('value', htmldata);
@@ -39,7 +40,9 @@
             alert("copy command");
             document.body.removeChild(aux);
             alert("i ran");
-        });     
+        });
+        });
+             
     </script>
 
 

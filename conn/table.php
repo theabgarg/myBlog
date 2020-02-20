@@ -7,7 +7,7 @@ $sql = "CREATE TABLE IF NOT EXISTS posts (
         username VARCHAR(100) UNIQUE NOT NULL,
         title VARCHAR(500) NOT NULL,
         short_desc VARCHAR(500),
-        content VARCHAR(65000),
+        content TEXT(65000),
         img BLOB NOT NULL,
         approval tinyint DEFAULT 0,
         post_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,

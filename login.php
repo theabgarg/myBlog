@@ -13,9 +13,14 @@ include_once('api/user.api.php');
             $_SESSION['username'] = $newUser->getUsername();
             $_SESSION['name'] = $newUser->getName();
             $_SESSION['email'] = $newUser->getEmail();
-        }
-        else{
-            echo "nikal lavde!!!";
+            $_SESSION['type'] = $newUser->getType();
+
+            if($_SESSION['type']==0){
+                header("location: ./author/index.php");
+            }
+            elseif($_SESSION['type'] == 1){
+                header("location: ./admin/index.php");
+            }
         }
     }
 

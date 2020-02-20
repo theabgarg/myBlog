@@ -6,6 +6,7 @@ class user{
     private $name;
     private $email;
     private $password;
+    private $isAdmin;
 
     function setToken($token){
         $token = base64_decode($token);
@@ -26,6 +27,10 @@ class user{
         $this->email = $email;
     }
 
+    function setType($isAdmin){
+        $this->isAdmin = $isAdmin;
+    }
+
     function getUsername(){
         return $this->username;
     }
@@ -36,6 +41,10 @@ class user{
 
     function getEmail(){
         return $this->email;
+    }
+
+    function getType(){
+        return $this->isAdmin;
     }
 
     function encPass($password){
@@ -140,6 +149,7 @@ class user{
             setUsername($row['useranme']);
             setName($row['fullname']);
             setEmail($row['email']);
+            setType($row['is_admin']);
         }
         else{
             return false;

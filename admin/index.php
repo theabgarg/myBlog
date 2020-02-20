@@ -23,15 +23,18 @@
             var htmldata = "https://cseprofessor.ml/signup?token=" + token;
             var button = '<button id="cpy-btn-btn" >copy token</button>';
             $(".response").append(button);
-            $('#cpy-btn-btn').onclick(function(){
-                var aux = document.createElement("INPUT");
-                aux.setAttribute('value', htmldata);
-                document.body.appendChild(aux);
-                aux.select();
-                document.execCommand('copy');
-                document.body.removeChild(aux);
-            });
         }
+        $('#cpy-btn-btn').onclick(function(){
+            var aux = document.createElement("INPUT");
+            aux.setAttribute('value', htmldata);
+            document.body.appendChild(aux);
+            aux.select();
+            document.execCommand('copy');
+            document.body.removeChild(aux);
+        });
+
+
+            
     </script>
 
 

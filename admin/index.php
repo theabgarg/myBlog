@@ -1,7 +1,15 @@
 <?php
     session_start();
-    print_r($_SESSION);
+    if(isset($_SESSION['type'])){
+        if($_SESSION['type'] == 1){
 
+        }
+        else{
+            header('location: https://www.macmillandictionary.com/thesaurus-category/british/not-allowed');
+        }
+    }else{
+        header("location: https://en.wikipedia.org/wiki/The_Last_Warning");
+    }
     include("../api/user.api.php");
 
     $newUser = new user;

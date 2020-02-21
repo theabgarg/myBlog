@@ -58,7 +58,7 @@ class user{
             $result = $GLOBALS['conn']->query($sql);
             if ($result->num_rows > 0) {
                 $row = $result->fetch_assoc();
-                if ($row['valid'] === 1){
+                if ($row['valid'] == 1){
                     return true;
                 }
                 else{
@@ -168,7 +168,8 @@ class user{
 
     function deEncToken($token){
         $token = base64_decode($token);
-        $token = md5(hex2bin($token));
+        $token = hex2bin($token);
+        $token = md5($token);
         return $token;
     }
 

@@ -33,6 +33,10 @@ input:hover{
 	border-radius: 0px;
 }
 
+input:focus{
+    border: none;
+}
+
 .submit{
 	margin-top: 10px;
 	border-radius: 50px;

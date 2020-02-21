@@ -57,3 +57,7 @@ nav{
 .navigation a:last-child{
     padding-right: 0px;
 }
+
+.navigation a:visited{
+    background-color: red;
+}

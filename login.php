@@ -60,7 +60,3 @@ session_start();
 		</div>
 	</body>
 </html>
-
-<?php
-    print_r($_SESSION);
-?>

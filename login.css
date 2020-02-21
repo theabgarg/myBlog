@@ -6,7 +6,7 @@
 body{
 	margin: auto;
 	padding: auto;
-	background: no-repeat url("downloads.jpg");
+	background: darkred;
 	background-size: cover;
 }
 
@@ -49,7 +49,7 @@ input:hover{
     width: 60%;
     height: 50%;
 	padding: 2% 5%;
-	background: darkgoldenrod;
+	background: darksalmon;
     border-radius: 50px;
     display: block;
 }

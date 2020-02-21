@@ -51,19 +51,12 @@ session_start();
 		<div class="login_border">
 			<div class="heading">Sign In</div>
 			<div class="form_input">
-				<form action="temp.php" method="post">
+				<form method="post">
 					<div><input type="text" name="uname" placeholder="username or email" required="required"></div>
 					<div><input type="password" name="psw" placeholder="password" required="required"></div>
 					<div><input class="submit" type="submit" name="submit" value="Sign In"></div>
 				</form>
 			</div>
-			<div class="login_with">
-				<div class="or_login_with">Or login with:</div>
-				<div>
-					<a href=""><img class="fb" src="fb.png" width="40px" height="40px">
-				</div>
-			</div>
-			<div class="signup"><a href="signup.html">Sign Up</a></div>
 		</div>
 	</body>
 </html>

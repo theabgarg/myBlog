@@ -42,6 +42,7 @@ input:hover{
 .login_border{
     margin: auto;
     width: 60%;
+    height: auto;
 	padding: 2% 5%;
 	background:  white;
 	border-radius: 50px;

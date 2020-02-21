@@ -15,9 +15,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     
     <style>
-        ul{margin: auto; display: block; margin-top: 30px;}
-        ul a{ list-style: none; float: left; margin-right: 20px;}
-        ul a li{ text-decoration: none; font-family:sans-serif}
+        ul{}
+        ul a{ }
+        ul a li{ }
         .active{background-color:#d90000;}
     </style>
 

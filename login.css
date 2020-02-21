@@ -94,17 +94,18 @@ input:hover{
 
 @media screen and (max-width: 600px){
 	.login_border{
-		width: 100%;
-		margin: 0;
+		width: 90%;
+        margin: 0;
+        margin-top: 50px;
 		border-radius: 0;
 	}
 
 	input{
-		width: 70%;
+		width: 80%;
 	}
 
 	.submit{
-		width: 30%;
+		width: 40%;
 	}
 
 	.login_with{

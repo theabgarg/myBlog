@@ -45,7 +45,8 @@ input:hover{
     height: 50%;
 	padding: 2% 5%;
 	background:  white;
-	border-radius: 50px;
+    border-radius: 50px;
+    display: block;
 }
 
 .heading{

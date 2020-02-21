@@ -39,28 +39,33 @@ session_start();
 ?>
 
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-    </head>
-    <body>
-
-        <form class="login-form" method="post">
-
-            <div class="container">
-            <label for="uname"><b>Username or Email</b></label>
-            <input type="text" placeholder="Enter Username or Email" name="uname" required>
-
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-                
-            <button type="submit" name="submit" value="submit">Login</button>
-            </div>
-        </form>
-        </div>
-
-    </body>
+<html lang="en">
+	<head>
+		<title>login page</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="login.css">
+	</head>
+	<body>
+		<div class="login_border">
+			<div class="heading">Sign In</div>
+			<div class="form_input">
+				<form action="temp.php" method="post">
+					<div><input type="text" name="uname" placeholder="username or email" required="required"></div>
+					<div><input type="password" name="psw" placeholder="password" required="required"></div>
+					<div><input class="submit" type="submit" name="submit" value="Sign In"></div>
+				</form>
+			</div>
+			<div class="login_with">
+				<div class="or_login_with">Or login with:</div>
+				<div>
+					<a href=""><img class="fb" src="fb.png" width="40px" height="40px">
+				</div>
+			</div>
+			<div class="signup"><a href="signup.html">Sign Up</a></div>
+		</div>
+	</body>
 </html>
 
 <?php

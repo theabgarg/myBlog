@@ -17,6 +17,11 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
+    <script>header();</script>
     <div class="posts" id="latestposts"></div>
+    <div class="posts" id="news"></div>
+    <div class="posts" id="how_to"></div>
+    <div class="posts" id="reviews"></div>
+    <div class="posts" id="blog"></div>
 </body>
 </html>

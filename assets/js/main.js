@@ -1,5 +1,5 @@
 function header(){
-    var x = '<nav class="header"><div class="inner_header"><div class="logo_container"><h1>veroxyle</h1></div><ul class="navigation"><a href="#"><li>Latest</li></a><a href="#"><li>News</li></a><a href="#"><li>How-To</li></a><a href="#"><li>Reviews</li></a><a href="#"><li>Blog</li></a></ul><div class="search"></div></div></nav>';
+    var x = '<nav class="header"><div class="inner_header"><div class="logo_container"><h1>veroxyle</h1></div><ul class="navigation"><li><a href="#">Home</a></li><li><a href="#">News</a></li><li><a href="#">How-To</a></li><li><a href="#">Reviews</a></li><li><a href="#">Blog</a></li></ul><div class="search"></div></div></nav>';
     document.write(x);
 }
 

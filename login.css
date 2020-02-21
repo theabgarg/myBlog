@@ -21,7 +21,7 @@ input{
 	padding: 20px 5px;
 	margin: 5px;
 	text-align: center;
-	width: 60%;
+	width: 90%;
 	border: 1px solid;
 	border-color: grey;
 	font-weight: bolder;
@@ -37,7 +37,7 @@ input:hover{
 	margin-top: 10px;
 	border-radius: 50px;
 	padding: 10px 20px;
-	width: 25%;
+	width: 40%;
 	font-size: 20px;
 	font-weight: bolder;
 	background-color: #276127;
@@ -46,7 +46,7 @@ input:hover{
 
 .login_border{
     margin: auto auto;
-    width: 60%;
+    width: 50%;
     height: 50%;
 	padding: 2% 5%;
 	background: rgb(49, 48, 47);

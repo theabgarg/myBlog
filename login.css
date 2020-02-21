@@ -6,7 +6,8 @@
 body{
 	padding: auto auto;
 	background: rgb(8, 1, 1);
-	background-size: cover;
+    background-size: cover;
+    display: block;
 }
 
 a{

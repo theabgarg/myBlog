@@ -17,16 +17,16 @@
         ul{}
         ul a:active{background-color:#d90000;}
         ul a li{}
-        /* .active{background-color:#d90000;} */
+        .active{background-color:#d90000;}
     </style>
-    <!-- <script type="text/javascript">
+    <script type="text/javascript">
         $(document).ready(function(){
             $('ul a').click(function(){
-                // $('a li').css("background-color", "none");
+                $('a li').css("background-color", "none");
                 $(this).css("background-color", "#d90000");
             });
         });
-    </script> -->
+    </script>
 </head>
 <body>
     <script>header();</script>

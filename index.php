@@ -17,7 +17,7 @@
     <style>
         ul{margin: auto; display: block; margin-top: 30px;}
         ul a{ list-style: none; float: left; margin-right: 20px;}
-        ul a li{ color: aliceblue; background: #0080cd; padding: 6px 20px; text-decoration: none; font-family:sans-serif}
+        ul a li{ text-decoration: none; font-family:sans-serif}
         .active{background-color:#d90000;}
     </style>
 

@@ -22,8 +22,8 @@
     <script type="text/javascript">
         $(document).ready(function(){
             $('ul a').click(function(){
-                $('a li').css("background-color", "none");
-                $(this).css("background-color", "#d90000");
+                $('a li').removeClass("active");
+                $(this).addClass("active");
             });
         });
     </script>

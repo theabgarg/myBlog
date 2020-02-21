@@ -4,8 +4,7 @@
 }
 
 body{
-	margin: auto;
-	padding: auto;
+	padding: auto auto;
 	background: darkred;
 	background-size: cover;
 }
@@ -45,7 +44,7 @@ input:hover{
 }
 
 .login_border{
-    margin: auto;
+    margin: auto auto;
     width: 60%;
     height: 50%;
 	padding: 2% 5%;

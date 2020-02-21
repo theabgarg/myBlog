@@ -22,7 +22,7 @@
     <script type="text/javascript">
         $(document).ready(function(){
             $('ul a li').click(function(){
-                $('a li').css("background-color", "none");
+                // $('a li').css("background-color", "none");
                 $(this).css("background-color", "#d90000");
             });
         });

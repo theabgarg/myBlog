@@ -52,9 +52,9 @@ class user{
         $this->password = $password;
     }
 
-    function verifyToken() {
+    function verifyToken($token) {
         if(isset($this->token)){
-            $sql ="SELECT * FROM auth WHERE token = '$this->token'";
+            $sql ="SELECT * FROM auth WHERE token = '$token'";
             $result = $GLOBALS['conn']->query($sql);
             if ($result->num_rows > 0) {
                 $row = $result->fetch_assoc();
@@ -92,7 +92,7 @@ class user{
     function addUser($token, $username, $name, $email, $password){
         $token = $this->deEncToken($token);
         $this->setToken($token);
-        $tokenValidity = $this->verifyToken();
+        $tokenValidity = $this->verifyToken($token);
         if($tokenValidity){
             $this->encPass($password);
             $usernameAvailaibility = $this->verifyUsername($username);

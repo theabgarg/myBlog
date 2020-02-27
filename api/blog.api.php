@@ -42,7 +42,7 @@ class Blog{
     }
 
     function editPost($id){
-        $sql = "SELECT * FROM posts WHERE id='$id'";
+        $sql = "SELECT * FROM posts WHERE id='$id' AND username='$this->username'";
         $result = $GLOBALS['conn']->query($sql);
         if($result && $result->num_rows > 0){
             $fetch_data = $result ->fetch_all(MYSQLI_ASSOC);
@@ -60,6 +60,10 @@ class Blog{
 
     function savePost($title, $image, $short_desc, $content, $approval){
         
+    }
+
+    function getLatestPosts(){
+        $sql = "SELECT * FROM posts ORDER BY post_date ASC";
     }
 }
 

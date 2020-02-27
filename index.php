@@ -24,4 +24,6 @@
     <div class="posts" id="reviews"></div>
     <div class="posts" id="blog"></div>
 </body>
+
+
 </html>

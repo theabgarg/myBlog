@@ -99,8 +99,8 @@ class user{
             if ($usernameAvailaibility) {
                 if($name != null && $email != null){
                     $sql = "INSERT INTO userDB (username, is_admin, fullname, email, pass) VALUES('
-                    $username', '1', '$name', '$email', '$this->password')";
-                    $sql .= "UPDATE auth SET valid=0 WHERE token = '$this->token'";
+                    $username', '1', '$name', '$email', '$this->password');";
+                    $sql .= "UPDATE auth SET valid=0 WHERE token = '$token'";
 
                     if($GLOBALS['conn']->multi_query($sql)){
                         return "user added successfully";

@@ -6,3 +6,8 @@ function header(){
 function card(){
     var x = '<div class="card"><div class="title"><h1>'+title+'</h1></div><div class="desc"><p>'+description+'</p></div><a href="http://">delete</a><a href="http://">approval</a><a href="">Edit</a></div>';
 }
+
+function postDesign(img, title, shortDesc, username, postDate){
+    var x = '<div class="postDesign"><div class="img">'+img+'</div><div class="title">'+title+'</div><div class="shortrDesc">'+shortDesc+'</div><div class="author">By'+author+'at'+date+'</div></div>';
+    return x;
+}

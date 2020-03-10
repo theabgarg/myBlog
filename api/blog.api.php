@@ -62,7 +62,7 @@ class Blog{
         
     }
 
-    function getLatestPosts(){
+    function getLatestPosts($offset, $limit){
         $sql = "SELECT * FROM posts ORDER BY post_date ASC";
     }
 }

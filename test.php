@@ -17,6 +17,7 @@
     ul{
         list-style-type:none;
         width:100%;
+        text-align:justify;
     }
 
     ul li{

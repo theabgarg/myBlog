@@ -8,7 +8,7 @@
             header('location: https://www.macmillandictionary.com/thesaurus-category/british/not-allowed');
         }
     }else{
-        header("location: https://en.wikipedia.org/wiki/The_Last_Warning");
+        header("location: ../login.php");
     }
     include("../api/user.api.php");
     include("../conn/conn.php");
@@ -23,11 +23,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/main.js"></script>
 </head>
 <body>
 
 <script>
-
+    header();
     var htmldata='a';
 
     function generate(){
@@ -36,7 +37,6 @@
         var button = '<button id="cpy-btn-btn" onclick="myFunction()">copy token</button>';
         $(".response").append(button);
     }
-
     function myFunction() {
         var aux = document.createElement("INPUT");
         aux.setAttribute('value', htmldata);
@@ -44,8 +44,7 @@
         aux.select();
         document.execCommand('copy');
         document.body.removeChild(aux);
-    }
-             
+    }         
     </script>
 
 

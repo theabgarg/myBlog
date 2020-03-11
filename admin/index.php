@@ -48,16 +48,16 @@
     }         
     </script>
 
-    <div class="welcome">
-        <p>Welcome, <span><?php echo $_SESSION['name'];?></span> to the admin dashboard.</p>
-    </div>
-
     <aside>
         <div class="buttons"> <a onclick="">create new post</a></div>
         <div class="buttons"><a onclick="">manage users</a></div>
         <div class="buttons"><a onclick="">manage posts</a></div>
         <div class="buttons"><a onclick="">generate signup token</a></div>
     </aside>
+
+    <div class="welcome">
+        <p>Welcome, <span><?php echo $_SESSION['name'];?></span> to the admin dashboard.</p>
+    </div>
 
     <!-- <button onclick="generate()" >generate signup token</button>
     <div class="response"></div> -->

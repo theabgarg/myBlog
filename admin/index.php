@@ -48,6 +48,9 @@
     }         
     </script>
 
+    <div class="welcome">
+        <p>Welcome, <span><?php echo $_SESSION['name'];?></span></p>
+    </div>
 
     <button onclick="generate()" >generate signup token</button>
     <div class="response"></div>

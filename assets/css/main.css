@@ -102,3 +102,13 @@ footer ul li{
 .welcome p span{
     color: darkslateblue;
 }
+
+aside{
+    width: 25%;
+}
+
+.buttons{
+    width:100%;
+    padding: 20px;
+    border: 1px solid black;
+}

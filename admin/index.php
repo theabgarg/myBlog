@@ -68,5 +68,12 @@
    
 
     <script>footer();</script>
+    <script>
+        $('.new_post').click(function(){
+            var x = postform();
+            $('aside').html("");
+            $('aside').html(x);
+        });
+    </script>
 </body>
 </html>

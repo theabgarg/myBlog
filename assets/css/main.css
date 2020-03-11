@@ -36,8 +36,8 @@ nav{
     height: 100%;
 }
 
-.navigation a{
-    display: table;
+.navigation li{
+    display: table-cell;
     float: left;
     height: 100%;
     padding: 0 20px;
@@ -45,8 +45,7 @@ nav{
     color: white;
 }
 
-.navigation a li{
-    display: table-cell;
+/* .navigation li{
     float: left;
     vertical-align: middle;
     color: white;
@@ -54,7 +53,7 @@ nav{
     height: 100%;
     font-size: 16px;
     font-family: monospace;
-}
+} */
 
 .navigation a:last-child{
     padding-right: 0px;

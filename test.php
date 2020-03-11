@@ -14,7 +14,7 @@
     padding:auto;
 }
 
-ul{
+ul ul{
     list-style-type:none;
     float:left;
 }

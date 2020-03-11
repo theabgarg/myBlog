@@ -21,6 +21,8 @@
     }
 
     ul li{
+        width:auto;
+        display:inline-block;
         float:left;
         margin: auto;
         padding: auto;

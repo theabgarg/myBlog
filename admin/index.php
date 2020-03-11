@@ -52,5 +52,7 @@
     <button onclick="generate()" >generate signup token</button>
     <div class="response"></div>
    
+
+    <script>footer();</script>
 </body>
 </html>

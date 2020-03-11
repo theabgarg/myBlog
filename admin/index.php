@@ -49,15 +49,19 @@
     </script>
 
     <aside>
-        <div class="buttons"> <a onclick="">create new post</a></div>
-        <div class="buttons"><a onclick="">manage users</a></div>
-        <div class="buttons"><a onclick="">manage posts</a></div>
-        <div class="buttons"><a onclick="">generate signup token</a></div>
+        <div class="buttons new_post"> <a onclick="">create new post</a></div>
+        <div class="buttons users"><a onclick="">manage users</a></div>
+        <div class="buttons posts"><a onclick="">manage posts</a></div>
+        <div class="buttons token"><a onclick="generate()">generate signup token</a></div>
     </aside>
 
     <div class="welcome">
         <p>Welcome, <span><?php echo $_SESSION['name'];?></span> to the admin dashboard.</p>
     </div>
+
+    <section>
+        <div class="response"></div>
+    </section>
 
     <!-- <button onclick="generate()" >generate signup token</button>
     <div class="response"></div> -->

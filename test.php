@@ -14,6 +14,10 @@
         color: white;
     }
 
+    ul{
+        list-style-type:none;
+    }
+
     ul li{
         float:left;
         margin: 0px 10px;

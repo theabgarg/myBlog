@@ -7,6 +7,5 @@
     <input type="text" name="description" id="description"><br>
     <label for="category">Select Category</label><br>
     <select name="category" id="category"><option value="how_to">How To</option><option value="news">News</option><option value="reviews">Reviews</option><option value="blog">Blog</option></select><br>
-    <label for="publish">Publish Now?</label><br>
-    <input type="checkbox" name="publish" id="publish"><br>
+    <input type="checkbox" name="publish" id="publish"><label for="publish">Publish Now?</label><br>
     <input type="submit" value="submit"></form>

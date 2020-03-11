@@ -122,3 +122,7 @@ aside{
     font-family: monospace;
     border-collapse: collapse;
 }
+
+.buttons a:hover{
+    cursor: pointer;
+}

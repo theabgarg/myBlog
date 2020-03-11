@@ -23,7 +23,7 @@ ul{
 }
 
 .footer .flist{
-    width:100%;
+    width:auto;
     float:left;
     margin:auto;
     padding:10px;

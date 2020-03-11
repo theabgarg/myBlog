@@ -38,7 +38,6 @@ nav{
 }
 
 .navigation a{
-    display: table;
     float: left;
     height: 100%;
     padding: 0 20px;
@@ -47,7 +46,6 @@ nav{
 }
 
 .navigation a li{
-    display: table-cell;
     float: left;
     vertical-align: middle;
     color: white;

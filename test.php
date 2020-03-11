@@ -17,5 +17,61 @@
 
 
 <div id="footer">
-<p>footer</p>
+<ul>
+    <li>
+        <span>menu1</span>
+        <ul>
+            <li>lorem1</li>
+            <li>lorem2</li>
+            <li>lorem3</li>
+            <li>lorem4</li>
+            <li>lorem5</li>
+            <li>lorem6</li>
+        </ul>
+    </li>
+    <li>
+        <span>menu1</span>
+        <ul>
+            <li>lorem1</li>
+            <li>lorem2</li>
+            <li>lorem3</li>
+            <li>lorem4</li>
+            <li>lorem5</li>
+            <li>lorem6</li>
+        </ul>
+    </li>
+    <li>
+        <span>menu1</span>
+        <ul>
+            <li>lorem1</li>
+            <li>lorem2</li>
+            <li>lorem3</li>
+            <li>lorem4</li>
+            <li>lorem5</li>
+            <li>lorem6</li>
+        </ul>
+    </li>
+    <li>
+        <span>menu2</span>
+        <ul>
+            <li>lorem1</li>
+            <li>lorem2</li>
+            <li>lorem3</li>
+            <li>lorem4</li>
+            <li>lorem5</li>
+            <li>lorem6</li>
+        </ul>
+    </li>
+    <li>
+        <span>menu3</span>
+        <ul>
+            <li>lorem1</li>
+            <li>lorem2</li>
+            <li>lorem3</li>
+            <li>lorem4</li>
+            <li>lorem5</li>
+            <li>lorem6</li>
+        </ul>
+    </li>
+</ul>
 </div>

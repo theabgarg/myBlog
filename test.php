@@ -6,6 +6,8 @@
 #footer{
     bottom:0;
     left:0;
+    height:20%;
+    background-color:black;
 }
 </style>
 

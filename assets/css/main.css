@@ -33,12 +33,11 @@ nav{
 }
 
 .navigation{
+    float: right;
     height: 100%;
-    vertical-align: middle;
 }
 
 .navigation li{
-    display: table-cell;
     float: left;
     height: 100%;
     padding: 0 20px;

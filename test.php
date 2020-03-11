@@ -14,7 +14,7 @@
     padding:auto;
 }
 
-ul li{
+.footer li{
     list-style-type:none;
     float:left;
 }
@@ -22,7 +22,7 @@ ul li{
 
 
 <div id="footer">
-<ul>
+<ul class="footer">
     <li>
         <ul>
             <span>menu1</span>

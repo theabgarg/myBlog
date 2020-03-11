@@ -11,3 +11,8 @@ function postDesign(img, title, shortDesc, username, postDate){
     var x = '<div class="postDesign"><div class="img">'+img+'</div><div class="title">'+title+'</div><div class="shortrDesc">'+shortDesc+'</div><div class="author">By'+author+'at'+date+'</div></div>';
     return x;
 }
+
+function footer(){
+    var x ='<footer><div class="wrapper"><div class="sitemap"><ul><li>home</li><li>news</li><li>how_to</li><li>review</li><li>blog</li><li>contact</li></ul></div></div></footer>';
+    document.write(x);
+}

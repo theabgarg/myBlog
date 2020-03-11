@@ -133,5 +133,7 @@
         }
         ?>
     </div>
+
+    <script>footer();</script>
 </body>
 </html>

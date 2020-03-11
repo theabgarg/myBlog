@@ -57,3 +57,27 @@ nav{
 .navigation a:last-child{
     padding-right: 0px;
 }
+
+footer{
+    position:fixed;
+    bottom:0;
+    left:0;
+    padding: 20px 0px;
+    margin:auto;
+    width:100%;
+    background:black;
+    color: white;
+}
+
+ul{
+    list-style-type:none;
+    width:100%;
+    text-align:justify;
+    display:inline-block;
+}
+
+ul li{
+    width:16%;
+    display:inline-block;
+    text-align:center;
+}

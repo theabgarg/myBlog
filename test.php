@@ -26,7 +26,7 @@ ul{
     width:auto;
     float:left;
     margin:auto;
-    padding:10px;
+    padding:auto;
 }
 </style>
 

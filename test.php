@@ -8,7 +8,7 @@
         position:fixed;
         bottom:0;
         left:0;
-        padding: 20px 20px;
+        padding: 20px auto;
         width:100%;
         background:black;
         color: white;

@@ -24,8 +24,8 @@ ul ul{
 <div id="footer">
 <ul>
     <li>
-        <span>menu1</span>
         <ul>
+            <span>menu1</span>
             <li>lorem1</li>
             <li>lorem2</li>
             <li>lorem3</li>
@@ -35,8 +35,8 @@ ul ul{
         </ul>
     </li>
     <li>
-        <span>menu1</span>
         <ul>
+            <span>menu2</span>
             <li>lorem1</li>
             <li>lorem2</li>
             <li>lorem3</li>
@@ -46,8 +46,8 @@ ul ul{
         </ul>
     </li>
     <li>
-        <span>menu1</span>
         <ul>
+            <span>menu3</span>
             <li>lorem1</li>
             <li>lorem2</li>
             <li>lorem3</li>
@@ -57,8 +57,8 @@ ul ul{
         </ul>
     </li>
     <li>
-        <span>menu2</span>
         <ul>
+            <span>menu4</span>
             <li>lorem1</li>
             <li>lorem2</li>
             <li>lorem3</li>
@@ -68,8 +68,8 @@ ul ul{
         </ul>
     </li>
     <li>
-        <span>menu3</span>
         <ul>
+            <span>menu5</span>
             <li>lorem1</li>
             <li>lorem2</li>
             <li>lorem3</li>

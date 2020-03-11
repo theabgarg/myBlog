@@ -111,6 +111,7 @@ aside{
 
 .buttons{
     width:100%;
-    padding: 20px;
+    text-align: center;
+    padding: 20px 0px;
     border: 1px solid black;
 }

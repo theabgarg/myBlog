@@ -13,6 +13,12 @@
         background:black;
         color: white;
     }
+
+    ul li{
+        float:left;
+        margin: 0px 10px;
+        padding: auto;
+    }
 </style>
 
 <footer>

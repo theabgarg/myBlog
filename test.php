@@ -13,6 +13,11 @@
     text-align: center;
     padding:auto;
 }
+
+ul{
+    list-style-type:none;
+    float:left;
+}
 </style>
 
 

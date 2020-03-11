@@ -53,9 +53,10 @@
     </div>
 
     <aside>
-        <div class="buttons">create new post</div>
-        <div class="buttons">manage users</div>
-        <div class="buttons">generate signup token</div>
+        <div class="buttons"> <a onclick="">create new post</a></div>
+        <div class="buttons"><a onclick="">manage users</a></div>
+        <div class="buttons"><a onclick="">manage posts</a></div>
+        <div class="buttons"><a onclick="">generate signup token</a></div>
     </aside>
 
     <!-- <button onclick="generate()" >generate signup token</button>

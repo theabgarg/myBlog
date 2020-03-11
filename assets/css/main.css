@@ -42,6 +42,7 @@ nav{
     float: left;
     height: 100%;
     padding: 0 20px;
+    text-decoration: none;
 }
 
 .navigation a li{

@@ -71,8 +71,8 @@
     <script>
         $('.new_post').click(function(){
             var x = postform();
-            $('aside').html("");
-            $('aside').html(x);
+            $('section').html("");
+            $('section').html(x);
         });
     </script>
 </body>

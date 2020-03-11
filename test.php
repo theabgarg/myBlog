@@ -20,6 +20,7 @@
     list-style-type:none;
     float:left;
     margin:auto;
+    padding:10px;
 }
 </style>
 

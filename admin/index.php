@@ -52,8 +52,14 @@
         <p>Welcome, <span><?php echo $_SESSION['name'];?></span> to the admin dashboard.</p>
     </div>
 
-    <button onclick="generate()" >generate signup token</button>
-    <div class="response"></div>
+    <aside>
+        <div>create new post</div>
+        <div>manage users</div>
+        <div>generate signup token</div>
+    </aside>
+
+    <!-- <button onclick="generate()" >generate signup token</button>
+    <div class="response"></div> -->
    
 
     <script>footer();</script>

@@ -24,6 +24,7 @@
     ul li{
         width:16%;
         display:inline-block;
+        text-align:center;
     }
 </style>
 

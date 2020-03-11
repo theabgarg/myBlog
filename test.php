@@ -16,12 +16,14 @@
 
     ul{
         list-style-type:none;
+        width:100%;
     }
 
     ul li{
         float:left;
-        margin: 0px 10px;
+        margin: auto;
         padding: auto;
+        weight:1;
     }
 </style>
 

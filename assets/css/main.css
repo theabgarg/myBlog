@@ -105,6 +105,8 @@ footer ul li{
 
 aside{
     width: 25%;
+    border:1px solid black;
+    height:100%;
 }
 
 .buttons{

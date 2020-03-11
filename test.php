@@ -10,6 +10,7 @@
         left:0;
         padding: 10px 0px;
         width:100%;
+        background:black;
     }
 </style>
 

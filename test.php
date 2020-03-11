@@ -22,7 +22,7 @@
     }
 
     ul li{
-        width:20%;
+        width:16%;
         display:inline-block;
     }
 </style>

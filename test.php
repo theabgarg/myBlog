@@ -24,9 +24,8 @@
         width:auto;
         display:inline-block;
         float:left;
-        margin: auto;
-        padding: auto;
-        weight:1;
+        margin:0;
+        padding:0;
     }
 </style>
 

@@ -14,7 +14,7 @@
     padding:auto;
 }
 
-.footer li{
+.footer .flist{
     list-style-type:none;
     float:left;
 }
@@ -23,7 +23,7 @@
 
 <div id="footer">
 <ul class="footer">
-    <li>
+    <li class="flist">
         <ul>
             <span>menu1</span>
             <li>lorem1</li>
@@ -34,7 +34,7 @@
             <li>lorem6</li>
         </ul>
     </li>
-    <li>
+    <li class="flist">
         <ul>
             <span>menu2</span>
             <li>lorem1</li>
@@ -45,7 +45,7 @@
             <li>lorem6</li>
         </ul>
     </li>
-    <li>
+    <li class="flist">
         <ul>
             <span>menu3</span>
             <li>lorem1</li>
@@ -56,7 +56,7 @@
             <li>lorem6</li>
         </ul>
     </li>
-    <li>
+    <li class="flist">
         <ul>
             <span>menu4</span>
             <li>lorem1</li>
@@ -67,7 +67,7 @@
             <li>lorem6</li>
         </ul>
     </li>
-    <li>
+    <li class="flist">
         <ul>
             <span>menu5</span>
             <li>lorem1</li>

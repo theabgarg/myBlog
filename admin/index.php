@@ -49,7 +49,7 @@
     </script>
 
     <div class="welcome">
-        <p>Welcome, <span><?php echo $_SESSION['name'];?></span> to the admin dashboard</p>
+        <p>Welcome, <span><?php echo $_SESSION['name'];?></span> to the admin dashboard.</p>
     </div>
 
     <button onclick="generate()" >generate signup token</button>

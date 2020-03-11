@@ -81,3 +81,15 @@ footer ul li{
     display:inline-block;
     text-align:center;
 }
+
+.welcome p{
+    font-size: 20px;
+    font-weight: bolder;
+    color: darksalmon;
+    text-transform: capitalize;
+}
+
+.welcome p span{
+    color: darkslateblue;
+    text-transform: uppercase;
+}

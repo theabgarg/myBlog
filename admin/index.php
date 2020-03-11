@@ -24,6 +24,7 @@
     <title>Document</title>
     <script src="../assets/js/jquery.js"></script>
     <script src="../assets/js/main.js"></script>
+    <link rel="stylesheet" href="../assets/main.css">
 </head>
 <body>
 

@@ -4,10 +4,13 @@
     padding:0;
 }
 #footer{
-    bottom:0;
-    left:0;
-    height:20%;
-    background-color:black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
 }
 </style>
 

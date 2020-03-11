@@ -5,6 +5,7 @@
     }
 
     footer{
+        position:fixed;
         bottom:0;
         left:0;
         padding: 10px 0px;

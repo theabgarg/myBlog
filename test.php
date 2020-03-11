@@ -18,6 +18,7 @@
         list-style-type:none;
         width:100%;
         text-align:justify;
+        display:inline-block;
     }
 
     ul li{

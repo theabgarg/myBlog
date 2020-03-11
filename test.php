@@ -13,10 +13,15 @@
     text-align: center;
     padding:auto;
 }
-.footer{
-    width:100%;
+
+ul{
     list-style-type:none;
 }
+
+.footer{
+    width:100%;
+}
+
 .footer .flist{
     float:left;
     margin:auto;

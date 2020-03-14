@@ -28,9 +28,9 @@
                     ?>
                     <script>
                     var img;
-                    var title = <?php echo $data['title'];?>;
-                    var shortDesc = <?php echo $data['short_desc']?>;
-                    var author = <?php echo $data['username'];?>;
+                    var title = "<?php echo $data['title'];?>";
+                    var shortDesc = "<?php echo $data['short_desc']?>";
+                    var author = "<?php echo $data['username'];?>";
                     var date = <?php echo $data['post_date'];?> * 1000;
                     var postDate = new Date(date);
                     var post = potsDesign(img, title, shortDesc, username, postDate);

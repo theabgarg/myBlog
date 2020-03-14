@@ -1,5 +1,5 @@
 <?php
-    include_once("conn/conn.php")
+    include_once("./conn/conn.php")
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -36,6 +36,7 @@
                     var post = potsDesign(img, title, shortDesc, username, postDate);
                     document.write(post);
                     </script>
+                    "after script
                     <?php
                 }
             }

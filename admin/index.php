@@ -74,6 +74,24 @@
             $('section').html("");
             $('section').html(x);
         });
+
+        $('.users').click(function(){
+            <?php
+                $sql = "SELECT * FROM userDB WHERE is_admin=0";
+                $result = $GLOBALS['conn']->query($sql);
+                if($result && $result->num_rows > 0){
+                    $fetch_data = $result ->fetch_all(MYSQLI_ASSOC);
+                    foreach($fetch_data as $data){
+                        ?>
+                            var id = <?php echo $data['id']?>;
+                            var name = <?php echo $data['fullname']?>;
+                            var username = <?php echo $data['username']?>;
+                            postusers(id,name, username);
+                        <?php
+                    }
+                } 
+            ?>
+        });
     </script>
 </body>
 </html>

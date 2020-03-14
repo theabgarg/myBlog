@@ -31,9 +31,9 @@
                     var title = "<?php echo $data['title'];?>";
                     var shortDesc = "<?php echo $data['short_desc']?>";
                     var author = "<?php echo $data['username'];?>";
-                    var date = <?php echo $data['post_date'];?> * 1000;
-                    var postDate = new Date(date);
-                    var post = potsDesign(img, title, shortDesc, username, postDate);
+                    var date = <?php echo $data['post_date'];?>;
+                    // var postDate = new Date(date);
+                    var post = potsDesign(img, title, shortDesc, username, date);
                     document.write(post);
                     </script>
                     "after script

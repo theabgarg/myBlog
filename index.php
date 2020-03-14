@@ -33,7 +33,7 @@
                     var author = "<?php echo $data['username'];?>";
                     var date = "<?php echo $data['post_date'];?>";
                     // var postDate = new Date(date);
-                    var post = postDesign(img, title, shortDesc, username, date);
+                    var post = postDesign(img, title, shortDesc, author, date);
                     document.write(post);
                     </script>
                     "after script

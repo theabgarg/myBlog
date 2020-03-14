@@ -27,7 +27,7 @@
                 foreach ($fetch_data as $data){
                     ?>
                     <script>
-                    var img = ;
+                    var img;
                     var title = <?php echo $data['title'];?>;
                     var shortDesc = <?php echo $data['short_desc']?>;
                     var author = <?php echo $data['username'];?>;

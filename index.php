@@ -36,7 +36,6 @@
                     var post = postDesign(img, title, shortDesc, author, date);
                     document.write(post);
                     </script>
-                    "after script
                     <?php
                 }
             }
@@ -134,7 +133,6 @@
         }
         ?>
     </div>
-
     <script>footer();</script>
 </body>
 </html>

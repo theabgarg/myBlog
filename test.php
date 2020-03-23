@@ -69,6 +69,21 @@
 
             <div class="main-content">
                 <h1 class="recent-post-title">Recent Posts</h1>
+
+                <div class="post">
+                    <img src="assets/images/image_1.pmg" alt="" class="post-image">
+                    <div class="post-preview">
+                        <h1><a href="single.html">sweetest dong to be sung</a></h1>
+                        <i class="fa fa-user">veroXyle</i>
+                        &nbsp;
+                        <i class="fa fa-calendar">mar 11, 2020</i>
+                        <p class="preview-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Optio fuga maiores odit necessitatibus cum ipsam?
+                        </p>
+                        <a href="single.html" class="btn">Read More</a>
+                    </div>
+                </div>
             </div>
 
             <div class="sidebar"></div>

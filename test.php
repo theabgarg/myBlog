@@ -47,7 +47,7 @@
 
                 var x = $('header > ul').css({"display" : "none"});
 
-                if( x == true) {
+                if( x === true) {
                     $('header > ul').css({"display" : "block"});
                 }else{
                     $('header > ul').css({"display" : "none"});

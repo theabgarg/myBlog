@@ -193,6 +193,17 @@ header .menu-close{
     border: 1px dashed greenyellow;
     height: 300px;
 }
+.content .main-content .recent-post-title{
+    margin: 20px;
+}
+
+.content .main-content .post{
+    width: 95%;
+    height: 270px;
+    margin: 10px auto;
+    border-radius: 5px;
+    background: white;
+}
 
 
 /* media query */

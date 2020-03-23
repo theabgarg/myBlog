@@ -27,7 +27,7 @@ a:hover{
     clear: both;
 }
 
-btn{
+.btn{
     padding: .5rem 1rem;
     background: maroon;
     color: white;

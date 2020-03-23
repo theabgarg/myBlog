@@ -133,6 +133,11 @@ header .menu-close{
 }
 
 /* post slider */
+
+.page-wrapper{
+    min-height: 100%;
+}
+
 .post-slider{
     position: relative;
     border: 1px solid red;

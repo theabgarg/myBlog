@@ -64,6 +64,10 @@ header ul li:hover ul{
     display: block;
 }
 
+header ul li:active ul{
+    display: block;
+}
+
 header ul li ul li{
     width: 100%;
 }

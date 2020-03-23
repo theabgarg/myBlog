@@ -52,6 +52,7 @@ header ul li ul{
     top: 66px;
     right: 0;
     width: 180px;
+    display: none;
 }
 
 header ul li ul li{

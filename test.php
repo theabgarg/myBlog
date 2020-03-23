@@ -42,7 +42,11 @@
     </header>
 
     <script>
-        
+        $(document).ready(function(){
+            $('.menu-toggle').click(function(){
+                $('header > ul').css({"display" : "block"});
+            });
+        });
     </script>
 </body>
 </html>

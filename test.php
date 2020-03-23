@@ -47,7 +47,8 @@
                 if($('header > ul').css({"display" : "none"})){
                     $('header > ul').css({"display" : "block"});
                 }
-                else{
+                
+                if($('header > ul').css({"display" : "block"})){
                     $('header > ul').css({"display" : "none"});
                 }
             });

@@ -53,7 +53,7 @@ header ul li a{
 }
 
 header ul li a:hover{
-    background: greenyellow;
+    background: rgb(240, 73, 73);
 }
 
 header .menu-toggle{

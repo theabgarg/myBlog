@@ -43,14 +43,10 @@
     </header>
 
     <div class="page-wrapper">
-        
         <div class="post-slider">
-
             <h1 class="slider-title">Trending posts</h1>
-
             <i class="fa fa-chevron-left prev"></i>
             <i class="fa fa-chevron-right next"></i>
-
             <div class="post-wrapper">
                 <div class="post">
                     <img src="assets/images/image_1.png" alt="image.png" class="slider-image">
@@ -61,15 +57,11 @@
                         <i class="fa fa-calendar">mar30, 2020</i>
                     </div>
                 </div>
-            
             </div>
         </div>
-
         <div class="content clearfix">
-
             <div class="main-content">
                 <h1 class="recent-post-title">Recent Posts</h1>
-
                 <div class="post">
                     <img src="assets/images/image_1.png" alt="" class="post-image">
                     <div class="post-preview">
@@ -81,17 +73,21 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Optio fuga maiores odit necessitatibus cum ipsam?
                         </p>
-                        <a href="single.html" class="btn">Read More</a>
+                        <a href="single.html" class="btn read-more">Read More</a>
                     </div>
                 </div>
             </div>
-
             <div class="sidebar"></div>
-
         </div>
-
     </div>
 
+    <footer class="footer">
+        <div class="footer-content"></div>
+
+        <div class="footer-bottom">
+            &copy; veroxyle | Designed by abhishek garg, abhishek kishor, MD sharib, aniket ch.
+        </div>
+    </footer>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

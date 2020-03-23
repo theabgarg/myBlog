@@ -26,7 +26,7 @@
                 <a href="#">
                 <i class="fa fa-user"></i>    
                 veroxyle
-                <i class="fa fa-chevron-down"></i>
+                <i class="fa fa-chevron-down" style="font-size: 0.8em;"></i>
                 </a>
                 <ul>
                     <li><a href="#">Dashboard</a></li>

@@ -34,4 +34,8 @@ $(document).ready(function(){
         $('.menu-toggle').css({"display" : "block"});
         $('.menu-close').css({"display" : "none"});
     });
+
+    $('.logo').click(function(){
+        location.replace("./index.php");
+    });
 });

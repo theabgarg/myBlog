@@ -30,8 +30,7 @@ header .logo img{
 
 header .logo-text{
     float: left;
-    margin: auto;
-    padding: auto;
+    margin: 9px;
     font-family: cursive;
 }
 

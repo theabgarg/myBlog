@@ -22,16 +22,16 @@ function postform(){
     return x;
 }
 
-// $(document).ready(function(){
-//     $('.menu-toggle').click(function(){
-//             $('header > ul').css({"display" : "block"});
-//             $('.menu-toggle').css({"display" : "none"});
-//             $('.menu-close').css({"display" : "block"});
-//     });
+$(document).ready(function(){
+    $('.menu-toggle').click(function(){
+            $('header > ul').css({"display" : "block"});
+            $('.menu-toggle').css({"display" : "none"});
+            $('.menu-close').css({"display" : "block"});
+    });
 
-//     $('.menu-close').click(function(){
-//         $('header > ul').css({"display" : "none"});
-//         $('.menu-toggle').css({"display" : "block"});
-//         $('.menu-close').css({"display" : "none"});
-//     });
-// });
+    $('.menu-close').click(function(){
+        $('header > ul').css({"display" : "none"});
+        $('.menu-toggle').css({"display" : "block"});
+        $('.menu-close').css({"display" : "none"});
+    });
+});

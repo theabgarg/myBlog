@@ -115,6 +115,7 @@ header .menu-close{
     height : 350px;
     margin: 0px auto;
     border : 1px dashed red;
+    overflow: hidden;
 }
 
 .post-slider .post-wrapper .post{

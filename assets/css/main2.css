@@ -117,6 +117,11 @@ header .menu-close{
     border : 1px dashed red;
 }
 
+.post-slider .post-wrapper .post{
+    display: inline-block;
+    background: whitesmoke;
+}
+
 
 /* media query */
 

@@ -247,6 +247,7 @@ header .menu-close{
 
 .footer .footer-content{
     border: 1px solid red;
+    height: 350px;
 }
 
 .footer .footer-bottom{

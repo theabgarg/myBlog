@@ -11,6 +11,7 @@
 <body>
     <header>
         <div class="logo">
+            <img src="" alt="" height="100" width="100">
             <h1 class="logo-text">vero<span>xyle</span></h1>
         </div>
 

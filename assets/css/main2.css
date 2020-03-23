@@ -168,6 +168,13 @@ header .menu-close{
     border-top-right-radius: 5px;
 }
 
+/* content */
+.content{
+    width: 90%;
+    margin: 30px auto 30px;
+    border: 1px solid red;
+}
+
 
 /* media query */
 

@@ -64,6 +64,17 @@
             
             </div>
         </div>
+
+        <div class="content">
+
+            <div class="main-content">
+                <h1 class="recent-post-title">Recent Posts</h1>
+            </div>
+
+            <div class="sidebar"></div>
+
+        </div>
+
     </div>
 
     <script src="assets/js/main.js"></script>

@@ -65,7 +65,7 @@
             </div>
         </div>
 
-        <div class="content">
+        <div class="content clearfix">
 
             <div class="main-content">
                 <h1 class="recent-post-title">Recent Posts</h1>

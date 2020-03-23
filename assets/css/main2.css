@@ -12,6 +12,12 @@ h1,h2,h3,h4{
     font-family: 'Courier New', Courier, monospace;
 }
 
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
 header{
     background: #000;
     height: 66px;

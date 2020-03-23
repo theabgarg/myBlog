@@ -175,6 +175,19 @@ header .menu-close{
     border: 1px solid red;
 }
 
+.content .main-content{
+    width: 70%;
+    float: left;
+    border: 1px solid blue;
+}
+
+.content .sidebar{
+    width: 30%;
+    float: left;
+    border: 1px dashed greenyellow;
+    height: 300px;
+}
+
 
 /* media query */
 

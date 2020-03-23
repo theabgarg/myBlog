@@ -244,6 +244,13 @@ header .menu-close{
     height: 400px;
 }
 
+.footer .footer-bottom{
+    background: #343a40;
+    color: #686868;
+    height: 50px;
+    text-align: center;
+}
+
 /* media query */
 
 @media only screen and (max-width:900px){

@@ -118,6 +118,11 @@ header .menu-close{
     overflow: hidden;
 }
 
+.post-slider .slider-title{
+    text-align: center;
+    margin: 30px auto;
+}
+
 .post-slider .post-wrapper .post{
     height : 350px;
     width: 300px;

@@ -52,11 +52,15 @@
             <i class="fa fa-chevron-right next"></i>
 
             <div class="post-wrapper">
-                <div class="post">1</div>
-                <div class="post">2</div>
-                <div class="post">3</div>
-                <div class="post">4</div>
-                <div class="post">5</div>
+                <div class="post">
+                    <img src="images/image_1.png" alt="bakchodi h bhai" class="slider-image">
+                    <div class="post-info">
+                        <h4><a href="single.html">One day i don't know what will happen just like you</a></h4>
+                        <i class="fa fa-user">abhishek</i>
+                        &nbsp;
+                        <i class="fa fa-calendar">mar30, 2020</i>
+                    </div>
+                </div>
             
             </div>
         </div>

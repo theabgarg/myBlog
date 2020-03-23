@@ -1,5 +1,19 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background: aquamarine;
+}
+
 header{
     background: #000;
     height: 66px;
     color: white;
+}
+
+header .logo{
+    float: left;
+}
+
+header ul{
+    float: right;
 }

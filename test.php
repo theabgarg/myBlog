@@ -45,7 +45,9 @@
         $(document).ready(function(){
             $('.menu-toggle').click(function(){
 
-                if($('header > ul').css({"display" : "none"})){
+                var x = $('header > ul').css({"display" : "none"});
+
+                if( x == true) {
                     $('header > ul').css({"display" : "block"});
                 }else{
                     $('header > ul').css({"display" : "none"});

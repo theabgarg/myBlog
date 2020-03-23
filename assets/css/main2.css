@@ -111,6 +111,9 @@ header .menu-close{
 }
 
 .post-slider .post-wrapper{
+    width: 84%;
+    height : 350px;
+    margin: 0px auto;
     border : 1px dashed red;
 }
 

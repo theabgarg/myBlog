@@ -118,6 +118,8 @@ header .menu-close{
 }
 
 .post-slider .post-wrapper .post{
+    height : 350px;
+    width: 300px;
     display: inline-block;
     background: whitesmoke;
 }

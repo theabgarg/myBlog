@@ -40,20 +40,5 @@
             </li>
         </ul>
     </header>
-
-    <script>
-        $(document).ready(function(){
-            $('.menu-toggle').click(function(){
-
-                var x = $('header > ul').css({"display" : "none"});
-
-                if(x) {
-                    $('header > ul').css({"display" : "block"});
-                }else{
-                    $('header > ul').css({"display" : "none"});
-                }
-            });
-        });
-    </script>
 </body>
 </html>

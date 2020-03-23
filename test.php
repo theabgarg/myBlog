@@ -89,7 +89,7 @@
         </div>
 
         <div class="footer-bottom">
-            &copy; veroxyle | Designed by abhishek garg, abhishek kishor, MD sharib, aniket ch.
+            &copy; veroxyle | Designed by Abhishek Garg, Abhishek Kishor, MD Sharib, Aniket chaudhary
         </div>
     </footer>
     <script src="assets/js/main.js"></script>

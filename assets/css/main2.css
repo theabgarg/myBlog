@@ -9,7 +9,16 @@ body{
 }
 
 h1,h2,h3,h4{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+aL:hover{
+    color: lawngreen;
 }
 
 .clearfix::after{

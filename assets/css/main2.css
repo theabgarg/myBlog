@@ -119,6 +119,7 @@ header .menu-close{
     width: 84%;
     height : 350px;
     margin: 0px auto;
+    padding: 10px 0px 10px 0px;
     border : 1px dashed red;
     overflow: hidden;
 }
@@ -146,7 +147,7 @@ header .menu-close{
 }
 
 .post-slider .post-wrapper .post{
-    height : 350px;
+    height : 330px;
     width: 300px;
     margin: 0px 10px;
     display: inline-block;

@@ -1,1 +1,34 @@
-<form method="post"><label for="title">Title</label>  <br><input type="text" name="title" id="title"> <br> <label for="image">Image</label><br><input type="file" name="image" id="image"><br><label for="desc">Short Description</label><br><input type="text" name="description" id="description"><br><label for="category">Select Category</label><br><select name="category" id="category"><option value="how_to">How To</option><option value="news">News</option><option value="reviews">Reviews</option><option value="blog">Blog</option></select><br><input type="checkbox" name="publish" id="publish"><label for="publish">Publish Now?</label><br><input type="submit" value="submit"></form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="logo-text">vero<span>xyle</span></h1>
+        </div>
+
+        <i class="fa fa-bars"></i>
+
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <!-- <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Login</a></li> -->
+            <li>
+                <a href="#">veroxyle</a>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#" class="logout">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+</body>
+</html>

@@ -25,6 +25,7 @@ header .logo{
 
 header .logo img{
     float: left;
+    margin: 9px;
 }
 
 header .logo-text{

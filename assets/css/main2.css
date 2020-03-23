@@ -152,6 +152,7 @@ header .menu-close{
     margin: 0px 10px;
     display: inline-block;
     background: whitesmoke;
+    border-radius: 5px;
 }
 
 .post-slider .post-wrapper .post .slider-image{

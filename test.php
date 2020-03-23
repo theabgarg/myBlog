@@ -55,7 +55,7 @@
                 <div class="post">
                     <img src="assets/images/image_1.png" alt="imahe.png" class="slider-image">
                     <div class="post-info">
-                        <h4><a href="single.html">One day i don't know what will happen just like you</a></h4>
+                        <h4><a href="single.html">One day i don't know </a></h4>
                         <i class="fa fa-user">abhishek</i>
                         &nbsp;
                         <i class="fa fa-calendar">mar30, 2020</i>

@@ -117,4 +117,10 @@ header .menu-toggle{
     header ul li{
         width: 100%;
     }
+
+    header ul li ul{
+        position: static;
+        display: block;
+        width: 100%;
+    }
 }

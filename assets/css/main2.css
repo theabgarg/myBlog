@@ -213,7 +213,7 @@ header .menu-close{
 
 .content .main-content .post .post-preview{
     width: 60%;
-    margin: 10px;
+    padding: 10px;
     float: right;
 }
 

@@ -19,13 +19,12 @@ header *{
 
 header .logo{
     float: left;
-    border: 1px solid greenyellow;
     height: inherit;
     margin-left: 2em;
 }
 
 header .logo-text{
-    margin: 8px;
+    margin: 9px;
 }
 
 header ul{

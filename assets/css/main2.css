@@ -63,7 +63,7 @@ header ul li ul li a{
 }
 
 header ul li ul li a.logout{
-    color: chocolate;
+    color: red;
 }
 
 /* header ul li ul li a:hover{

@@ -45,12 +45,10 @@
         $(document).ready(function(){
             $('.menu-toggle').click(function(){
 
-                if($('header > ul').css({"display" : "block"})){
-                    $('header > ul').css({"display" : "none"});
-                }
-
                 if($('header > ul').css({"display" : "none"})){
                     $('header > ul').css({"display" : "block"});
+                }else{
+                    $('header > ul').css({"display" : "none"});
                 }
             });
         });

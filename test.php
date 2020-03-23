@@ -54,10 +54,9 @@
                 <div class="post">3</div>
                 <div class="post">4</div>
                 <div class="post">5</div>
+            
             </div>
-
         </div>
-
     </div>
 
 </body>

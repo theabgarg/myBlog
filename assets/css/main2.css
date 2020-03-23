@@ -105,6 +105,16 @@ header .menu-close{
     display: none;
 }
 
+/* post slider */
+.post-slider{
+    border: 1px solid red;
+}
+
+.post-slider .post-wrapper{
+    border : 1px dashed red;
+}
+
+
 /* media query */
 
 @media only screen and (max-width:900px){

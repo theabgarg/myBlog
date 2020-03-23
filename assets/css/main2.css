@@ -87,7 +87,7 @@ header ul li ul li a.logout{
 
 header ul li a{
     display: inline-block;
-    padding: auto 10px;
+    padding: auto;
     font-size: 1.1em;
     text-decoration: none;
 }

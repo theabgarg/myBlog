@@ -130,7 +130,7 @@ header .menu-toggle{
 
     header ul li ul{
         position: static;
-        display: block;
+        display: none;
         width: 100%;
     }
 

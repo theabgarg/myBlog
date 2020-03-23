@@ -245,6 +245,10 @@ header .menu-close{
     position: relative;
 }
 
+.footer .footer-content{
+    border: 1px solid red;
+}
+
 .footer .footer-bottom{
     background: #343a40;
     color: #686868;

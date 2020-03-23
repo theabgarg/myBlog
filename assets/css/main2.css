@@ -47,7 +47,7 @@ header ul li{
 }
 
 header ul li ul{
-
+    position: absolute;
 }
 
 header ul li a{

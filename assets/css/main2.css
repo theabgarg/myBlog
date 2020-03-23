@@ -25,12 +25,13 @@ header .logo{
 
 header .logo img{
     float: left;
-    margin: auto;
+    margin: 9px;
 }
 
 header .logo-text{
     float: left;
-    margin: 9px;
+    margin: auto;
+    padding: auto;
     font-family: cursive;
 }
 

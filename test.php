@@ -42,7 +42,7 @@
         </ul>
     </header>
 
-    <div class="page-wrapper">
+    <!-- <div class="page-wrapper">
         <div class="post-slider">
             <h1 class="slider-title">Trending posts</h1>
             <i class="fa fa-chevron-left prev"></i>
@@ -79,7 +79,7 @@
             </div>
             <div class="sidebar"></div>
         </div>
-    </div>
+    </div> -->
 
     <footer class="footer">
         <div class="footer-content">

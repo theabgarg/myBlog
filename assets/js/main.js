@@ -45,4 +45,6 @@ $('.post-wrapper').slick({
     slidesToScroll: 1,
     autoplay: true,
     autoplatSpeed:2000,
+    nextArrow: $('.next'),
+    prevArrow: $('.prev'),
 });

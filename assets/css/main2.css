@@ -21,6 +21,7 @@ header .logo{
     float: left;
     height: inherit;
     margin-left: 2em;
+    cursor: pointer;
 }
 
 header .logo img{

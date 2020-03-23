@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="assets/css/main2.css">
     <script src="assets/js/jquery.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="assets/js/main.js"></script>
 </head>
 <body>
     <header>
@@ -59,5 +58,7 @@
             </div>
         </div>
     </div>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

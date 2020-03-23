@@ -111,6 +111,7 @@ header .menu-close{
 
 /* post slider */
 .post-slider{
+    position: relative;
     border: 1px solid red;
 }
 
@@ -125,6 +126,23 @@ header .menu-close{
 .post-slider .slider-title{
     text-align: center;
     margin: 30px auto;
+}
+
+.post-slider .next{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 2em;
+    color: #006669;
+    cursor: pointer;
+}
+.post-slider .prev{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 2em;
+    color: #006669;
+    cursor: pointer;
 }
 
 .post-slider .post-wrapper .post{

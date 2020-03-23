@@ -23,7 +23,11 @@
             <!-- <li><a href="#">Sign Up</a></li>
             <li><a href="#">Login</a></li> -->
             <li>
-                <a href="#">veroxyle</a>
+                <a href="#">
+                <i class="fa fa-user"></i>    
+                veroxyle
+                <i class="fa fa-chevron-down"></i>
+                </a>
                 <ul>
                     <li><a href="#">Dashboard</a></li>
                     <li><a href="#" class="logout">Logout</a></li>

@@ -73,7 +73,7 @@
                 <div class="post">
                     <img src="assets/images/image_1.png" alt="" class="post-image">
                     <div class="post-preview">
-                        <h1><a href="single.html">sweetest dong to be sung</a></h1>
+                        <h2><a href="single.html">sweetest dong to be sung</a></h2>
                         <i class="fa fa-user">veroXyle</i>
                         &nbsp;
                         <i class="fa fa-calendar">mar 11, 2020</i>

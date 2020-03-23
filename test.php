@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/main2.css">
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/slick.js"></script>
 </head>
 <body>
     <header>

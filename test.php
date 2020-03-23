@@ -71,7 +71,7 @@
                 <h1 class="recent-post-title">Recent Posts</h1>
 
                 <div class="post">
-                    <img src="assets/images/image_1.pmg" alt="" class="post-image">
+                    <img src="assets/images/image_1.png" alt="" class="post-image">
                     <div class="post-preview">
                         <h1><a href="single.html">sweetest dong to be sung</a></h1>
                         <i class="fa fa-user">veroXyle</i>

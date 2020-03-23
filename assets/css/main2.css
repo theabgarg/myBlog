@@ -23,7 +23,12 @@ header .logo{
     margin-left: 2em;
 }
 
+header .logo img{
+    float: left;
+}
+
 header .logo-text{
+    float: left;
     margin: 9px;
     font-family: cursive;
 }

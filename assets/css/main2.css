@@ -239,7 +239,7 @@ header .menu-close{
 /* footer */
 
 .footer{
-    bottom: 0px;
+    bottom: 0;
     background: #303036;
     color: #d3d3d3;
     height: 400px;

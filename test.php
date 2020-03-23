@@ -44,7 +44,12 @@
     <script>
         $(document).ready(function(){
             $('.menu-toggle').click(function(){
-                $('header > ul').css({"display" : "block"});
+                if($('header > ul').css({"display" : "none"})){
+                    $('header > ul').css({"display" : "block"});
+                }
+                else{
+                    $('header > ul').css({"display" : "none"});
+                }
             });
         });
     </script>

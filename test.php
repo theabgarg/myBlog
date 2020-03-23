@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="https://www.google.com/search?q=logo&safe=active&rlz=1C1CHBF_enIN887IN887&sxsrf=ALeKk00u1FzR1Y-F2Yv2VNxCOR_gl14nYw:1584939796778&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjf8s7s6K_oAhVeyTgGHXy3A-YQ_AUoAXoECA4QAw&biw=1366&bih=657#imgrc=WQQB4_wzzdNoBM" alt="logo" height="48" width="48">
+            <img src="assets/images/logo.png" alt="logo" height="48" width="48">
             <h1 class="logo-text">vero<span>xyle</span></h1>
         </div>
 

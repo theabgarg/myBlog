@@ -211,6 +211,12 @@ header .menu-close{
     float: left;
 }
 
+.content .main-content .post .post-preview{
+    margin: 10px;
+    width: 60%;
+    float: right;
+}
+
 
 /* media query */
 

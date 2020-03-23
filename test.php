@@ -60,5 +60,13 @@
         </div>
     </div>
 
+    <script>
+        $('.post-wrapper').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3
+});
+    </script>
+
 </body>
 </html>

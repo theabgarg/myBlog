@@ -146,4 +146,12 @@ header .menu-toggle{
     header .logo{
         margin-left: 0.8em;
     }
+
+    header .logo img{
+        margin: 9px 4px;
+    }
+
+    header .logo-text{
+        margin: 9px 4px;
+    }
 }

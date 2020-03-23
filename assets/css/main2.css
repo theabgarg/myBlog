@@ -57,6 +57,10 @@ header ul li ul li{
     width: 100%;
 }
 
+header ul li ul li a{
+    padding: 10px;
+}
+
 header ul li a{
     display: block;
     padding: 21px;

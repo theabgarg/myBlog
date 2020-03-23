@@ -41,5 +41,24 @@
             </li>
         </ul>
     </header>
+
+    <div class="page-wrapper">
+        
+        <div class="post-slider">
+
+            <h1 class="slider-title"></h1>
+
+            <div class="post-wrapper">
+                <div class="post">1</div>
+                <div class="post">2</div>
+                <div class="post">3</div>
+                <div class="post">4</div>
+                <div class="post">5</div>
+            </div>
+
+        </div>
+
+    </div>
+
 </body>
 </html>

@@ -155,6 +155,12 @@ header .menu-close{
     border-radius: 5px;
 }
 
+.post-slider .post-wrapper .post .post-info{
+    height: 130px;
+    width: 100%;
+    border: 1px solid black;
+}
+
 .post-slider .post-wrapper .post .slider-image{
     width: 100%;
     height: 200px;

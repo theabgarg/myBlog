@@ -53,7 +53,7 @@
 
             <div class="post-wrapper">
                 <div class="post">
-                    <img src="assets/images/image_1.png" alt="imahe.png" class="slider-image" height="175" width="300">
+                    <img src="assets/images/image_1.png" alt="imahe.png" class="slider-image">
                     <div class="post-info">
                         <h4><a href="single.html">One day i don't know what will happen just like you</a></h4>
                         <i class="fa fa-user">abhishek</i>

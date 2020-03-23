@@ -8,6 +8,10 @@ body{
     background: aquamarine;
 }
 
+h1,h2,h3,h4{
+    font-family: 'Times New Roman', Times, serif;
+}
+
 header{
     background: #000;
     height: 66px;

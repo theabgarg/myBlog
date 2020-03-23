@@ -52,6 +52,10 @@ header ul li a{
     text-decoration: none;
 }
 
+header ul li a:hover{
+    background: #000022;
+}
+
 header .menu-toggle{
     display: none;
 }

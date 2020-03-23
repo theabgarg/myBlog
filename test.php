@@ -18,6 +18,7 @@
         </div>
 
         <i class="fa fa-bars menu-toggle"></i>
+        <i class="fa fa-times menu-close"></i>
 
         <ul class="nav">
             <li><a href="#">Latest</a></li>

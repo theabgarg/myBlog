@@ -40,6 +40,16 @@ header ul{
     border: 1px solid red;
 }
 
+header ul li{
+    float: left;
+}
+
+header ul li a{
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+}
+
 header .menu-toggle{
     display: none;
 }

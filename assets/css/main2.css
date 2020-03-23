@@ -25,6 +25,7 @@ header .logo{
 
 header .logo-text{
     margin: 9px;
+    font-family: cursive;
 }
 
 header .logo-text span{

@@ -205,6 +205,12 @@ header .menu-close{
     background: white;
 }
 
+.content .main-content .post .post-image{
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+
 
 /* media query */
 

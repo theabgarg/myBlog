@@ -121,6 +121,7 @@ header .menu-close{
 .post-slider .post-wrapper .post{
     height : 350px;
     width: 300px;
+    margin: 0px 10px;
     display: inline-block;
     background: whitesmoke;
 }

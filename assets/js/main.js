@@ -39,3 +39,9 @@ $(document).ready(function(){
         location.replace("./index.php");
     });
 });
+
+$('.post-wrapper').slick({
+    infinite : true,
+    slidesToShow: 3,
+    slidesToScroll: 3
+});

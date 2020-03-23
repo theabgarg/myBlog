@@ -8,8 +8,8 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main2.css">
     <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/main.js"></script>
     <script src="assets/js/slick.js"></script>
+    <script src="assets/js/main.js"></script>
 </head>
 <body>
     <header>

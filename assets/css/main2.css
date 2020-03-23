@@ -35,6 +35,8 @@ header .logo-text span{
 
 header ul{
     float: right;
+    margin: 0;
+    padding: 0;
     border: 1px solid red;
 }
 

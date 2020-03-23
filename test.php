@@ -46,7 +46,7 @@
         
         <div class="post-slider">
 
-            <h1 class="slider-title"></h1>
+            <h1 class="slider-title">Trending posts</h1>
 
             <div class="post-wrapper">
                 <div class="post">1</div>

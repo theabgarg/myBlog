@@ -158,7 +158,7 @@ header .menu-close{
 .post-slider .post-wrapper .post .slider-image{
     width: 100%;
     height: 200px;
-    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
 

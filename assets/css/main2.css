@@ -62,6 +62,10 @@ header ul li ul li a{
     background: black;
 }
 
+header ul li ul li a.logout{
+    color: chocolate;
+}
+
 /* header ul li ul li a:hover{
     background: black;
 } */

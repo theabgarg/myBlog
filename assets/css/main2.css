@@ -212,8 +212,8 @@ header .menu-close{
 }
 
 .content .main-content .post .post-preview{
-    margin: 10px;
     width: 60%;
+    margin: 10px;
     float: right;
 }
 

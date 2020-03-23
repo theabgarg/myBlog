@@ -148,14 +148,14 @@ header .menu-close{
 
 .post-slider .post-wrapper .post{
     height : 330px;
-    width: 200px;
+    width: 300px;
     margin: 0px 10px;
     display: inline-block;
     background: whitesmoke;
 }
 
 .post-slider .post-wrapper .post .slider-image{
-    width: 100%;
+    width: 300px;
     height: 200px;
 }
 

@@ -142,4 +142,8 @@ header .menu-toggle{
         top: 20px;
         font-size: 1.9em;
     }
+
+    header .logo{
+        margin-left: 0.8em;
+    }
 }

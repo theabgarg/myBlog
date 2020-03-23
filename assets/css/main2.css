@@ -109,6 +109,11 @@ header .menu-toggle{
 }
 
 @media only screen and (max-width:750px){
+
+    header{
+        position: relative;
+    }
+
     header ul{
         width: 100%;
         background: #000;

@@ -14,7 +14,7 @@
             <h1 class="logo-text">vero<span>xyle</span></h1>
         </div>
 
-        <i class="fa fa-bars"></i>
+        <i class="fa fa-bars menu-toggle"></i>
 
         <ul class="nav">
             <li><a href="#">Home</a></li>

@@ -1,0 +1,18 @@
+.sidebar{
+    width: 33%;
+    height: 100%;
+}
+
+.main-content{
+    width: 67%;
+    height: 100%;
+}
+
+.main-content .welcome{
+    width: 100%;
+    text-align: center;
+}
+
+.main-content .response{
+    width: 100%;
+}

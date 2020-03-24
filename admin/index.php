@@ -5,7 +5,7 @@
 
         }
         else{
-            header('location: https://www.macmillandictionary.com/thesaurus-category/british/not-allowed');
+            header('location: ../login.php');
         }
     }else{
         header("location: ../login.php");
@@ -25,6 +25,7 @@
     <script src="../assets/js/jquery.js"></script>
     <script src="../assets/js/main.js"></script>
     <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
@@ -48,23 +49,27 @@
     }         
     </script>
 
-    <aside>
+    <aside class="sidebar">
         <div class="buttons new_post"> <a onclick="">create new post</a></div>
         <div class="buttons users"><a onclick="">manage users</a></div>
         <div class="buttons posts"><a onclick="">manage posts</a></div>
         <div class="buttons token"><a onclick="generate()">generate signup token</a></div>
     </aside>
 
-    <div class="welcome">
-        <p>Welcome, <span><?php echo $_SESSION['name'];?></span> to the admin dashboard.</p>
-    </div>
-
-    <section>
-        <div class="response"></div>
-    </section>
+    
 
     <!-- <button onclick="generate()" >generate signup token</button>
     <div class="response"></div> -->
+
+    <div class="main-content">
+        <div class="welcome">
+            <p>Welcome, <span><?php echo $_SESSION['name'];?></span> to the admin dashboard.</p>
+        </div>
+
+        <section>
+            <div class="response"></div>
+        </section>
+    </div>
    
 
     <script>footer();</script>

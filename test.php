@@ -149,7 +149,7 @@
                 border : 2px solid black;
                 border-radius: 5px;
                 float:left;
-                margin:auto 10px;
+                margin:10px;
             }
 
             .post-image{

@@ -67,7 +67,7 @@
         </div>
 
         <section>
-            <div class="response"></div>
+            <div class="response"><button id="cpy-btn-btn" onclick="">copy token</button></div>
         </section>
     </div>
    

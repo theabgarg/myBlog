@@ -145,7 +145,7 @@
 
             .post-container{
                 width: 80%;
-                height: 364px;
+                height: 366px;
                 margin:auto;
                 overflow-x:scroll;
                 overflow-y:hidden;

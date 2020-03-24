@@ -159,6 +159,7 @@
                 border-radius: 5px;
                 float:left;
                 margin:10px;
+                background:white;
             }
 
             .post-image{

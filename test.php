@@ -153,6 +153,10 @@
                 background: grey;
             }
 
+            .inner-container{
+                width:10000px;
+            }
+
             .card{
                 display: inline;
                 width : 300px;
@@ -201,6 +205,7 @@
 
     <body>
         <div class="post-container">
+        <div class="inner-container">
         <div class="card">
             <img src="assets/images/image_1.png" alt="" class="post-image">
             <div class="post-info">
@@ -320,6 +325,7 @@
                     <i class="fa fa-calendar">mar 30, 2020</i>
                 </div>
             </div>
+        </div>
         </div>
         </div>
     </body>

@@ -69,7 +69,7 @@
         </div>
 
         <section>
-            <div class="response"><input type="text" class="token-display" value="bahut bada token aayega yha pe..............................................................." readonly><button id="cpy-btn-btn" onclick="">copy token</button></div>
+            <div class="response"><input type="text" class="token-display" value="bahut bada token aayega yha pe..............................................................." readonly><br><button id="cpy-btn-btn" onclick="">copy token</button></div>
         </section>
     </div>
    

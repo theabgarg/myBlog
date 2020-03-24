@@ -124,6 +124,4 @@ html, body{
 }
 
 .new-post-form #publish{
-    clear: left;
-    position: absolute;
 }

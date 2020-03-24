@@ -26,6 +26,11 @@ html, body{
     text-align: center;
 }
 
+.main-content .welcome p{
+    font-size: 25px;
+    color: coral;
+}
+
 .main-content .response{
     width: 100%;
 }

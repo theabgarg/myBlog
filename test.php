@@ -158,6 +158,7 @@
             }
 
             .post-info{
+                height:100%;
                 padding: 5px;
                 border: 1px dashed green;
             }

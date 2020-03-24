@@ -30,7 +30,7 @@
 <body>
 
 <script>
-    header();
+    // header();
     var htmldata='a';
 
     function generate(){

@@ -59,6 +59,13 @@ html, body{
     color: darkolivegreen;
 }
 
+.main-content section .response .token-display::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+}
+
 .main-content section .response #cpy-btn-btn{
     background: greenyellow;
     border-radius: 10px;

@@ -145,7 +145,7 @@
 
             .post-container{
                 width: 80%;
-                height: 370px;
+                height: 380px;
                 margin:auto;
                 overflow-x:scroll;
                 overflow-y:hidden;
@@ -163,7 +163,7 @@
                 border : 2px solid black;
                 border-radius: 5px;
                 float:left;
-                margin:2px;
+                margin:2px 10px;
                 background:white;
             }
 

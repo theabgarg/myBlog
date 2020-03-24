@@ -23,7 +23,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="../assets/js/jquery.js"></script>
-    <!-- <script src="../assets/js/main.js"></script> -->
+    <script src="../assets/js/main.js"></script>
     <!-- <link rel="stylesheet" href="../assets/css/main.css"> -->
     <link rel="stylesheet" href="main.css">
 </head>
@@ -53,7 +53,7 @@
     </script>
 
     <aside class="sidebar">
-        <div class="buttons new_post"> <a onclick="">create new post</a></div>
+        <div class="buttons new_post"> <a>create new post</a></div>
         <div class="buttons users"><a onclick="">manage users</a></div>
         <div class="buttons posts"><a onclick="">manage posts</a></div>
         <div class="buttons token"><a onclick="generate()">generate signup token</a></div>

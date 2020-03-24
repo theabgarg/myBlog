@@ -104,7 +104,7 @@ html, body{
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
     color: darkseagreen;
-    margin: 30px auto auto auto;
+    margin-top: 30px;
 }
 
 .new-post-form input{

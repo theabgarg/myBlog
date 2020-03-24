@@ -144,7 +144,7 @@
         <style>
 
             ::-webkit-scrollbar {
-                width: 10px;
+                width: 30px;
             }
 
             .post-container{

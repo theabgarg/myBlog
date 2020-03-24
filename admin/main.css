@@ -33,6 +33,11 @@ html, body{
     color: coral;
 }
 
+.main-content .welcome p span{
+    color: cyan;
+    text-transform: uppercase;
+}
+
 .main-content .response{
     width: 100%;
 }

@@ -163,7 +163,7 @@
                 border : 2px solid black;
                 border-radius: 5px;
                 float:left;
-                margin:10px;
+                margin:2px;
                 background:white;
             }
 

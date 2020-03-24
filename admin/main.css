@@ -62,3 +62,7 @@ html, body{
     color: brown;
     cursor: pointer;
 }
+
+response{
+    height: calc(100% - 40px);
+}

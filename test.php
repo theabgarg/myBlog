@@ -146,14 +146,13 @@
             .card{
                 width : 300px;
                 height : 350px;
-                border : 1px solid black;
+                border : 2px solid black;
                 border-radius: 5px;
             }
 
             .post-image{
                 width:300px;
                 height:150px;
-                border : 1px solid red;
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;
             }

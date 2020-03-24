@@ -92,6 +92,7 @@ html, body{
 
 .new-post-form{
     width:50%;
+    margin: auto;
 }
 
 .new-post-form label{

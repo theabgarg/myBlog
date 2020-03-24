@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar{
+    float: left;
+    width: 33%;
+    height: 100%;
+    background: gold;
+}
+
+.main-content{
+    float: left;
+    width: 67%;
+    height: 100%;
+    background: ghostwhite;
+}
+
+.main-content .welcome{
+    width: 100%;
+    text-align: center;
+}
+
+.main-content .welcome p{
+    margin: 5px auto;
+    font-size: 30px;
+    color: coral;
+}
+
+.main-content .welcome p span{
+    color: darkblue;
+    text-transform: uppercase;
+}
+
+.main-content section{
+    display: table;
+    width: 100%;
+    min-height: calc(100% - 45px);
+}
+
+.main-content section .response{
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.main-content section .response .token-display{
+    width: 80%;
+    font-size: 20px;
+    color: darkolivegreen;
+    margin: 20px auto;
+}
+
+.main-content section .response #cpy-btn-btn{
+    background: greenyellow;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid green;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.buttons{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.buttons:hover{
+    background: darkgoldenrod;
+}
+
+.buttons a{
+    margin:20px auto;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: brown;
+    cursor: pointer;
+}
+
+.new-post-form{
+    width:50%;
+    margin: auto;
+}
+
+.new-post-form label{
+    display: block;
+    width: 100%;
+    text-align: center;
+    clear: both;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: darkseagreen;
+    margin: 30px auto 0px auto;
+}
+
+.new-post-form input{
+    width: 100%;
+    text-align: center;
+    border: none;
+    background: navajowhite;
+    height: 40px;
+    font-size: 30px;
+}

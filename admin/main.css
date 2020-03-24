@@ -12,19 +12,23 @@ body{
     float: left;
     width: 33%;
     height: 100%;
+    border: 1px solid black;
 }
 
 .main-content{
     float: left;
     width: 67%;
     height: 100%;
+    border: 1px dashed green;
 }
 
 .main-content .welcome{
     width: 100%;
     text-align: center;
+    border: 1px solid blue;
 }
 
 .main-content .response{
     width: 100%;
+    border:1px dashed yellow;
 }

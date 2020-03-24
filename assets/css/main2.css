@@ -193,7 +193,6 @@ header .menu-close{
 .card{
     width : 300px;
     height : 350px;
-    border : 2px solid black;
     border-radius: 5px;
 }
 
@@ -207,19 +206,16 @@ header .menu-close{
 .card .post-info{
     height:auto;
     padding: 5px;
-    border: 1px dashed green;
 }
 
 .card .post-info .post-title{
     width:100%;
     margin: 2px auto;
-    border: 1px dashed blue;
 }
 
 .card .post-info .post-description{
     width:100%;
     margin: 2px auto;
-    border: 1px solid blue;
 }
 
 /* content */

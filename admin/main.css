@@ -110,4 +110,6 @@ html, body{
 .new-post-form input{
     width: 100%;
     text-align: center;
+    border: none;
+    background: navajowhite;
 }

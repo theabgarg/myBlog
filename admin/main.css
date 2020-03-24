@@ -49,7 +49,7 @@ html, body{
 }
 
 .buttons:hover{
-    color: darkgoldenrod;
+    background: darkgoldenrod;
 }
 
 .buttons a{

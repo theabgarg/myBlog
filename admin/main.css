@@ -12,26 +12,22 @@ html, body{
 .sidebar{
     float: left;
     width: 33%;
-    height: 99%;
-    border: 1px solid black;
+    height: 100%;
 }
 
 .main-content{
     float: left;
-    width: 66%;
-    height: 99%;
-    border: 1px dashed green;
+    width: 67%;
+    height: 100%;
 }
 
 .main-content .welcome{
     width: 100%;
     text-align: center;
-    border: 1px solid blue;
 }
 
 .main-content .response{
     width: 100%;
-    border:1px dashed yellow;
 }
 
 .buttons{
@@ -44,4 +40,7 @@ html, body{
     margin:10px auto;
     display: inline-block;
     vertical-align: middle;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: brown;
 }

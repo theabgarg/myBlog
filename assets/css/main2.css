@@ -206,6 +206,7 @@ header .menu-close{
 .card .post-info{
     height:auto;
     padding: 5px;
+    background: white;
 }
 
 .card .post-info .post-title{

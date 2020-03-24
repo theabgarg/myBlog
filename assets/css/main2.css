@@ -194,6 +194,7 @@ header .menu-close{
     width : 300px;
     height : 350px;
     border-radius: 5px;
+    background: white;
 }
 
 .card .post-image{
@@ -206,7 +207,6 @@ header .menu-close{
 .card .post-info{
     height:auto;
     padding: 5px;
-    background: white;
 }
 
 .card .post-info .post-title{

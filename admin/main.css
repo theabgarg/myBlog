@@ -93,6 +93,8 @@ html, body{
 .new-post-form{
     width:50%;
     margin: auto;
+    background: navajowhite;
+    padding: auto 10px;
 }
 
 .new-post-form label{
@@ -111,7 +113,7 @@ html, body{
     text-align: center;
     border: none;
     border-radius: 10px;
-    background: navajowhite;
+    background: white;
     height: 30px;
     font-size: 20px;
 }

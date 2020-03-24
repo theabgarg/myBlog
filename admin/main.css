@@ -52,6 +52,12 @@ html, body{
     vertical-align: middle;
 }
 
+.main-content section .response #cpy-btn-btn{
+    width: 50px;
+    background: greenyellow;
+    border-radius: 2px;
+}
+
 .buttons{
     display: block;
     width: 100%;

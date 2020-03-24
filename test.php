@@ -143,10 +143,6 @@
     <head>
         <style>
 
-            ::-webkit-scrollbar {
-                width: 30px;
-            }
-
             .post-container{
                 width: 80%;
                 height: 364px;

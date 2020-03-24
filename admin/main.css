@@ -53,7 +53,6 @@ html, body{
 }
 
 .main-content section .response #cpy-btn-btn{
-    width: 100px;
     background: greenyellow;
     border-radius: 10px;
     padding: 10px;

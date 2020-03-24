@@ -111,7 +111,8 @@ html, body{
     width: 100%;
     text-align: center;
     border: none;
+    border-radius: 10px;
     background: navajowhite;
     height: 40px;
-    font-size: 30px;
+    font-size: 20px;
 }

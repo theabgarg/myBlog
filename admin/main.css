@@ -38,9 +38,9 @@ html, body{
     text-transform: uppercase;
 }
 
-.main-content section .response{
+.main-content section{
     width: 100%;
-    height: calc(100% - 45px);
+    min-height: calc(100% - 45px);
 }
 
 .buttons{

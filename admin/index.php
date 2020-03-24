@@ -72,7 +72,7 @@
     </div>
    
 
-    <script>footer();</script>
+    <!-- <script>footer();</script> -->
     <script>
         $('.new_post').click(function(){
             var x = postform();

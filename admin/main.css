@@ -27,7 +27,8 @@ html, body{
 }
 
 .main-content .welcome p{
-    font-size: 25px;
+    margin: 5px auto;
+    font-size: 30px;
     color: coral;
 }
 

@@ -40,6 +40,7 @@ html, body{
 
 .main-content .response{
     width: 100%;
+    height: calc(100% - 45px);
 }
 
 .buttons{
@@ -61,9 +62,4 @@ html, body{
     text-transform: capitalize;
     color: brown;
     cursor: pointer;
-}
-
-.response{
-    width: 100%;
-    height: calc(100% - 40px);
 }

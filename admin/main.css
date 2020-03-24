@@ -4,11 +4,13 @@ body{
 }
 
 .sidebar{
+    float: left;
     width: 33%;
     height: 100%;
 }
 
 .main-content{
+    float: left;
     width: 67%;
     height: 100%;
 }

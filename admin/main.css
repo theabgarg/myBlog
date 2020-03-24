@@ -13,14 +13,14 @@ html, body{
 .sidebar{
     float: left;
     width: 33%;
-    height: 100%;
+    height: 99%;
     border: 1px solid black;
 }
 
 .main-content{
     float: left;
     width: 66%;
-    height: 100%;
+    height: 99%;
     border: 1px dashed green;
 }
 

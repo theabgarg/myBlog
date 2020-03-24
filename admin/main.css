@@ -10,14 +10,14 @@ html, body{
 
 .sidebar{
     float: left;
-    width: 33%;
+    width: 20%;
     height: 100%;
     background: gold;
 }
 
 .main-content{
     float: left;
-    width: 67%;
+    width: 80%;
     height: 100%;
     background: ghostwhite;
 }

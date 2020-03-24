@@ -36,7 +36,9 @@
     function generate(){
         var token = "<?php echo $newUser->authToken();?>";
         htmldata = "https://cseprofessor.ml/signup.php?token=" + token;
+        var td = '<input type="text" class="token-display" value="'htmldata'" readonly>';
         var button = '<button id="cpy-btn-btn" onclick="myFunction()">copy token</button>';
+        $(".response").append(td);
         $(".response").append(button);
     }
     function myFunction() {
@@ -67,7 +69,7 @@
         </div>
 
         <section>
-            <div class="response"><button id="cpy-btn-btn" onclick="">copy token</button></div>
+            <div class="response"><input type="text" class="token-display" value="bahut bada token aayega yha pe..............................................................." readonly><button id="cpy-btn-btn" onclick="">copy token</button></div>
         </section>
     </div>
    

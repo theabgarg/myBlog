@@ -52,6 +52,11 @@ html, body{
     vertical-align: middle;
 }
 
+.main-content section .response .token-display{
+    width: 80%;
+    
+}
+
 .main-content section .response #cpy-btn-btn{
     background: greenyellow;
     border-radius: 10px;

@@ -38,7 +38,7 @@
         htmldata = "https://cseprofessor.ml/signup.php?token=" + token;
         var td = '<input type="text" class="token-display" value="'+ htmldata +'" readonly><br>';
         var button = '<button id="cpy-btn-btn" onclick="myFunction()">copy token</button>';
-        $(".response").empty();
+        $(".response").html("");
         $(".response").append(td);
         $(".response").append(button);
     }

@@ -42,6 +42,8 @@
         </ul>
     </header>
 
+    <div class="page-wrapper"></div>
+
     <!-- <div class="page-wrapper">
         <div class="post-slider">
             <h1 class="slider-title">Trending posts</h1>

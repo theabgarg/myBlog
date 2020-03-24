@@ -143,6 +143,14 @@
     <head>
         <style>
 
+            .post-container{
+                width: 80%;
+                height: 400px;
+                margin:auto;
+                padding:20px;
+                overflow:auto;
+            }
+
             .card{
                 width : 300px;
                 height : 350px;
@@ -188,6 +196,7 @@
 
 
     <body>
+        <div class="post-container">
         <div class="card">
             <img src="assets/images/image_1.png" alt="" class="post-image">
             <div class="post-info">
@@ -307,6 +316,7 @@
                     <i class="fa fa-calendar">mar 30, 2020</i>
                 </div>
             </div>
+        </div>
         </div>
     </body>
 </html>

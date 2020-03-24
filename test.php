@@ -143,9 +143,13 @@
     <head>
         <style>
 
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+
             .post-container{
                 width: 80%;
-                height: 380px;
+                height: 364px;
                 margin:auto;
                 overflow-x:scroll;
                 overflow-y:hidden;

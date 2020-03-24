@@ -198,5 +198,113 @@
                 </div>
             </div>
         </div>
+        <div class="card">
+            <img src="assets/images/image_1.png" alt="" class="post-image">
+            <div class="post-info">
+                <div class="post-title"><h2><a href="single.php">the rain drops and the light shines.</a></h2></div>
+                <div class="post-description">the rain drop poem is amazing fabulous Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                <div class="post-author">
+                    <i class="fa fa-user">veroXyle</i>
+                    &nbsp;&nbsp;
+                    <i class="fa fa-calendar">mar 30, 2020</i>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="assets/images/image_1.png" alt="" class="post-image">
+            <div class="post-info">
+                <div class="post-title"><h2><a href="single.php">the rain drops and the light shines.</a></h2></div>
+                <div class="post-description">the rain drop poem is amazing fabulous Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                <div class="post-author">
+                    <i class="fa fa-user">veroXyle</i>
+                    &nbsp;&nbsp;
+                    <i class="fa fa-calendar">mar 30, 2020</i>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="assets/images/image_1.png" alt="" class="post-image">
+            <div class="post-info">
+                <div class="post-title"><h2><a href="single.php">the rain drops and the light shines.</a></h2></div>
+                <div class="post-description">the rain drop poem is amazing fabulous Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                <div class="post-author">
+                    <i class="fa fa-user">veroXyle</i>
+                    &nbsp;&nbsp;
+                    <i class="fa fa-calendar">mar 30, 2020</i>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="assets/images/image_1.png" alt="" class="post-image">
+            <div class="post-info">
+                <div class="post-title"><h2><a href="single.php">the rain drops and the light shines.</a></h2></div>
+                <div class="post-description">the rain drop poem is amazing fabulous Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                <div class="post-author">
+                    <i class="fa fa-user">veroXyle</i>
+                    &nbsp;&nbsp;
+                    <i class="fa fa-calendar">mar 30, 2020</i>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="assets/images/image_1.png" alt="" class="post-image">
+            <div class="post-info">
+                <div class="post-title"><h2><a href="single.php">the rain drops and the light shines.</a></h2></div>
+                <div class="post-description">the rain drop poem is amazing fabulous Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                <div class="post-author">
+                    <i class="fa fa-user">veroXyle</i>
+                    &nbsp;&nbsp;
+                    <i class="fa fa-calendar">mar 30, 2020</i>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="assets/images/image_1.png" alt="" class="post-image">
+            <div class="post-info">
+                <div class="post-title"><h2><a href="single.php">the rain drops and the light shines.</a></h2></div>
+                <div class="post-description">the rain drop poem is amazing fabulous Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                <div class="post-author">
+                    <i class="fa fa-user">veroXyle</i>
+                    &nbsp;&nbsp;
+                    <i class="fa fa-calendar">mar 30, 2020</i>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="assets/images/image_1.png" alt="" class="post-image">
+            <div class="post-info">
+                <div class="post-title"><h2><a href="single.php">the rain drops and the light shines.</a></h2></div>
+                <div class="post-description">the rain drop poem is amazing fabulous Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                <div class="post-author">
+                    <i class="fa fa-user">veroXyle</i>
+                    &nbsp;&nbsp;
+                    <i class="fa fa-calendar">mar 30, 2020</i>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="assets/images/image_1.png" alt="" class="post-image">
+            <div class="post-info">
+                <div class="post-title"><h2><a href="single.php">the rain drops and the light shines.</a></h2></div>
+                <div class="post-description">the rain drop poem is amazing fabulous Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                <div class="post-author">
+                    <i class="fa fa-user">veroXyle</i>
+                    &nbsp;&nbsp;
+                    <i class="fa fa-calendar">mar 30, 2020</i>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="assets/images/image_1.png" alt="" class="post-image">
+            <div class="post-info">
+                <div class="post-title"><h2><a href="single.php">the rain drops and the light shines.</a></h2></div>
+                <div class="post-description">the rain drop poem is amazing fabulous Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                <div class="post-author">
+                    <i class="fa fa-user">veroXyle</i>
+                    &nbsp;&nbsp;
+                    <i class="fa fa-calendar">mar 30, 2020</i>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

@@ -38,7 +38,7 @@ html, body{
     text-transform: uppercase;
 }
 
-.main-content .response{
+.main-content section .response{
     width: 100%;
     height: calc(100% - 45px);
 }

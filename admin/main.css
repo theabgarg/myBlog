@@ -17,7 +17,7 @@ body{
 
 .main-content{
     float: left;
-    width: 67%;
+    width: 66%;
     height: 100%;
     border: 1px dashed green;
 }

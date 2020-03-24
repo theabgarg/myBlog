@@ -150,7 +150,6 @@
                 padding:20px;
                 overflow:auto;
                 background: grey;
-                white-space: nowrap;
             }
 
             .card{

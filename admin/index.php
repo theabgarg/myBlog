@@ -30,7 +30,6 @@
 <body>
 
 <script>
-    // header();
     var htmldata='a';
 
     function generate(){
@@ -42,6 +41,7 @@
         $(".response").append(td);
         $(".response").append(button);
     }
+
     function myFunction() {
         var aux = document.createElement("INPUT");
         aux.setAttribute('value', htmldata);
@@ -49,7 +49,7 @@
         aux.select();
         document.execCommand('copy');
         document.body.removeChild(aux);
-    }         
+    }
     </script>
 
     <aside class="sidebar">
@@ -58,11 +58,6 @@
         <div class="buttons posts"><a onclick="">manage posts</a></div>
         <div class="buttons token"><a onclick="generate()">generate signup token</a></div>
     </aside>
-
-    
-
-    <!-- <button onclick="generate()" >generate signup token</button>
-    <div class="response"></div> -->
 
     <div class="main-content">
         <div class="welcome">
@@ -83,7 +78,7 @@
 
         $('.users').click(function(){
             <?php
-                $sql = "SELECT * FROM userDB WHERE is_admin=0";
+                $sql = "SELECT * FROM userDB WHERE is_admin = 0";
                 $result = $GLOBALS['conn']->query($sql);
                 if($result && $result->num_rows > 0){
                     $fetch_data = $result ->fetch_all(MYSQLI_ASSOC);

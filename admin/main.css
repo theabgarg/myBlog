@@ -89,3 +89,17 @@ html, body{
     color: brown;
     cursor: pointer;
 }
+
+.new-post-form{
+    width:50%;
+}
+
+.new-post-form label{
+    width: 100%;
+    text-align: center;
+    clear: both;
+}
+
+.new-post-form input{
+    width: 100%;
+}

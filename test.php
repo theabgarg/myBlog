@@ -139,9 +139,56 @@
 
 
 <html>
+
+    <head>
+        <style>
+
+            .card{
+                width : 300px;
+                height : 350px;
+                border : 1px solid black;
+                border-radius: 5px;
+            }
+
+            .post-image{
+                width:300px;
+                height:150px;
+                border : 1px solid red;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+
+            .post-info{
+                height:200px;
+                padding: 5px;
+                border: 1px dashed green;
+            }
+
+            .post-title{
+                width:100%;
+                margin: 2px auto;
+                border: 1px dashed blue;
+            }
+
+            .post-description{
+                width:100%;
+                margin: 2px auto;
+                border: 1px solid blue;
+            }
+
+
+
+        </style>
+    </head>
+
+
+
+
+
+
     <body>
         <div class="card">
-            <img src="assets/images/image_1.png" alt="">
+            <img src="assets/images/image_1.png" alt="" class="post-image">
             <div class="post-info">
                 <div class="post-title"><h2><a href="single.php">the rain drops and the light shines.</a></h2></div>
                 <div class="post-description">the rain drop poem is amazing fabulous Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>

@@ -74,13 +74,11 @@
         </section>
     </div>
    
-
-    <!-- <script>footer();</script> -->
     <script>
         $('.new_post').click(function(){
             var x = postform();
-            $('section').html("");
-            $('section').html(x);
+            $('.response').html("");
+            $('.response').append(x);
         });
 
         $('.users').click(function(){

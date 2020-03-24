@@ -48,6 +48,10 @@ html, body{
     text-align: center;
 }
 
+.buttons:hover{
+    color: darkgoldenrod;
+}
+
 .buttons a{
     margin:20px auto;
     display: inline-block;

@@ -149,6 +149,7 @@
                 margin:auto;
                 padding:20px;
                 overflow:auto;
+                background: grey;
             }
 
             .card{

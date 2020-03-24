@@ -96,6 +96,7 @@ html, body{
 }
 
 .new-post-form label{
+    display: block;
     width: 100%;
     text-align: center;
     clear: both;

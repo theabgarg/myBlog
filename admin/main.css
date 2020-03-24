@@ -38,11 +38,11 @@ html, body{
 .buttons{
     display: block;
     width: 100%;
-    text-align: center;
     height: 50px;
 }
 
 .buttons a{
+    text-align: center;
     display: inline-block;
     vertical-align: middle;
 }

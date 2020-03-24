@@ -54,7 +54,6 @@ html, body{
 
 .main-content section .response .token-display{
     width: 80%;
-    clear: both;
     font-size: 20px;
     color: darkolivegreen;
 }
@@ -73,6 +72,7 @@ html, body{
     color: white;
     font-size: 20px;
     font-weight: bold;
+    clear: both;
 }
 
 .buttons{

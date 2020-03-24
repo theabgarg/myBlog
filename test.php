@@ -153,7 +153,7 @@
             }
 
             .card{
-                display: inline-block;
+                display: inline;
                 width : 300px;
                 height : 350px;
                 border : 2px solid black;

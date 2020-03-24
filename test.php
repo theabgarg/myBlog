@@ -148,7 +148,7 @@
                 height: 400px;
                 margin:auto;
                 padding:20px;
-                overflow:auto;
+                overflow-x:scroll;
                 overflow-y:hidden;
                 background: grey;
             }

@@ -43,5 +43,6 @@ html, body{
 }
 
 .buttons a{
+    display: inline-block;
     vertical-align: middle;
 }

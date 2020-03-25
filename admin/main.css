@@ -127,6 +127,13 @@ html, body{
     margin: 30px auto;
 }
 
+.new-post-form input[type=submit]{
+    width: 50%;
+    background-color: greenyellow;
+    color: black;
+    border: none;
+}
+
 .new-post-form .publish-now{
     display: inline;
     margin-left: 10px;

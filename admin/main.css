@@ -136,6 +136,10 @@ html, body{
     border-radius: 10px;
 }
 
+.new-post-form input[type=submit], .new-post-form input[type=file], .new-post-form select{
+    cursor: pointer;
+}
+
 .new-post-form .publish-now{
     display: inline;
     margin-left: 10px;

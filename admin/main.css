@@ -140,6 +140,10 @@ html, body{
     cursor: pointer;
 }
 
+.new-post-form input:focus{
+    outline: none;
+}
+
 .new-post-form .publish-now{
     display: inline;
     margin-left: 10px;

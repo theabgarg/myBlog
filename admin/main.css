@@ -136,7 +136,7 @@ html, body{
     border-radius: 10px;
 }
 
-.new-post-form input[type=submit], .new-post-form input[type=file], .new-post-form select{
+.new-post-form input[type=submit], .new-post-form input[type=file], .new-post-form select, .new-post-form select option{
     cursor: pointer;
 }
 

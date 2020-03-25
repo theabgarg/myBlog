@@ -118,6 +118,13 @@ html, body{
     font-size: 20px;
 }
 
+.new-post-form input[type=checkbox]{
+    width: auto;
+    text-align: none;
+    border-radius: none;
+    height: 20px;
+}
+
 .new-post-form #image{
     width: fit-content;
     margin: 0 auto;

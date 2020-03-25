@@ -119,11 +119,10 @@ html, body{
 }
 
 .new-post-form input[type=checkbox]{
-    width: auto;
+    width: 20px;
     text-align: none;
     border-radius: none;
     height: auto;
-    font-size: 20px;
 }
 
 .new-post-form #image{

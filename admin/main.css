@@ -128,6 +128,10 @@ html, body{
 
 .new-post-form .publish-now{
     margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: darkseagreen;
 }
 
 .new-post-form #image{

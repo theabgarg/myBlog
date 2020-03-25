@@ -23,14 +23,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="../assets/js/jquery.js"></script>
-    <script src="../assets/js/main.js"></script>
+    <!-- <script src="../assets/js/main.js"></script> -->
     <link rel="stylesheet" href="../assets/css/main2.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
 <header>
         <div class="logo">
-            <img src="assets/images/logo.png" alt="logo" height="48" width="48">
+            <img src="../assets/images/logo.png" alt="logo" height="48" width="48">
             <h1 class="logo-text">vero<span>xyle</span></h1>
         </div>
 
@@ -124,5 +124,7 @@
             ?>
         });
     </script>
+
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>

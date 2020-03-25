@@ -129,6 +129,7 @@ html, body{
 
 .new-post-form input[type=submit]{
     width: fit-content;
+    padding: 5px 10px;
     background-color: greenyellow;
     color: black;
     border: none;

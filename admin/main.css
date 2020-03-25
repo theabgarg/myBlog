@@ -119,7 +119,8 @@ html, body{
 }
 
 .new-post-form input[type=checkbox]{
-    width: 20px;
+    width: auto;
+    border-radius: 10px;
     text-align: none;
     border-radius: none;
     height: auto;

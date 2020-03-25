@@ -105,13 +105,13 @@ html, body{
     font-family: 'Courier New', Courier, monospace;
     color: darkseagreen;
     margin: 30px auto 0px auto;
-    border-bottom: 1px solid white;
 }
 
 .new-post-form input{
     width: 100%;
     text-align: center;
     border: none;
+    border-bottom: 1px solid white;
     border-radius: 10px;
     background: red;
     height: 30px;

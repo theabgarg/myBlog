@@ -127,6 +127,7 @@ html, body{
 }
 
 .new-post-form .publish-now{
+    display: inline;
     margin-left: 10px;
     font-size: 20px;
     font-weight: bold;

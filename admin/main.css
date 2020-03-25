@@ -157,3 +157,19 @@ html, body{
     width: fit-content;
     margin: 0 auto;
 }
+
+
+
+
+/* mobile media queries */
+
+
+@media only screen and (max-width:750px){
+    .sidebar{
+        display: none;
+        float: left;
+        width: 20%;
+        height: 100%;
+        background: gold;
+    }
+}

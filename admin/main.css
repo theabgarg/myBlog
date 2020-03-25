@@ -115,6 +115,7 @@ html, body{
     height: 30px;
     font-size: 20px;
     background-color: inherit;
+    color: white;
 }
 
 .new-post-form input[type=checkbox]{

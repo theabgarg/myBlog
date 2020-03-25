@@ -126,10 +126,11 @@ html, body{
     height: auto;
 }
 
+.new-post-form .publish-now{
+    margin-left: 10px;
+}
+
 .new-post-form #image{
     width: fit-content;
     margin: 0 auto;
-}
-
-.new-post-form #publish{
 }

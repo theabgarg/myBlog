@@ -128,10 +128,11 @@ html, body{
 }
 
 .new-post-form input[type=submit]{
-    width: 50%;
+    width: fit-content;
     background-color: greenyellow;
     color: black;
     border: none;
+    border-radius: 10px;
 }
 
 .new-post-form .publish-now{

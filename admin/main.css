@@ -124,7 +124,7 @@ html, body{
     text-align: none;
     border-radius: none;
     height: auto;
-    margin-top: 30px;
+    margin: 30px auto;
 }
 
 .new-post-form .publish-now{
@@ -134,7 +134,6 @@ html, body{
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
     color: darkseagreen;
-    margin-bottom: 30px;
 }
 
 .new-post-form #image{

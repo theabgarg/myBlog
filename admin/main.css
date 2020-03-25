@@ -41,7 +41,6 @@ html, body{
 .main-content section{
     display: table;
     width: 100%;
-    min-height: calc(100% - 45px);
 }
 
 .main-content section .response{

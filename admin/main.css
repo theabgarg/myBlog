@@ -124,6 +124,7 @@ html, body{
     text-align: none;
     border-radius: none;
     height: auto;
+    margin-top: 30px;
 }
 
 .new-post-form .publish-now{

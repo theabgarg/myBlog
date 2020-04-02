@@ -44,7 +44,7 @@
     </header>
 
     <div class="page-wrapper">
-        <?php include("includes/post.php") ?>
+        <?php include("includes/posts.php") ?>
     </div>
 
     <footer class="footer">

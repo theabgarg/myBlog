@@ -130,6 +130,10 @@ header .menu-close{
 
 /* post slider */
 
+.page-wrapper{
+    min-height: 50%;
+}
+
 .post-slider{
     position: relative;
 }

@@ -17,7 +17,7 @@
                 <div class="post">
                     <a href="single.php?id=<?php echo $id; ?>">
                         <div class="post_image">
-                            <img src="data:image/jpeg;base64,<?php base64_encode($img); ?>"/>
+                            <img src="data:image/jpeg;base64,<?php echo base64_encode($img); ?>"/>
                         </div>
                         <div class="post-preview">
                             <h2><?php echo $title; ?></h2>

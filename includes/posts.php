@@ -1,5 +1,7 @@
 <?php
 
+    $offset = 0;
+
     $sql = "SELECT * FROM posts ORDER BY post_date ASC LIMIT $offset, 10";
     if($result = $GLOBALS['conn']->query($sql)) {
         while ($row = $result -> fetch_assoc()) {

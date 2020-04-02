@@ -44,55 +44,8 @@
     </header>
 
     <div class="page-wrapper">
-        <div class="post-slider">
-            <h1 class="slider-title">Trending posts</h1>
-            <i class="fa fa-chevron-left prev"></i>
-            <i class="fa fa-chevron-right next"></i>
-            <div class="post-wrapper">
-                <div class="post">
-                    <img src="assets/images/image_1.png" alt="image.png" class="slider-image">
-                    <div class="post-info">
-                        <h4><a href="single.html">One day i don't know </a></h4>
-                        <i class="fa fa-user">abhishek</i>
-                        &nbsp;
-                        <i class="fa fa-calendar">mar30, 2020</i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="content clearfix">
-            <div class="main-content">
-                <h1 class="recent-post-title">Recent Posts</h1>
-                <div class="post">
-                    <img src="assets/images/image_1.png" alt="" class="post-image">
-                    <div class="post-preview">
-                        <h2><a href="single.html">sweetest dong to be sung</a></h2>
-                        <i class="fa fa-user">veroXyle</i>
-                        &nbsp;
-                        <i class="fa fa-calendar">mar 11, 2020</i>
-                        <p class="preview-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Optio fuga maiores odit necessitatibus cum ipsam?
-                        </p>
-                        <a href="single.html" class="btn read-more">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="sidebar"></div>
-        </div>
+        <?php include("includes/post.php") ?>
     </div>
-    <div class="card">
-            <img src="assets/images/image_1.png" alt="" class="post-image">
-            <div class="post-info">
-                <div class="post-title"><h2><a href="single.php">the rain drops and the light shines.</a></h2></div>
-                <div class="post-description">the rain drop poem is amazing fabulous Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
-                <div class="post-author">
-                    <i class="fa fa-user">veroXyle</i>
-                    &nbsp;
-                    <i class="fa fa-calendar">mar 30, 2020</i>
-                </div>
-            </div>
-        </div>
 
     <footer class="footer">
         <div class="footer-content">
@@ -103,7 +56,7 @@
         </div>
 
         <div class="footer-bottom">
-            &copy; veroxyle | Designed by Abhishek Garg, Abhishek Kishor, MD Sharib, Aniket chaudhary
+            &copy; veroxyle | Designed by team veroxyle
         </div>
     </footer>
     <script src="assets/js/main.js"></script>

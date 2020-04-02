@@ -35,6 +35,19 @@ a:hover{
     border-radius: .25rem;
 }
 
+
+
+
+
+
+/* header */
+
+
+
+
+
+
+
 header{
     background: #000;
     height: 66px;
@@ -128,7 +141,21 @@ header .menu-close{
     display: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /* post slider */
+
+
+
 
 .page-wrapper{
     min-height: 50%;
@@ -136,7 +163,20 @@ header .menu-close{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* footer */
+
+
 
 .footer{
     bottom: 0;
@@ -163,7 +203,23 @@ header .menu-close{
     padding-top: 20px;
 }
 
+
+
+
+
+
+
+
+
+
 /* media query */
+
+
+
+
+
+
+
 
 @media only screen and (max-width:900px){
     header ul li a{

@@ -177,6 +177,7 @@ header .menu-close{
     height: 400px;
     width: 300px;
     border: 1px solid red;
+    margin: 10px;
 }
 
 .post a .post_image{
@@ -190,7 +191,8 @@ header .menu-close{
 }
 
 .post a .post-preview{
-
+    width: 100%;
+    text-align: center;
 }
 
 .post a .post-preview h2{

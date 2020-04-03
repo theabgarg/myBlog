@@ -30,9 +30,14 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+
+    <!-- header -->
     <?php include("includes/header.php"); ?>
+
+    <!-- sidebar -->
     <?php include("includes/sidebar.php"); ?>
 
+    <!-- response -->
     <div class="main-content">
         <div class="welcome">
             <p>Welcome, <span><?php echo $_SESSION['name'];?></span> to the admin dashboard.</p>
@@ -51,7 +56,7 @@
 
 
 
-
+<!-- javascript -->
 
 
 

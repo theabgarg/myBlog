@@ -1,6 +1,6 @@
 <header>
         <div class="logo">
-            <img src="assets/images/logo.png" alt="logo" height="48" width="48">
+            <img src="../assets/images/logo.png" alt="logo" height="48" width="48">
             <h1 class="logo-text">vero<span>xyle</span></h1>
         </div>
 

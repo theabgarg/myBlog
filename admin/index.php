@@ -31,7 +31,7 @@
 </head>
 <body>
     <?php include("includes/header.php"); ?>
-    <?php inclued("includes/sidebar.php"); ?>
+    <?php include("includes/sidebar.php"); ?>
 
     <div class="main-content">
         <div class="welcome">

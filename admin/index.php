@@ -26,41 +26,36 @@
     <link rel='shortcut icon' href='../favicon.png' type='image/x-icon' />
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="../assets/js/jquery.js"></script>
-    <!-- <script src="../assets/js/main.js"></script> -->
     <link rel="stylesheet" href="../assets/css/main2.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-<header>
-        <div class="logo">
-            <img src="../assets/images/logo.png" alt="logo" height="48" width="48">
-            <h1 class="logo-text">vero<span>xyle</span></h1>
+    <?php include("includes/header.php"); ?>
+    <?php inclued("includes/sidebar.php"); ?>
+
+    <div class="main-content">
+        <div class="welcome">
+            <p>Welcome, <span><?php echo $_SESSION['name'];?></span> to the admin dashboard.</p>
         </div>
 
-        <i class="fa fa-bars menu-toggle"></i>
-        <i class="fa fa-times menu-close"></i>
+        <section>
+            <div class="response"></div>
+        </section>
+    </div>
 
-        <ul class="nav">
-            <li><a href="#">Latest</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">How-to</a></li>
-            <li><a href="#">Reviews</a></li>
-            <li><a href="#">Blog</a></li>
-            <!-- <li><a href="#">Sign Up</a></li>
-            <li><a href="#">Login</a></li> -->
-            <li>
-                <a href="#">
-                <i class="fa fa-user"></i>    
-                veroxyle
-                <i class="fa fa-chevron-down" style="font-size: 0.8em;"></i>
-                </a>
-                <ul>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="#" class="logout">Logout</a></li>
-                </ul>
-            </li>
-        </ul>
-    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <script>
     var htmldata='a';
@@ -83,51 +78,32 @@
         document.execCommand('copy');
         document.body.removeChild(aux);
     }
-    </script>
 
-    <aside class="sidebar">
-        <div class="buttons new_post"> <a>create new post</a></div>
-        <div class="buttons users"><a onclick="">manage users</a></div>
-        <div class="buttons posts"><a onclick="">manage posts</a></div>
-        <div class="buttons token"><a onclick="generate()">generate signup token</a></div>
-    </aside>
 
-    <div class="main-content">
-        <div class="welcome">
-            <p>Welcome, <span><?php echo $_SESSION['name'];?></span> to the admin dashboard.</p>
-        </div>
+    $('.new_post').click(function(){
+        var x = postform();
+        $('.response').html("");
+        $('.response').append(x);
+    });
 
-        <section>
-            <div class="response"></div>
-        </section>
-    </div>
-   
-    <script>
-        $('.new_post').click(function(){
-            var x = postform();
-            $('.response').html("");
-            $('.response').append(x);
-        });
-
-        $('.users').click(function(){
-            <?php
-                $sql = "SELECT * FROM userDB WHERE is_admin = 0";
-                $result = $GLOBALS['conn']->query($sql);
-                if($result && $result->num_rows > 0){
-                    $fetch_data = $result ->fetch_all(MYSQLI_ASSOC);
-                    foreach($fetch_data as $data){
-                        ?>
-                            var id = <?php echo $data['id']?>;
-                            var name = <?php echo $data['fullname']?>;
-                            var username = <?php echo $data['username']?>;
-                            postusers(id,name, username);
-                        <?php
-                    }
-                } 
-            ?>
-        });
-    </script>
-
-    <script src="../assets/js/main.js"></script>
+    $('.users').click(function(){
+        <?php
+            $sql = "SELECT * FROM userDB WHERE is_admin = 0";
+            $result = $GLOBALS['conn']->query($sql);
+            if($result && $result->num_rows > 0){
+                $fetch_data = $result ->fetch_all(MYSQLI_ASSOC);
+                foreach($fetch_data as $data){
+                    ?>
+                        var id = <?php echo $data['id']?>;
+                        var name = <?php echo $data['fullname']?>;
+                        var username = <?php echo $data['username']?>;
+                        postusers(id,name, username);
+                    <?php
+                }
+            } 
+        ?>
+    });
+</script>
+<script src="../assets/js/main.js"></script>
 </body>
 </html>

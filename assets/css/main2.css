@@ -193,6 +193,7 @@ header .menu-close{
 .post a .post-preview{
     width: 100%;
     text-align: center;
+    line-height: 5px;
 }
 
 .post a .post-preview h2{

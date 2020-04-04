@@ -36,8 +36,10 @@
         <input type="text" name="token" value="<?php echo $token; ?>" readonly>
         <input type="text" name="username" placeholder="username">
         <input type="text" name="name" placeholder="name">
-        <input type="email" name="email" placeholder="email@female.com">
+        <input type="number" name="mobile">
+        <input type="email" name="email" placeholder="email@gmail.com">
         <input type="password" name="password" placeholder="password">
+        <input type="file" name="profile_pic">
         <input type="submit" value="submit">
     </form>
 </body>

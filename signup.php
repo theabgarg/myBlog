@@ -3,7 +3,7 @@
     if(isset($_GET['token'])){
         $token = $_GET['token'];
     }else{
-        header("location: https://headtopics.com/images/2019/3/1/aajtak/232523662354237113540-1101460802228256768.webp");
+        die("token leke aa pehle");
     }
 
     include("conn/conn.php");

@@ -75,7 +75,7 @@ class user{
     }
 
     function verifyUsername($username){
-        $sql = "SELECT * FROM userDB WHERE username = '$username'";
+        $sql = "SELECT * FROM users WHERE username = '$username'";
         if ($result = $GLOBALS['conn']->query($sql)){
             if ($result->num_rows > 0) {
                 return false;
@@ -89,7 +89,22 @@ class user{
         }
     }
 
-    function addUser($token, $username, $name, $email, $password){
+    function checkEmail($email){
+        $sql = "SELECT * FROM users WHERE email = '$email'";
+        if ($result = $GLOBALS['conn']->query($sql)){
+            if ($result->num_rows > 0) {
+                return false;
+            }
+            else{
+                return true;
+            }
+        }
+        else{
+            return false;
+        }
+    }
+
+    function addUser($token, $username, $name, $mobile, $email, $password, $image){
         $token = $this->deEncToken($token);
         $this->setToken($token);
         $tokenValidity = $this->verifyToken($token);
@@ -98,8 +113,8 @@ class user{
             $usernameAvailaibility = $this->verifyUsername($username);
             if ($usernameAvailaibility) {
                 if($name != null && $email != null){
-                    $sql = "INSERT INTO userDB (username, is_admin, fullname, email, pass) VALUES('
-                    $username', '1', '$name', '$email', '$this->password');";
+                    $sql = "INSERT INTO users (username,name, mobile, email, password, profile_pic) VALUES('
+                    $username', '$name', '$mobile', '$email', '$password', '$image);";
                     $sql .= "UPDATE auth SET valid=0 WHERE token = '$token'";
 
                     if($GLOBALS['conn']->multi_query($sql)){

@@ -10,6 +10,23 @@
     include("api/user.api.php");
 
     if (isset($_POST['token']) && isset($_POST['username']) && isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password'])) {
+        $target_dir = "assets/images";
+        $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+        $uploadOk = 1;
+        $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+        // Check if image file is a actual image or fake image
+        if(isset($_POST["submit"])) {
+            $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+            if($check !== false) {
+                echo "File is an image - " . $check["mime"] . ".";
+                $uploadOk = 1;
+            } else {
+                echo "File is not an image.";
+                $uploadOk = 0;
+            }
+        }
+
+
         $newUser = new user;
         $token = $_POST['token'];
         $username = $_POST['username'];
@@ -33,13 +50,13 @@
 </head>
 <body>
     <form method="post">
-        <input type="text" name="token" value="<?php echo $token; ?>" readonly>
-        <input type="text" name="username" placeholder="username">
-        <input type="text" name="name" placeholder="name">
-        <input type="number" name="mobile">
-        <input type="email" name="email" placeholder="email@gmail.com">
-        <input type="password" name="password" placeholder="password">
-        <input type="file" name="profile_pic">
+        <input type="text" name="token" value="<?php echo $token; ?>" readonly><br/>
+        <input type="text" name="username" placeholder="username"><br/>
+        <input type="text" name="name" placeholder="name"><br/>
+        <input type="tel" name="mobile"><br/>
+        <input type="email" name="email" placeholder="email@gmail.com"><br/>
+        <input type="password" name="password" placeholder="password"><br/>
+        <input type="file" name="profile_pic"><br/>
         <input type="submit" value="submit">
     </form>
 </body>

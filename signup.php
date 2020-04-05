@@ -11,21 +11,26 @@
 
     if(isset($_POST['submit'])){
         $newUser = new user;
+        $signUpagain = "<a href='signup.php?token=".$token."'>signup again</a>";
         $token = $conn -> real_escape_string($_POST['token']);
         $username = $conn -> real_escape_string($_POST['username']);
 
         $usernameCheck = $newUser -> verifyUsername($username);
         if(!$usernameCheck){
-            die("username already exist <br> <a href='cseprofessor.ml/signup.php?token=".$token."'>signup again</a>");
+            die("username already exist <br>".$signUpagain);
         }
         $name = $conn -> real_escape_string($_POST['name']);
         $email = $conn -> real_escape_string($_POST['email']);
 
         $emailCheck = $newUser->checkEmail($email);
         if(!$emailCheck){
-            die("email already exist <br> <a href='cseprofessor.ml/signup.php?token=".$token."'>signup again</a>");
+            die("email already exist <br>".$signUpagain);
         }
         $password = $conn -> real_escape_string($_POST['password']);
+        
+        if($username=="" || $name=="" || $email=="" || $password==""){
+            die("Fields missing. <br>".$signUpagain);
+        }
         
         $target_dir = "assets/images/user";
         $extension =  $target_dir . basename($_FILES["fileToUpload"]["name"]);
@@ -38,27 +43,23 @@
         if($check !== false) {
             $uploadOk = 1;
         } else {
-            die("Uploaded file is not a image <br> <a href='cseprofessor.ml/signup.php?token=".$token."'>signup again</a>");
+            die("Uploaded file is not a image <br>".$signUpagain);
             $uploadOk = 0;
         }
 
         if ($_FILES["image"]["size"] > 500000) {
-            die("file size too large <br> <a href='cseprofessor.ml/signup.php?token=".$token."'>signup again</a>");
+            die("file size too large <br>".$signUpagain);
             $uploadOk = 0;
         }
         // Allow certain file formats
         if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif" ) {
-            die("Sorry, only JPG, JPEG, PNG & GIF files are allowed. <br> <a href='cseprofessor.ml/signup.php?token=".$token."'>signup again</a>");
+            die("Sorry, only JPG, JPEG, PNG & GIF files are allowed. <br>".$signUpagain);
             $uploadOk = 0;
         }
         
         if(move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
         } else {
-            die("Error occured while uploading image <br> <a href='cseprofessor.ml/signup.php?token=".$token."'>signup again</a>");
-        }
-
-        if($username=="" || $name=="" || $email=="" || $password==""){
-            die("Fields missing. <br> <a href='cseprofessor.ml/signup.php?token=".$token."'>signup again</a>");
+            die("Error occured while uploading image <br>".$signUpagain);
         }
 
         $response = $newUser -> addUser($token, $username, $name, $mobile, $email, $password, $target_file);

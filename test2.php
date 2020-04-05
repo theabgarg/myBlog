@@ -22,6 +22,7 @@
 
 <?php
     if(isset($_POST['submit'])){
+        $newUser = new user;
         $token = $conn -> real_escape_string($_POST['token']);
         $username = $conn -> real_escape_string($_POST['username']);
 

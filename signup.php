@@ -9,32 +9,59 @@
     include("conn/conn.php");
     include("api/user.api.php");
 
-    if (isset($_POST['token']) && isset($_POST['username']) && isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password'])) {
-        $target_dir = "assets/images";
-        $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-        $uploadOk = 1;
-        $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-        // Check if image file is a actual image or fake image
-        if(isset($_POST["submit"])) {
-            $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-            if($check !== false) {
-                echo "File is an image - " . $check["mime"] . ".";
-                $uploadOk = 1;
-            } else {
-                echo "File is not an image.";
-                $uploadOk = 0;
-            }
+    if(isset($_POST['submit'])){
+        $newUser = new user;
+        $token = $conn -> real_escape_string($_POST['token']);
+        $username = $conn -> real_escape_string($_POST['username']);
+
+        $usernameCheck = $newUser -> verifyUsername($username);
+        if(!$usernameCheck){
+            die("username already exist <br> <a href='cseprofessor.ml/signup.php?token=".$token."'>signup again</a>");
+        }
+        $name = $conn -> real_escape_string($_POST['name']);
+        $email = $conn -> real_escape_string($_POST['email']);
+
+        $emailCheck = $newUser->checkEmail($email);
+        if(!$emailCheck){
+            die("email already exist <br> <a href='cseprofessor.ml/signup.php?token=".$token."'>signup again</a>");
+        }
+        $password = $conn -> real_escape_string($_POST['password']);
+        
+        $target_dir = "assets/images/user";
+        $extension =  $target_dir . basename($_FILES["fileToUpload"]["name"]);
+        $imageFileType = strtolower(pathinfo($extension, PATHINFO_EXTENSION));
+        $target_file = $target_dir . $username . $imageFileType;
+        if(file_exists($target_file)){
+            unlink($target_file);
+        }
+        $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+        if($check !== false) {
+            $uploadOk = 1;
+        } else {
+            die("Uploaded file is not a image <br> <a href='cseprofessor.ml/signup.php?token=".$token."'>signup again</a>");
+            $uploadOk = 0;
         }
 
+        if ($_FILES["image"]["size"] > 500000) {
+            die("file size too large <br> <a href='cseprofessor.ml/signup.php?token=".$token."'>signup again</a>");
+            $uploadOk = 0;
+        }
+        // Allow certain file formats
+        if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif" ) {
+            die("Sorry, only JPG, JPEG, PNG & GIF files are allowed. <br> <a href='cseprofessor.ml/signup.php?token=".$token."'>signup again</a>");
+            $uploadOk = 0;
+        }
+        
+        if(move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
+        } else {
+            die("Error occured while uploading image <br> <a href='cseprofessor.ml/signup.php?token=".$token."'>signup again</a>");
+        }
 
-        $newUser = new user;
-        $token = $_POST['token'];
-        $username = $_POST['username'];
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $password = $_POST['password'];
+        if($username=="" || $name=="" || $email=="" || $password==""){
+            die("Fields missing. <br> <a href='cseprofessor.ml/signup.php?token=".$token."'>signup again</a>");
+        }
 
-        $response = $newUser->addUser($token, $username, $name, $email, $password);
+        $response = $newUser -> addUser($token, $username, $name, $mobile, $email, $password, $target_file);
 
         echo $response;
     }
@@ -46,7 +73,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>signup form</title>
 </head>
 <body>
     <form method="post">

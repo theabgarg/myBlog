@@ -84,7 +84,7 @@
         <input type="email" name="email" placeholder="email@gmail.com"><br/>
         <input type="password" name="password" placeholder="password"><br/>
         <input type="file" name="profile_pic"><br/>
-        <input type="submit" value="submit">
+        <input type="submit" name="submit" value="submit">
     </form>
 </body>
 </html>

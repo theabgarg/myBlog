@@ -53,7 +53,7 @@
         <input type="text" name="token" value="<?php echo $token; ?>" readonly><br/>
         <input type="text" name="username" placeholder="username"><br/>
         <input type="text" name="name" placeholder="name"><br/>
-        <input type="tel" name="mobile"><br/>
+        <input type="tel" name="mobile" placeholder="mobile number" maxlength="10"><br/>
         <input type="email" name="email" placeholder="email@gmail.com"><br/>
         <input type="password" name="password" placeholder="password"><br/>
         <input type="file" name="profile_pic"><br/>

@@ -27,7 +27,7 @@ session_start();
             }
         }
         else{
-            die("LogIn failed.")
+            die("LogIn failed.");
         }
     }
     elseif (isset($_SESSION['username'])) {

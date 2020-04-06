@@ -32,7 +32,7 @@
             die("Fields missing. <br>".$signUpagain);
         }
         
-        $target_dir = "assets/images/user";
+        $target_dir = "assets/images/user/";
         $extension =  $target_dir . basename($_FILES["fileToUpload"]["name"]);
         $imageFileType = strtolower(pathinfo($extension, PATHINFO_EXTENSION));
         $target_file = $target_dir . $username . $imageFileType;

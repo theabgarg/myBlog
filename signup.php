@@ -34,18 +34,22 @@
         
         $target_dir = "assets/images/user/";
         $extension =  $target_dir . basename($_FILES["profile_pic"]["name"]);
+        echo "extension is ".$extension;
         $imageFileType = strtolower(pathinfo($extension, PATHINFO_EXTENSION));
+        echo "file type is ".$imageFileType;
         $target_file = $target_dir . $username . $imageFileType;
         if(file_exists($target_file)){
             unlink($target_file);
         }
-        // $check = getimagesize($_FILES["pic"]["tmp_name"]);
-        // if($check !== false) {
-        //     $uploadOk = 1;
-        // } else {
-        //     die("Uploaded file is not a image <br>".$signUpagain);
-        //     $uploadOk = 0;
-        // }
+        $check = getimagesize($_FILES["pic"]["tmp_name"]);
+
+        echo "check is ". $check;
+        if($check !== false) {
+            $uploadOk = 1;
+        } else {
+            die("Uploaded file is not a image <br>".$signUpagain);
+            $uploadOk = 0;
+        }
 
         if ($_FILES["pic"]["size"] > 500000) {
             die("file size too large <br>".$signUpagain);

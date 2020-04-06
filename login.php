@@ -10,6 +10,7 @@ session_start();
         $password = $_POST['psw'];
         $newUser = new user;
         $login = $newUser->verifyUser($username, $password);
+        echo "<p style='color:white'>".$login."</p>";
         if($login){
             $_SESSION['username'] = $newUser->getUsername();
             $_SESSION['name'] = $newUser->getName();

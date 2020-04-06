@@ -1,6 +1,6 @@
 <?php
     session_start();
-    if (/*isset($_SESSION['username']) && isset($_SESSION['name']) && isset($_SESSION['email'])*/ 1 ) {
+    if (isset($_SESSION['username']) && isset($_SESSION['name']) && isset($_SESSION['email']) && $_SESSION['role']=='author') {
         
     }
     else{
@@ -20,7 +20,7 @@
     <script src="../assets/js/main.js"></script>
 </head>
 <body>
-    <script>header();</script>
-    
+    <?php include "includes/header.php"; ?>
+       
 </body>
 </html>

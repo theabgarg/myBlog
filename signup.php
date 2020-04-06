@@ -37,7 +37,7 @@
         echo "extension is ".$extension;
         $imageFileType = strtolower(pathinfo($extension, PATHINFO_EXTENSION));
         echo "file type is ".$imageFileType;
-        $target_file = $target_dir . $username . $imageFileType;
+        $target_file = $target_dir . $username .".". $imageFileType;
         if(file_exists($target_file)){
             unlink($target_file);
         }

@@ -1,7 +1,7 @@
 <?php
     session_start();
-    if(isset($_SESSION['type'])){
-        if($_SESSION['type'] == 1){
+    if(isset($_SESSION['role'])){
+        if($_SESSION['role'] == 'admin'){
 
         }
         else{

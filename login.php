@@ -23,7 +23,7 @@ session_start();
                 header("location: ./admin/index.php");
             }
             else{
-                die("error in profile.");
+                die("error in profile. No role assigned.");
             }
         }
         else{

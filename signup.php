@@ -39,13 +39,13 @@
         if(file_exists($target_file)){
             unlink($target_file);
         }
-        $check = getimagesize($_FILES["pic"]["tmp_name"]);
-        if($check !== false) {
-            $uploadOk = 1;
-        } else {
-            die("Uploaded file is not a image <br>".$signUpagain);
-            $uploadOk = 0;
-        }
+        // $check = getimagesize($_FILES["pic"]["tmp_name"]);
+        // if($check !== false) {
+        //     $uploadOk = 1;
+        // } else {
+        //     die("Uploaded file is not a image <br>".$signUpagain);
+        //     $uploadOk = 0;
+        // }
 
         if ($_FILES["pic"]["size"] > 500000) {
             die("file size too large <br>".$signUpagain);

@@ -86,9 +86,10 @@
 
 
     $('.new_post').click(function(){
-        var x = postform();
-        $('.response').html("");
-        $('.response').append(x);
+        // var x = postform();
+        // $('.response').html("");
+        // $('.response').append(x);
+        location.replace('post.php');
     });
 
     $('.users').click(function(){

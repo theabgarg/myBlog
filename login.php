@@ -24,7 +24,7 @@ session_start();
             }
         }
         else{
-            header("location: https://www.scamwatch.gov.au/types-of-scams");
+            echo "login failed";
         }
     }
     elseif (isset($_SESSION['username'])) {

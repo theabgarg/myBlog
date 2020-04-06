@@ -14,7 +14,7 @@ session_start();
             $_SESSION['username'] = $newUser->getUsername();
             $_SESSION['name'] = $newUser->getName();
             $_SESSION['email'] = $newUser->getEmail();
-            $_SESSION['type'] = $newUser->getType();
+            $_SESSION['role'] = $newUser->getRole();
 
             if($_SESSION['type'] == 'author'){
                 header("location: ./author/index.php");
@@ -24,14 +24,14 @@ session_start();
             }
         }
         else{
-            echo "login failed";
+            echo "<p style='color:white'>login failed</p>";
         }
     }
     elseif (isset($_SESSION['username'])) {
-        if($_SESSION['type'] == 0){
+        if($_SESSION['role'] == 'author'){
             header("location: ./author/index.php");
         }
-        elseif($_SESSION['type'] == 1){
+        elseif($_SESSION['role'] == 'admin'){
             header("location: ./admin/index.php");
         }
     }

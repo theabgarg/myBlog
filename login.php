@@ -1,6 +1,6 @@
 <?php
 
-include_once('assets/conn/conn.php');
+include_once('conn/conn.php');
 include_once('api/user.api.php');
 
 session_start();

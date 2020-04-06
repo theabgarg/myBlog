@@ -33,13 +33,13 @@
         }
         
         $target_dir = "assets/images/user/";
-        $extension =  $target_dir . basename($_FILES["fileToUpload"]["name"]);
+        $extension =  $target_dir . basename($_FILES["profile_pic"]["name"]);
         $imageFileType = strtolower(pathinfo($extension, PATHINFO_EXTENSION));
         $target_file = $target_dir . $username . $imageFileType;
         if(file_exists($target_file)){
             unlink($target_file);
         }
-        $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+        $check = getimagesize($_FILES["profile_pic"]["tmp_name"]);
         if($check !== false) {
             $uploadOk = 1;
         } else {
@@ -47,7 +47,7 @@
             $uploadOk = 0;
         }
 
-        if ($_FILES["image"]["size"] > 500000) {
+        if ($_FILES["profile_pic"]["size"] > 500000) {
             die("file size too large <br>".$signUpagain);
             $uploadOk = 0;
         }
@@ -57,7 +57,7 @@
             $uploadOk = 0;
         }
         
-        if(move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
+        if(move_uploaded_file($_FILES["profile_pic"]["tmp_name"], $target_file)) {
         } else {
             die("Error occured while uploading image <br>".$signUpagain);
         }

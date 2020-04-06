@@ -199,6 +199,7 @@ class user{
         $result = $GLOBALS['conn']->query($sql);
         print_r($result);
         if($result && $result->num_rows > 0){
+            echo "inside if";
             $row = $result->fetch_assoc();
             $this->setId($row['id']);
             $this->setUsername($row['username']);
@@ -209,6 +210,7 @@ class user{
             return true;
         }
         else{
+            echo "inside else";
             return false;
         }
     }

@@ -2,17 +2,25 @@
 
 class user{
     private $token;
+    private $id;
     private $username;
     private $name;
+    private $mobile;
     private $email;
     private $password;
-    private $isAdmin;
+    private $pic;
+    private $post_id;
+    private $role;
 
     function setToken($token){
         $token = base64_decode($token);
         $token = hex2bin($token);
         $token = md5($token);
         $this->token = $token;
+    }
+
+    function setId($id){
+        $this->id = $id;
     }
 
     function setUsername($username){
@@ -23,12 +31,32 @@ class user{
         $this->name = $name;
     }
 
+    function setMobile($mobile){
+        $this->mobile = $mobile;
+    }
+
     function setEmail($email){
         $this->email = $email;
     }
 
-    function setType($isAdmin){
-        $this->isAdmin = $isAdmin;
+    function setPassword($password){
+        $this->password = $password;
+    }
+
+    function setPic($pic){
+        $this->pic = $pic;
+    }
+
+    function setPostId($post_id){
+        $this->post_id = $post_id;
+    }
+
+    function setRole($role){
+        $this->role = $role;
+    }
+
+    function getId(){
+        return $this->id;
     }
 
     function getUsername(){
@@ -39,12 +67,20 @@ class user{
         return $this->name;
     }
 
+    function getMobile(){
+        return $this->mobile;
+    }
+
     function getEmail(){
         return $this->email;
     }
 
-    function getType(){
-        return $this->isAdmin;
+    function getPassword(){
+        return $this->password;
+    }
+
+    function getRole(){
+        return $this->role;
     }
 
     function encPass($password){
@@ -139,9 +175,9 @@ class user{
     }
 
     function deleteUser($username){
-        $sql = "SELECT * FROM userDB WHERE username = '$username'";
+        $sql = "SELECT * FROM users WHERE username = '$username'";
         if($GLOBALS['conn']->query($sql)){
-            $sql = "DELETE FROM userDB WHERE username = '$username'";
+            $sql = "DELETE FROM users WHERE username = '$username'";
             if ($GLOBALS['conn']->query($sql)){
                 return "user deleted successfully";
             }
@@ -161,10 +197,12 @@ class user{
         $result = $GLOBALS['conn']->query($sql);
         if($result && $result->num_rows > 0){
             $row = $result->fetch_assoc();
+            $this->setId($row['id']);
             $this->setUsername($row['username']);
             $this->setName($row['name']);
             $this->setEmail($row['email']);
-            $this->setType($row['role']);
+            $this->setPic($row['profile_pic']);
+            $this->setRole($row['role']);
             return true;
         }
         else{

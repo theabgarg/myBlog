@@ -22,8 +22,12 @@ session_start();
             elseif($_SESSION['role'] == 'admin'){
                 header("location: ./admin/index.php");
             }
+            else{
+                die("error in profile.");
+            }
         }
         else{
+            die("LogIn failed.")
         }
     }
     elseif (isset($_SESSION['username'])) {

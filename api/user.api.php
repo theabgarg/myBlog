@@ -195,7 +195,6 @@ class user{
         $password = $this->password;
         $sql = "SELECT * FROM users WHERE (username='$username' OR email = '$username') AND password='$password'";
         $result = $GLOBALS['conn']->query($sql);
-        print_r($result);
         if($result && $result->num_rows > 0){
             $row = $result->fetch_assoc();
             $this->setId($row['id']);

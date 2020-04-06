@@ -10,7 +10,6 @@ session_start();
         $password = $_POST['psw'];
         $newUser = new user;
         $login = $newUser->verifyUser($username, $password);
-        echo "<p style='color:white'>".$login."</p>";
         if($login){
             $_SESSION['username'] = $newUser->getUsername();
             $_SESSION['name'] = $newUser->getName();
@@ -25,7 +24,6 @@ session_start();
             }
         }
         else{
-            echo "<p style='color:white'>login failed</p>";
         }
     }
     elseif (isset($_SESSION['username'])) {

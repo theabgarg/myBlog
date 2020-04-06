@@ -52,7 +52,7 @@
             $uploadOk = 0;
         }
         // Allow certain file formats
-        if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif" ) {
+        if($imageFileType != "jpg" || $imageFileType != "png" || $imageFileType != "jpeg" || $imageFileType != "gif" ) {
             die("Sorry, only JPG, JPEG, PNG & GIF files are allowed. <br>".$signUpagain);
             $uploadOk = 0;
         }
@@ -84,7 +84,7 @@
         <input type="tel" name="mobile" placeholder="mobile number" maxlength="10"><br/>
         <input type="email" name="email" placeholder="email@gmail.com"><br/>
         <input type="password" name="password" placeholder="password"><br/>
-        <input type="file" name="pic"><br/>
+        <input type="file" name="pic" id="pic"><br/>
         <input type="submit" name="submit" value="submit">
     </form>
 </body>

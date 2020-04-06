@@ -81,7 +81,7 @@
     <title>signup form</title>
 </head>
 <body>
-    <form method="post">
+    <form method="post" enctype="multipart/form-data">
         <input type="text" name="token" value="<?php echo $token; ?>" readonly><br/>
         <input type="text" name="username" placeholder="username"><br/>
         <input type="text" name="name" placeholder="name"><br/>

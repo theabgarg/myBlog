@@ -193,13 +193,10 @@ class user{
     function verifyUser($username, $password){
         $this->encPass($password);
         $password = $this->password;
-        echo $password;
         $sql = "SELECT * FROM users WHERE (username='$username' OR email = '$username') AND password='$password'";
-        echo $sql;
         $result = $GLOBALS['conn']->query($sql);
         print_r($result);
         if($result && $result->num_rows > 0){
-            echo "inside if";
             $row = $result->fetch_assoc();
             $this->setId($row['id']);
             $this->setUsername($row['username']);
@@ -210,7 +207,6 @@ class user{
             return true;
         }
         else{
-            echo "inside else";
             return false;
         }
     }

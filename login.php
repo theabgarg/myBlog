@@ -16,10 +16,10 @@ session_start();
             $_SESSION['email'] = $newUser->getEmail();
             $_SESSION['type'] = $newUser->getType();
 
-            if($_SESSION['type'] == 0){
+            if($_SESSION['type'] == 'author'){
                 header("location: ./author/index.php");
             }
-            elseif($_SESSION['type'] == 1){
+            elseif($_SESSION['type'] == 'admin'){
                 header("location: ./admin/index.php");
             }
         }

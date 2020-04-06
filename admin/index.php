@@ -1,15 +1,15 @@
 <?php
     session_start();
-    // if(isset($_SESSION['type'])){
-    //     if($_SESSION['type'] == 1){
+    if(isset($_SESSION['type'])){
+        if($_SESSION['type'] == 1){
 
-    //     }
-    //     else{
-    //         header('location: ../login.php');
-    //     }
-    // }else{
-    //     header("location: ../login.php");
-    // }
+        }
+        else{
+            header('location: ../login.php');
+        }
+    }else{
+        header("location: ../login.php");
+    }
     include("../api/user.api.php");
     include("../conn/conn.php");
 

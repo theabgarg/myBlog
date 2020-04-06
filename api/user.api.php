@@ -157,14 +157,14 @@ class user{
     function verifyUser($username, $password){
         $this->encPass($password);
         $password = $this->password;
-        $sql = "SELECT * FROM userDB WHERE (username='$username' OR email = '$username') AND pass='$password'";
+        $sql = "SELECT * FROM users WHERE (username='$username' OR email = '$username') AND pass='$password'";
         $result = $GLOBALS['conn']->query($sql);
         if($result && $result->num_rows > 0){
             $row = $result->fetch_assoc();
             $this->setUsername($row['username']);
-            $this->setName($row['fullname']);
+            $this->setName($row['name']);
             $this->setEmail($row['email']);
-            $this->setType($row['is_admin']);
+            $this->setType($row['role']);
             return true;
         }
         else{

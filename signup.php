@@ -69,6 +69,7 @@
         $response = $newUser -> addUser($token, $username, $name, $mobile, $email, $password, $target_file);
 
         echo $response;
+        die();
     }
 ?>
 

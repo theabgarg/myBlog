@@ -21,6 +21,7 @@
 </head>
 <body>
     <?php include "includes/header.php"; ?>
+    <?php include "includes/sidebar.php"; ?>
        
 </body>
 </html>

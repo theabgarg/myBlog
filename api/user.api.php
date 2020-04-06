@@ -193,8 +193,11 @@ class user{
     function verifyUser($username, $password){
         $this->encPass($password);
         $password = $this->password;
+        echo $password;
         $sql = "SELECT * FROM users WHERE (username='$username' OR email = '$username') AND password='$password'";
+        echo $sql;
         $result = $GLOBALS['conn']->query($sql);
+        echo $result;
         if($result && $result->num_rows > 0){
             $row = $result->fetch_assoc();
             $this->setId($row['id']);

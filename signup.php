@@ -33,7 +33,7 @@
         }
         
         $target_dir = "assets/images/user/";
-        $extension =  $target_dir . basename($_FILES["profile_pic"]["name"]);
+        $extension =  $target_dir . basename($_FILES["pic"]["name"]);
         echo "extension is ".$extension;
         $imageFileType = strtolower(pathinfo($extension, PATHINFO_EXTENSION));
         echo "file type is ".$imageFileType;

@@ -149,8 +149,7 @@ class user{
             $usernameAvailaibility = $this->verifyUsername($username);
             if ($usernameAvailaibility) {
                 if($name != null && $email != null){
-                    $sql = "INSERT INTO users (username,name, mobile, email, password, profile_pic) VALUES('
-                    $username', '$name', '$mobile', '$email', '$this->password', '$image');";
+                    $sql = "INSERT INTO users (username,name, mobile, email, password, profile_pic) VALUES('$username', '$name', '$mobile', '$email', '$this->password', '$image');";
                     $sql .= "UPDATE auth SET valid=0 WHERE token = '$token'";
 
                     if($GLOBALS['conn']->multi_query($sql)){

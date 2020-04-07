@@ -13,14 +13,14 @@
         $newUser = new user;
         $signUpagain = "<a href='signup.php?token=".$token."'>signup again</a>";
         $token = $conn -> real_escape_string($_POST['token']);
-        $username = $conn -> real_escape_string($_POST['username']);
+        $username = $conn->real_escape_string($_POST['username']);
 
-        $usernameCheck = $newUser -> verifyUsername($username);
+        $usernameCheck = $newUser->verifyUsername($username);
         if(!$usernameCheck){
             die("username already exist <br>".$signUpagain);
         }
-        $name = $conn -> real_escape_string($_POST['name']);
-        $email = $conn -> real_escape_string($_POST['email']);
+        $name = $conn->real_escape_string($_POST['name']);
+        $email = $conn->real_escape_string($_POST['email']);
 
         $emailCheck = $newUser->checkEmail($email);
         if(!$emailCheck){
@@ -34,16 +34,13 @@
         
         $target_dir = "assets/images/user/";
         $extension =  $target_dir . basename($_FILES["pic"]["name"]);
-        echo "extension is ".$extension;
         $imageFileType = strtolower(pathinfo($extension, PATHINFO_EXTENSION));
-        echo "file type is ".$imageFileType;
         $target_file = $target_dir . $username .".". $imageFileType;
         if(file_exists($target_file)){
             unlink($target_file);
         }
         $check = getimagesize($_FILES["pic"]["tmp_name"]);
 
-        echo "check is ". $check;
         if($check !== false) {
             $uploadOk = 1;
         } else {

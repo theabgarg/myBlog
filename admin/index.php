@@ -28,6 +28,9 @@
     <script src="../assets/js/jquery.js"></script>
     <link rel="stylesheet" href="../assets/css/main2.css">
     <link rel="stylesheet" href="main.css">
+    <script src="//cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="//cdn.quilljs.com/1.3.6/quill.min.js"></script>
+
 </head>
 <body>
 
@@ -63,6 +66,8 @@
 
 
 <script>
+    var editor = new Quill('#description');
+
     var htmldata='a';
 
     function generate(){
@@ -86,10 +91,10 @@
 
 
     $('.new_post').click(function(){
-        // var x = postform();
-        // $('.response').html("");
-        // $('.response').append(x);
-        location.replace('post.php');
+        var x = postform();
+        $('.response').html("");
+        $('.response').append(x);
+        // location.replace('post.php');
     });
 
     $('.users').click(function(){

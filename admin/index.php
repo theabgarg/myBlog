@@ -29,7 +29,6 @@
     <link rel="stylesheet" href="../assets/css/main2.css">
     <link rel="stylesheet" href="main.css">
     <script src="//cdn.quilljs.com/1.3.6/quill.js"></script>
-    <script src="//cdn.quilljs.com/1.3.6/quill.min.js"></script>
 
 </head>
 <body>
@@ -64,6 +63,7 @@
 
 
 
+<script src="//cdn.quilljs.com/1.3.6/quill.min.js"></script>
 
 <script>
     var editor = new Quill('#description');

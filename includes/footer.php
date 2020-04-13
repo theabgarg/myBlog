@@ -7,6 +7,6 @@
     </div>
 
     <div class="footer-bottom">
-        &copy; veroxyle | Designed by team veroxyle
+        &copy; MyBlog | Designed by team 3AS
     </div>
 </footer>

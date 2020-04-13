@@ -1,15 +1,10 @@
-<?php include_once("conn/conn.php"); ?>
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>veroxyle</title>
-        <link rel='shortcut icon' href='favicon.png' type='image/x-icon' />
-        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <link rel="stylesheet" href="assets/css/main2.css">
-        <script src="assets/js/jquery.js"></script>
+<?php 
+    include_once($_SERVER["DOCUMENT_ROOT"]."/myBlog/conn/conn.php");
+
+    $title = "home";
+
+    include_once($_SERVER["DOCUMENT_ROOT"]."/myBlog/includes/head.php");
+?>
     </head>
     <body>
 
@@ -22,7 +17,8 @@
     
     <!-- posts -->
         <div class="page-wrapper">
-            <?php include("includes/posts.php") ?>
+            <input type="hidden" name="offset" id="offset" value=0>
+            <div class="response"></div>
         </div>
 
     <!-- posts ending -->
@@ -32,6 +28,35 @@
         
     <!-- footer ending -->
 
-        <script src="assets/js/main.js"></script>
+        <script src="/myBlog/assets/js/main.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                var offset = $('#offset').val();
+                $.ajax({
+                    type:'POST',
+                    url: 'includes/posts.php',
+                    data : {offset:offset},
+                    dataType: 'json',
+                    success: function(data){
+                        $('.response').html("");
+                        if (data!= 'null') {
+                           for (let i = 1; i < 10; i++) {
+                            var id = data[i].id;
+                            var title = data[i].title;
+                            var category = data[i].category;
+                            var description = data[i].description;
+                            var author = data[i].author;
+                            var image = data[i].image;
+                            var date = data[i].date;
+                            var card = '<a href="single.php?id='+id+'"><div class="card"><img src="'+image+'"><div class="content"><p class="card-title">'+title+'</p><p class="card-description">'+description+'</p><p class="author">'+author+" "+date+'</p><p class="category">'+category+'</p></div></div></a>';
+                            $('.response').append(card);
+                           }
+                        }
+                    }
+                });
+            });
+        </script>
+
     </body>
 </html>

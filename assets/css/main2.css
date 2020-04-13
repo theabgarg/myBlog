@@ -6,7 +6,7 @@
 
 html, body{
     height: 100%;
-    background: aquamarine;
+    background: #000080;
 }
 
 h1,h2,h3,h4{
@@ -19,7 +19,7 @@ a{
 }
 
 a:hover{
-    color: rgb(60, 110, 9);
+    color: honeydew;
 }
 
 .clearfix::after{
@@ -219,19 +219,18 @@ header .menu-close{
 
 .footer{
     bottom: 0;
-    background: #303036;
+    background: #000;
     color: #d3d3d3;
     height: 400px;
     position: relative;
 }
 
 .footer .footer-content{
-    border: 1px solid red;
     height: 350px;
 }
 
 .footer .footer-bottom{
-    background: #343a40;
+    background: #000;
     color: #686868;
     width: 100%;
     height: 50px;

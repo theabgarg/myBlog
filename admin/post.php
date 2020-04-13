@@ -10,11 +10,83 @@
     }else{
         header('location: /myblog/login.php');
     }
-    include($_SERVER["DOCUMENT_ROOT"]."/api/user.api.php");
-    include($_SERVER["DOCUMENT_ROOT"]."/conn/conn.php");
+    include($_SERVER["DOCUMENT_ROOT"]."/myBlog/api/user.api.php");
+    include($_SERVER["DOCUMENT_ROOT"]."/myBlog/conn/conn.php");
 
     $newUser = new user;
 ?>
+
+
+
+<!-- post form handler -->
+<?php
+
+    if(isset($_POST['post'])){
+      $title = $conn->real_escape_string($_POST['title']);
+      $category = $conn->real_escape_string($_POST['category']);
+      $description = $conn->real_escape_string($_POST['description']);
+      $author = $conn->real_escape_string($_POST['author']);
+      $content = $conn->real_escape_string($_POST['content']);
+      $image = $_FILES['image'];
+      $tags = $conn->real_escape_string($_POST['tags']);
+
+      if (isset($_POST['approval'])) {
+        $approval = 1;
+      }
+      else{
+        $approval = 0;
+      }
+
+      $t = time();
+
+      $target_dir = $_SERVER["DOCUMENT_ROOT"]."/myBlog/assets/images/post/";
+        $extension =  $target_dir . basename($_FILES["image"]["name"]);
+        $imageFileType = strtolower(pathinfo($extension, PATHINFO_EXTENSION));
+        $target_output = $username.$t.".".$imageFileType;
+        $target_file = $target_dir . $username . $t . "." . $imageFileType;
+        $target_output2 = "/myBlog/assets/images/post/".$target_output;
+        if(file_exists($target_file)){
+            die("image with same name already exist");
+        }
+        $check = getimagesize($_FILES["image"]["tmp_name"]);
+
+        if($check !== false) {
+            $uploadOk = 1;
+        } else {
+            die("Uploaded file is not a image <br>");
+            $uploadOk = 0;
+        }
+
+        if ($_FILES["image"]["size"] > 500000) {
+            die("file size too large <br>");
+            $uploadOk = 0;
+        }
+        // Allow certain file formats
+        if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif" ){
+            die("Sorry, only JPG, JPEG, PNG & GIF files are allowed. <br>");
+            $uploadOk = 0;
+        }
+        
+        if(move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
+        } else {
+            die("Error occured while uploading image <br>");
+        }
+
+
+        $sql = "INSERT INTO posts (title, category, description, author, content, image, tags, status) VALUES('$title', '$category', '$description', '$author', '$content', '$target_output2', '$tags', '$approval')";
+        if($GLOBALS['conn']->query($sql)){
+          echo 'posted successfully';
+        }
+    }
+
+?>
+
+
+
+
+
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -37,7 +109,7 @@
   var size = screen.width;
   size -= 20;
   tinymce.init({
-    selector: '#myTextarea',
+    selector: '#content',
     width: size,
     height: 500,
     plugins: [
@@ -58,10 +130,22 @@
   </script>
 </head>
 <body>
-  <form action="" method="post">
-    <label for=""></label>
+  
+  <form method="post" enctype="multipart/form-data" class="post-form">
+    <input type="text" name="title" id="title" placeholder="title of post"><br>
+    <select name="category" id="category">
+      <option value="blog">blog</option>
+      <option value="news">news</option>
+      <option value="review">review</option>
+    </select><br>
+    <input type="text" name="description" id="description" placeholder="say something about this post"><br>
+    <input type="text" name="author" id="author" value="<?php echo $_SESSION['username']; ?>"><br>
+    <textarea name="content" id="content"></textarea><br>
+    <input type="file" name="image" id="image"><br>
+    <input type="text" name="tags" id="tags" placeholder="example: blog, cat, dog, etc..."><br>
+    <input type="checkbox" name="approval" id="approval"><br>
+    <input type="submit" value="post" name="post">
   </form>
-
 
 
 </body>

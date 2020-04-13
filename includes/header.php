@@ -1,7 +1,7 @@
 <header>
         <div class="logo">
             <img src="assets/images/logo.png" alt="logo" height="48" width="48">
-            <h1 class="logo-text">vero<span>xyle</span></h1>
+            <h1 class="logo-text">My<span>Blog</span></h1>
         </div>
 
         <i class="fa fa-bars menu-toggle"></i>
@@ -18,7 +18,7 @@
             <li>
                 <a href="#">
                 <i class="fa fa-user"></i>    
-                veroxyle
+                user
                 <i class="fa fa-chevron-down" style="font-size: 0.8em;"></i>
                 </a>
                 <ul>

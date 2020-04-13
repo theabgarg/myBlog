@@ -21,6 +21,7 @@
         }
         $name = $conn->real_escape_string($_POST['name']);
         $email = $conn->real_escape_string($_POST['email']);
+        $mobile = $conn->real_escape_string($_POST['mobile']);
 
         $emailCheck = $newUser->checkEmail($email);
         if(!$emailCheck){

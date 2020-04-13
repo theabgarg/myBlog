@@ -329,3 +329,7 @@
         </div>
     </body>
 </html>
+
+
+
+<a href="+id+"><div class="card"><img src="+image+"><div class="content"><p class="card-title">+title+</p><p class="card-description">+description+</p><p class="author">+author+" "+date+ </p><p class="category">+category+</p></div></div></a>

@@ -49,7 +49,7 @@
                             var author = data[i].author;
                             var image = data[i].image;
                             var date = data[i].date;
-                            var card = '<a href="single.php?id='+id+'"><div class="card"><img src="'+image+'"><div class="content"><p class="card-title">'+title+'</p><p class="card-description">'+description+'</p><p class="author">'+author+" "+date+'</p><p class="category">'+category+'</p></div></div></a>';
+                            var card = '<div class="card"><a class="card-link" href="single.php?id='+id+'"><img src="'+image+'"><div class="content"><p class="card-title">'+title+'</p><p class="card-description">'+description+'</p><p class="author">'+author+" on "+date+'</p><p class="category">'+category+'</p></div></a></div>';
                             $('.response').append(card);
                            }
                         }

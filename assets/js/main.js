@@ -1,10 +1,17 @@
+$(function() {
+    $('form').each(function() {
+        $(this).find('input').keypress(function(e) {
+            // Enter pressed?
+            if(e.which == 10 || e.which == 13) {
+                this.form.submit();
+            }
+        });
+    });
+});
+
 function header(){
     var x = '<nav class="header"><div class="inner_header"><div class="logo_container"><h1>veroxyle</h1></div><ul class="navigation"><li><a href="#">Home</a></li><li><a href="#">News</a></li><li><a href="#">How-To</a></li><li><a href="#">Reviews</a></li><li><a href="#">Blog</a></li></ul><div class="search"></div></div></nav>';
     document.write(x);
-}
-
-function card(){
-    var x = '<div class="card"><div class="title"><h1>'+title+'</h1></div><div class="desc"><p>'+description+'</p></div><a href="http://">delete</a><a href="http://">approval</a><a href="">Edit</a></div>';
 }
 
 function postDesign(img, title, shortDesc, username, postDate){
@@ -22,6 +29,17 @@ function postform(){
     return x;
 }
 
+function postUser(img, name, username){
+    var x = '<div class="user"><div class="user-img"><img src="'+img+'" alt="user"></div><div class="user-about"><p class="username">'+username+'</p><p class="name">'+name+'</p></div><div class="delete"><button onclick="deleteUser(\''+username+'\')"><i>delete</i></button></div></div>';
+    return x;
+}
+
+function commentCard(name,comment,date){
+    var x = '<div class="comment"><div class="comment-name">'+name+'</div><div class="comment-message">'+comment+'</div><div class="comment-date">'+date+'</div></div>';
+    return x;
+}
+
+
 $(document).ready(function(){
     $('.menu-toggle').click(function(){
             $('header > ul').css({"display" : "block"});
@@ -36,17 +54,184 @@ $(document).ready(function(){
     });
 
     $('.logo').click(function(){
-        location.replace("./index.php");
+        location.replace("/myBlog/index.html");
     });
 });
 
-$('.post-wrapper').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplatSpeed:2000,
-    nextArrow: $('.next'),
-    prevArrow: $('.prev'),
+
+
+
+$('form.searchbar').on("submit", function(e){
+    e.preventDefault();
+    $('.search-response').html("");
+    var search = $('#search').val();
+    $.ajax({
+        type:'POST',
+        url:'/myBlog/search.php',
+        data:{search:search},
+        dataType:'json',
+        success: function(data){
+            console.log(data);
+            if (data!= 'null' && data != "") {
+               for (let i = 0; i < data.length; i++) {
+                    var id = data[i].id;
+                    var title = data[i].title;
+                    var category = data[i].category;
+                    var description = data[i].description;
+                    var author = data[i].author;
+                    var image = data[i].image;
+                    var date = data[i].date;
+                    var cards = card(id,image,title,description,author,date);
+                    $('.search-response').append(cards);
+                }
+            }
+        }
+    });
 });
 
-var y = '<header><div class="logo"><img src="assets/images/logo.png" alt="logo" height="48" width="48"><h1 class="logo-text">vero<span>xyle</span></h1></div><i class="fa fa-bars menu-toggle"></i><i class="fa fa-times menu-close"></i><ul class="nav"><li><a href="#">Latest</a></li><li><a href="#">News</a></li><li><a href="#">How-to</a></li><li><a href="#">Reviews</a></li><li><a href="#">Blog</a></li><!-- <li><a href="#">Sign Up</a></li><li><a href="#">Login</a></li> --><li><a href="#"><i class="fa fa-user"></i>veroxyle<i class="fa fa-chevron-down" style="font-size: 0.8em;"></i></a><ul><li><a href="#">Dashboard</a></li><li><a href="#" class="logout">Logout</a></li></ul></li></ul></header>';
+
+
+function assignArrows(){
+    var cS = $('.card.active');
+    var nS = cS.next();
+    var pS = cS.prev();
+    if(nS.length == 0){
+        nS = $('.card').first();
+    }
+    if(pS.length == 0){
+        pS = $('.card').last();
+    }
+
+    pS.addClass('prev');
+    nS.addClass('next');
+}
+
+$('#right-arrow').click(function(){
+    var pS = $('.card.active');
+    var ppS = pS.prev();
+    var cS = pS.next();
+    var nS = cS.next();
+
+    if(ppS.length == 0){
+        ppS = $('.card').last();
+    }
+
+    if(cS.length == 0){
+        cS = $('.card').first();
+        nS = cS.next();
+    }
+
+    if(nS.length == 0){
+        nS = $('.card').first();
+    }
+
+    ppS.removeClass('prev');
+    pS.removeClass('active').addClass('prev');
+    cS.removeClass('next').addClass('active');
+    nS.addClass('next');
+
+});
+
+$('#left-arrow').click(function(){
+    var pS = $('.card.active');
+    var cS = pS.prev();
+    var ppS = cS.prev();
+    var nS = pS.next();
+
+    if(cS.length == 0){
+        cS = $('.card').last();
+        ppS = cS.prev();
+    }
+
+    if(ppS.length == 0){
+        ppS = $('.card').last();
+    }
+
+    if(nS.length == 0){
+        nS = $('.card').first();
+    }
+
+    pS.removeClass('active').addClass('next');
+    cS.removeClass('prev').addClass('active');
+    ppS.addClass('prev');
+    nS.removeClass('next');
+});
+
+
+$(document).ready(function(){
+    $('.loader').fadeOut(3000);
+});
+
+function card(id,img,title,desc,author,date){
+    var x = '<div class="card"><div class="card-img"><img src="'+img+'" alt="card image"></div><div class="card-content"><div class="card-title"><a href="single.php?id='+id+'">'+title+'</a></div><div class="card-description">'+desc+'</div><div class="card-details"><p class="card-author">'+author+'</p><p class="card-date">'+date+'</p></div></div></div>';
+    return x;
+}
+
+function latestCard(id,img,title,desc,author,date){
+    var x = '<div class="latest-card"><div class="latest-card-img"><img src="'+img+'" alt="card image"></div><div class="latest-card-content"><div class="latest-card-title"><a href="single.php?id='+id+'">'+title+'</a></div><div class="latest-card-description">'+desc+'</div><div class="latest-card-details"><p class="latest-card-author">'+author+'</p><p class="latest-card-date">'+date+'</p></div></div></div>';
+    return x;
+}
+
+function loadTrending(){
+    var offset = 0;
+    $.ajax({
+        type:'POST',
+        url: '/myBlog/includes/posts.php',
+        data : {offset:offset},
+        dataType: 'json',
+        success: function(data){
+            if (data!= 'null' && data != "") {
+               for (let i = 1; i < data.length; i++) {
+                    var id = data[i].id;
+                    var title = data[i].title;
+                    var category = data[i].category;
+                    var description = data[i].description;
+                    var author = data[i].author;
+                    var image = data[i].image;
+                    var date = data[i].date;
+                    var cards = card(id,image,title,description,author,date);
+                    $('#trending-container').append(cards);
+                    if(i==1){
+                        $('.card').addClass('active');
+                    }
+                }
+                assignArrows();
+            }
+        }
+    });
+    // $('.card').first().addClass('active');
+    // assignArrows();
+}
+
+function loadBody(){
+    loadTrending();
+    loadLatest();
+}
+
+
+function loadLatest(){
+    var offset = 0;
+    $.ajax({
+        type:'POST',
+        url: '/myBlog/includes/posts.php',
+        data : {offset:offset},
+        dataType: 'json',
+        success: function(data){
+            if (data!= 'null') {
+               for (let i = 1; i < data.length; i++) {
+                var id = data[i].id;
+                var title = data[i].title;
+                var category = data[i].category;
+                var description = data[i].description;
+                var author = data[i].author;
+                var image = data[i].image;
+                var date = data[i].date;
+                var cards = latestCard(id,image,title,description,author,date);
+                $('#latest-container').append(cards);
+               }
+               var rmbutton = '<button class="latest-read-more">read more</button>';
+                $('#latest-container').append(rmbutton);
+            }
+        }
+    });
+}

@@ -17,3 +17,12 @@
     theme: 'snow'
   });
 </script>
+
+
+
+
+<div class="user"><div class="user-img"><img src="'+img+'" alt="user"></div><div class="user-about"><p class="username">'+username+'</p><p class="name">'+name+'</p></div><div class="delete"><button onclick="<?php deleteUser('+username+'); ?>"><i>delete</i></button></div></div>
+
+
+
+<div class="comment"><div class="comment-name">'+name+'</div><div class="comment-message">'+comment+'</div><div class="comment-date">'+date+'</div></div>

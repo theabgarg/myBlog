@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBlog</title>
+    <link rel="stylesheet" href="/myBlog/assets/css/main.css">
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/main.js"></script>
+</head>
+<body onload="loadBody()">
+    <div class="loader">
+        <div class="bar">
+            <div class="circle"></div>
+            <p>Loading</p>
+        </div>
+    </div>
+    <header>
+        <div class="logo">
+            <img src="/myBlog/assets/images/blog.svg" alt="logo">
+            <p>MyBlog</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/myBlog/index.html">home</a></li>
+                <li><a href="/myBlog/login.php">admin login</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+        <form class="searchbar">
+            <input type="text" name="search" id="search" placeholder="search...">
+            <button type="submit" class="searchbtn"><img src="assets/images/research.svg" alt="submit"></button>
+        </form>
+    </header>
+    <section>
+        <div class="search-response"></div>
+    </section>
+    <main>
+        <section class="trending">
+            <label for="trending">Trending</label>
+            <div class="container" id="trending-container">
+            </div>
+            <button id="left-arrow" class="arrow"> Left </button>
+            <button id="right-arrow" class="arrow"> Right </button>
+        </section>
+        <section class="latest">
+            <label for="latest">Latest</label>
+            <div class="container" id="latest-container">
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="info">
+            <p>By 3AS</p>
+            <p>we write blogs that matters</p>
+            <p>contact: 100</p>
+            <p><i>fb</i> <i>fb</i> <i>fb</i></p>
+        </div>
+        <form class="contact-form">
+            <label for="contact">contact us</label>
+            <input type="text" name="name" id="name" placeholder="name">
+            <input type="email" name="email" id="email" placeholder="email">
+            <input type="submit" value="submit">
+        </form>
+        <div class="sub-footer">
+            &copy;2020 BY 3AS
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

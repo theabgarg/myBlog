@@ -209,6 +209,29 @@ class user{
         }
     }
 
+
+    function changePassword($username, $oldpassword, $newPassword){
+        $this->encPass($oldpassword);
+        $password = $this->password;
+        $sql = "SELECT * FROM users WHERE (username='$username' OR email = '$username') AND password='$password'";
+        $result = $GLOBALS['conn']->query($sql);
+        if($result && $result->num_rows > 0){
+            $this->encPass($newPassword);
+            $password = $this->password;
+            $sql2 = "UPDATE users SET password='$password' WHERE username='$username'";
+            $exec = $GLOBALS['conn']->query($sql2);
+            if($result){
+                return "password updated successfully";
+            }
+            else{
+                return "maaf karna update karte hue thoda idhar udhar nikal jaata hu";
+            }
+        }
+        else{
+            return "entered password is incorrect";
+        }
+    }
+
     function authToken(){
         $binaryToken = random_bytes(32);
         $actualToken = md5($binaryToken);

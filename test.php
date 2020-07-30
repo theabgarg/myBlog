@@ -333,3 +333,17 @@
 
 
 <a href="+id+"><div class="card"><img src="+image+"><div class="content"><p class="card-title">+title+</p><p class="card-description">+description+</p><p class="author">+author+" "+date+ </p><p class="category">+category+</p></div></div></a>
+
+
+
+
+<div class="manage-post">
+    <div class="image">
+        <img src="'+image+'">
+    </div>
+    <div class="details">
+        <p class="title">'+title+'</p>
+        <p class="description">'+description+'</p>
+    </div>
+    <div class="delete"><button class="delete-post" onclick="deletePost('+id+')">delete</button></div>
+</div>

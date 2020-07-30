@@ -15,16 +15,6 @@
             <li><a href="#">Blog</a></li>
             <!-- <li><a href="#">Sign Up</a></li>
             <li><a href="#">Login</a></li> -->
-            <li>
-                <a href="#">
-                <i class="fa fa-user"></i>    
-                user
-                <i class="fa fa-chevron-down" style="font-size: 0.8em;"></i>
-                </a>
-                <ul>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="#" class="logout">Logout</a></li>
-                </ul>
-            </li>
+            
         </ul>
     </header>

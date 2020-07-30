@@ -28,8 +28,6 @@
     <script src="../assets/js/jquery.js"></script>
     <link rel="stylesheet" href="../assets/css/main2.css">
     <link rel="stylesheet" href="main.css">
-    <script src="//cdn.quilljs.com/1.3.6/quill.js"></script>
-
 </head>
 <body>
 
@@ -46,7 +44,8 @@
         </div>
 
         <section>
-            <div class="response"></div>
+            <div class="response">
+            </div>
         </section>
     </div>
 
@@ -61,18 +60,12 @@
 <!-- javascript -->
 
 
-
-
-<script src="//cdn.quilljs.com/1.3.6/quill.min.js"></script>
-
 <script>
-    var editor = new Quill('#description');
-
     var htmldata='a';
 
     function generate(){
         var token = "<?php echo $newUser->authToken();?>";
-        htmldata = "https://cseprofessor.ml/signup.php?token=" + token;
+        htmldata = "localhost/myBlog/signup.php?token=" + token;
         var td = '<input type="text" class="token-display" value="'+ htmldata +'" readonly><br>';
         var button = '<button id="cpy-btn-btn" onclick="myFunction()">copy token</button>';
         $(".response").html("");
@@ -89,31 +82,85 @@
         document.body.removeChild(aux);
     }
 
-
-    $('.new_post').click(function(){
-        var x = postform();
-        $('.response').html("");
-        $('.response').append(x);
-        // location.replace('post.php');
-    });
-
     $('.users').click(function(){
+        $('.response').html(" ");
+        console.log("i'm in!")
         <?php
-            $sql = "SELECT * FROM userDB WHERE is_admin = 0";
+            $sql = "SELECT * FROM users WHERE role='author'";
             $result = $GLOBALS['conn']->query($sql);
             if($result && $result->num_rows > 0){
                 $fetch_data = $result ->fetch_all(MYSQLI_ASSOC);
                 foreach($fetch_data as $data){
                     ?>
-                        var id = <?php echo $data['id']?>;
-                        var name = <?php echo $data['fullname']?>;
-                        var username = <?php echo $data['username']?>;
-                        postusers(id,name, username);
+                        var img ="/myBlog/"+"<?php echo $data['profile_pic'] ?>";
+                        var name = "<?php echo $data['name']?>";
+                        var username = "<?php echo $data['username']?>";
+                        var usercard = postUser(img,name, username);
+                        $('.response').append(usercard);
                     <?php
                 }
+            }
+            else{
+                ?>
+                    console.log("i failed!!");
+                <?php
             } 
         ?>
     });
+    
+    
+    $('.posts').click(function(){
+        $('.response').html("");
+        var offset = 0;
+        console.log("i'm in!")
+        $.ajax({
+            type:'POST',
+            url: '/myBlog/includes/posts.php',
+            data : {offset:offset},
+            dataType: 'json',
+            success: function(data){
+                if (data!= 'null') {
+                for (let i = 1; i < data.length; i++) {
+                    var id = data[i].id;
+                    var title = data[i].title;
+                    var category = data[i].category;
+                    var description = data[i].description;
+                    var author = data[i].author;
+                    var image = data[i].image;
+                    var date = data[i].date;
+                    var cards = '<div class="manage-post"><div class="image"><img src="'+image+'"></div><div class="details"><p class="title">'+title+'</p><p class="description">'+description+'</p></div><div class="delete"><button class="delete-post" onclick="deletePost('+id+')">delete</button></div></div>';
+                    $('.response').append(cards);
+                }
+                }
+            }
+        });
+    });
+
+    function deleteUser(name){
+        $.ajax({
+            type:'POST',
+            url: 'deleteuser.php',
+            data : {username:name},
+            dataType: 'html',
+            success: function(data){
+                location.reload();
+            }
+        });
+    }
+
+    function deletePost(id){
+        $.ajax({
+            type:'POST',
+            url: 'deletePost.php',
+            data : {id:id},
+            dataType: 'html',
+            success: function(data){
+                $('.posts').trigger("click");
+                console.log("deleted");
+            }
+        });
+    }
+
 </script>
 <script src="../assets/js/main.js"></script>
 </body>

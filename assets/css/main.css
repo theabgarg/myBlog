@@ -1,0 +1,889 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ffc;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+/* loader */
+
+.loader{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+    background: #000;
+    transition: ease-in-out;
+}
+
+.loader .bar{
+    position: relative;
+    height: 2px;
+    width: 90%;
+    background: #fff;
+}
+
+.loader .bar .circle{
+    position: absolute;
+    top: -30px;
+    margin-left: -30px;
+    height: 60px;
+    width: 60px;
+    left: 0;
+    background: #fff;
+    border-radius: 30%;
+    animation: move 3s infinite;
+}
+
+.loader .bar p{
+    width: 100%;
+    top: -30px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    color: #347fc3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    background: none;
+}
+
+@keyframes move{
+    0%{
+        left: 0;
+    }
+    50%{
+        left: 100%;
+        transform: rotate(450deg);
+        /* width: 150px;
+        height: 150px; */
+    }
+    75%{
+        left: 100%;
+        transform: rotate(450deg);
+        /* width: 150px;
+        height: 150px; */
+    }
+    100%{
+        right: 100%;
+    }
+}
+
+
+/* header css */
+
+
+
+header{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    height: 60px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px grey;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 999;
+}
+
+/* the logo div */
+
+header .logo{
+    flex: 1;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    cursor: pointer;
+    background: none;
+}
+
+/* logo image */
+
+header .logo img{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    background: none;
+}
+
+/* logo text */
+
+header .logo p{
+    margin: 0 0 0 10px;
+    background: none;
+}
+
+/* header navigation menu */
+
+header nav{
+    flex: 2;
+    background: none;
+}
+
+header nav ul{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    text-transform: capitalize;
+    background: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: inherit;
+    background: none;
+}
+
+header nav ul li{
+    list-style-type: none;
+    background: none;
+}
+
+
+
+/* header search bar */
+
+header .searchbar{
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: none;
+}
+
+header .searchbar #search{
+    height: 50%;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    outline: none;
+}
+
+header .searchbar .searchbtn{
+    display: block;
+    overflow: hidden;
+    height: 20px;
+    width: 20px;
+    border: none;
+    margin-left: 5px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+header .searchbar .searchbtn img{
+    width: 100%;
+    height: 100%;
+    background: none;
+}
+
+
+
+/* header End */
+
+.search-response{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+    align-self: center;
+}
+
+.search-response .card{
+    height: 402px;
+    width: 300px;
+    /* border: 1px solid black; */
+    position: relative;
+    background: #ffc;
+    transition: ease-in-out 0.2s;
+    box-shadow: -3px -3px 5px #fff, 3px 3px 5px grey;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: auto 10px;
+}
+
+.search-response .card .card-img{
+    display: flex;
+    width: 300px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-response .card .card-img img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.search-response .card .card-content{
+    display: grid;
+    height: 200px;
+    grid-template-columns: 1fr;
+    padding: 0 5px;
+    grid-template-rows: 1fr 1fr 50px;
+}
+
+.search-response .card .card-content .card-title{
+    justify-self: center;
+    align-self: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: initial;
+}
+
+.search-response .card .card-content .card-description{
+    font-weight: 300;
+    text-transform: initial;
+    justify-self: center;
+    align-self: center;
+}
+
+.search-response .container .card .card-content .card-details{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+
+
+
+
+/* main area */
+
+
+/* trending section */
+
+.trending{
+    display: flex;
+    min-height: 500px;
+    height: 50vh;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.trending label{
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-bottom: 0.5px solid black;
+}
+
+.trending .container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* cards */
+
+.trending .container .card{
+    height: 402px;
+    width: 300px;
+    /* border: 1px solid black; */
+    display: none;
+    position: absolute;
+    background: #ffc;
+    transition: ease-in-out 0.2s;
+    box-shadow: -3px -3px 5px #fff, 3px 3px 5px grey;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+/* card image */
+
+.trending .container .card .card-img{
+    display: flex;
+    width: 300px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.trending .container .card .card-img img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/* card content */
+
+.trending .container .card .card-content{
+    display: grid;
+    height: 200px;
+    grid-template-columns: 1fr;
+    padding: 0 5px;
+    grid-template-rows: 1fr 1fr 50px;
+}
+
+.trending .container .card .card-content .card-title{
+    justify-self: center;
+    align-self: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: initial;
+}
+
+.trending .container .card .card-content .card-description{
+    font-weight: 300;
+    text-transform: initial;
+    justify-self: center;
+    align-self: center;
+}
+
+.trending .container .card .card-content .card-details{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+/* css for active card */
+
+.card.active{
+    display: block !important;
+    z-index: 3;
+}
+
+/* css for prev card */
+
+.card.prev{
+    transform: translateX(-200px) scale(0.9);
+    opacity: 0.5;
+    display: block !important;
+    z-index: 2;
+}
+
+/* css for next card */
+
+.card.next{
+    transform: translateX(200px) scale(0.9);
+    opacity: 0.5;
+    display: block !important;
+    z-index: 2;
+}
+
+
+/* card nav arrows */
+
+.trending .arrow{
+    position: absolute;
+    padding: 10px 20px;
+    transform: translateY(-50%);
+    background: #ffc;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    border: none;
+    cursor: pointer;
+    box-shadow: -2px -4px 4px #fff, 2px 4px 4px #000;
+    outline: none;
+    border-radius: 20px;
+}
+
+.trending .arrow:hover{
+    transform: translateY(calc(-50% + 2px));
+    box-shadow: -1px -2px 4px #fff, 1px 2px 4px #000;
+}
+
+.trending .arrow:active{
+    transform: translateY(calc(-50% + 4px));
+    box-shadow: inset -1px -2px 4px #fff,inset 1px 2px 4px #000;
+}
+
+.trending #left-arrow{
+    left: 0;
+    top: 50%;
+    margin-left: 10px;
+    z-index: 99;
+}
+
+.trending #right-arrow{
+    right: 0;
+    top: 50%;
+    margin-right: 10px;
+    z-index: 99;
+}
+
+
+
+
+/* trending section end */
+
+
+/* latest section */
+
+.latest{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin-top: 20px;
+}
+
+.latest label{
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-bottom: 0.5px solid black;
+}
+
+
+.latest .container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 100px;
+    justify-items: center;
+    align-items: center;
+}
+
+.latest .container .latest-card{
+    margin: 20px;
+    height: 402px;
+    width: 300px;
+    /* border: 1px solid black; */
+    background: #ffc;
+    transition: ease-in-out 0.2s;
+    box-shadow: -3px -3px 5px #fff, 3px 3px 5px #544;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.latest .container .latest-card .latest-card-img{
+    display: flex;
+    width: 300px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.latest .container .latest-card .latest-card-img img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/* card content */
+
+.latest .container .latest-card .latest-card-content{
+    display: grid;
+    height: 200px;
+    grid-template-columns: 1fr;
+    padding: 0 5px;
+    grid-template-rows: 1fr 1fr 50px;
+}
+
+.latest .container .latest-card .latest-card-title{
+    justify-self: center;
+    align-self: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: initial;
+}
+
+.latest .container .latest-card .latest-card-content .latest-card-description{
+    font-weight: 300;
+    text-transform: initial;
+    justify-self: center;
+    align-self: center;
+}
+
+.latest .container .latest-card .latest-card-content .latest-card-details{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.latest .container .latest-read-more{
+    grid-column: 1/4;
+    padding: 10px 30px;
+    background: #ffc;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    border: none;
+    cursor: pointer;
+    box-shadow: -2px -4px 4px #fff, 2px 4px 4px #000;
+    outline: none;
+    border-radius: 20px;
+}
+
+.latest .container .latest-read-more:hover{
+    box-shadow: -1px -2px 4px #fff, 1px 2px 4px #000;
+    transform: translateY(2px);
+}
+
+.latest .container .latest-read-more:active{
+    box-shadow: inset -1px -2px 4px #fff, inset 1px 2px 4px #000;
+    transform: translateY(4px);
+}
+
+/* latest section end */
+
+
+/* main section end */
+
+
+/* footer */
+
+
+footer{
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 100px;
+    justify-items: center;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 -2px 4px black;
+    margin-top: 5px;
+}
+
+footer .info{
+    font-size: 30px;
+    text-transform: capitalize;
+    text-align: center;
+    background: none;
+}
+
+footer .info p,i{
+    background: none;
+}
+
+footer .contact-form{
+    display: flex;
+    flex-direction: column;
+    background: none;
+}
+
+footer .contact-form label{
+    text-align: center;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    background: none;
+}
+
+footer .contact-form input{
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid black;
+    font-size: 20px;
+    outline: none;
+    margin: 5px auto;
+    text-align: center;
+    background: none;
+}
+
+footer .contact-form input[type=submit]{
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: greenyellow;
+    padding: 5px 20px;
+}
+
+footer .sub-footer{
+    grid-column: 1/3;
+    font-size: 30px;
+    color: grey;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    background: none;
+}
+
+@media (max-width:1100px){
+    .latest .container{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .latest .container .latest-read-more{
+        position: relative;
+        bottom: 0;
+    }
+    footer{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:800px){
+    .card.prev{
+        display:none !important;
+    }
+    
+    /* css for next card */
+    
+    .card.next{
+        display: none !important;
+    }
+
+    header nav{
+        display:none;
+    }
+}
+
+@media (max-width:600px){
+    .trending .arrow{
+        width: 20%;
+        height: 100%;
+        padding: none;
+        margin: none;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        color: transparent;
+    }
+
+    .trending .arrow:hover{
+        box-shadow: none;
+
+    }
+
+    .trending .arrow:active{
+        border:none;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .info{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .contact-form{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .sub-footer{
+        font-size: 20px;
+        letter-spacing: 2px;
+        word-spacing: 4px;
+    }
+
+}
+
+
+
+/* single page */
+
+.title{
+    width:100%;
+    text-align: center;
+    /* color:white; */
+    font-size:50px;
+    text-transform: capitalize;
+}
+.image{
+    width:500px;
+    height: 500px;
+    margin:20px auto;
+}
+
+.image img{
+    height:100%;
+    width:100%;
+}
+.content{
+    /* color:white ; */
+    font-size:30px;
+    margin-bottom:50px;
+}
+
+
+/* user section */
+
+.user-section{
+    margin: 100px 0;
+    width: 100%;
+    display: flex;
+    height: 50px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    transition: ease-in-out 1s;
+}
+
+.user-section .like{
+    border-right: 1px solid black;
+    flex: 1;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-section .like p:hover{
+    transform: scale(2);
+}
+
+.user-section .share{
+    flex: 1;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid black;
+}
+
+.user-section .share p:hover{
+    transform: scale(2);
+}
+
+.user-section .report{
+    flex: 1;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-section .report p:hover{
+    transform: scale(2);
+}
+
+
+/* comment section */
+
+
+.comment-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.comments{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.comments .comment{
+    padding: 20px 0;
+    width: 90%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.comments .comment .comment-name{
+    flex: 1;
+    width: 100%;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 800;
+    letter-spacing: 2px;
+    padding: 0 20px;
+}
+
+.comments .comment .comment-message{
+    flex: 2;
+    width: 100%;
+    padding: 10px 20px;
+    text-transform: capitalize;
+}
+
+.comments .comment .comment-date{
+    flex: 1;
+    width: 100%;
+    padding: 0 20px;
+
+}
+
+.submit-comment{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-comment input[type=text], input[type=email], textarea{
+    width: 70%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.submit-comment input[type=submit]{
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: greenyellow;
+    margin: 10px auto;
+}

@@ -3,7 +3,7 @@
     if(isset($_GET['token'])){
         $token = $_GET['token'];
     }else{
-        die("token leke aa pehle");
+        die("<p style='text-align:center; font-size:20px;'>No Token Detected!</p>");
     }
 
     include("conn/conn.php");
@@ -78,9 +78,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>signup form</title>
+    <link rel="stylesheet" href="signup.css">
 </head>
 <body>
-    <form method="post" enctype="multipart/form-data">
+    <form autocomplete="off" method="post" enctype="multipart/form-data">
         <input type="text" name="token" value="<?php echo $token; ?>" readonly><br/>
         <input type="text" name="username" placeholder="username"><br/>
         <input type="text" name="name" placeholder="name"><br/>

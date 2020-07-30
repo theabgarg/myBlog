@@ -288,6 +288,67 @@ body{
 
 
 
+
+
+.response .card{
+    height: 402px;
+    width: 300px;
+    /* border: 1px solid black; */
+    position: relative;
+    background: #ffc;
+    transition: ease-in-out 0.2s;
+    box-shadow: -3px -3px 5px #fff, 3px 3px 5px grey;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: auto 10px;
+}
+
+.response .card .card-img{
+    display: flex;
+    width: 300px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.response .card .card-img img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.response .card .card-content{
+    display: grid;
+    height: 200px;
+    grid-template-columns: 1fr;
+    padding: 0 5px;
+    grid-template-rows: 1fr 1fr 50px;
+}
+
+.response .card .card-content .card-title{
+    justify-self: center;
+    align-self: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: initial;
+}
+
+.response .card .card-content .card-description{
+    font-weight: 300;
+    text-transform: initial;
+    justify-self: center;
+    align-self: center;
+}
+
+.response .container .card .card-content .card-details{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+
+
 .manage-post{
     width: 80%;
     height: 100px;

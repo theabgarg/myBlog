@@ -1,120 +1,125 @@
-*{
+* {
     margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-	background: rgb(8, 1, 1);
-	height: 100vh;
-	width: 100vw;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+body {
+    background: url(/assets/images/MoonBook.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-a{
-	text-decoration: none;
-	color: inherit;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-
-input{
-	border-radius: 25px;
-	padding: 20px 5px;
-	margin: 5px;
-	text-align: center;
-	width: 90%;
-	border: 1px solid;
-	border-color: grey;
-	font-weight: bolder;
-	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+input {
+    border-radius: 25px;
+    padding: 20px 5px;
+    margin: 5px;
+    text-align: center;
+    width: 90%;
+    border: 1px solid;
+    border-color: grey;
+    font-weight: bolder;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
-input:hover{
-	border-radius: 0px;
+input:hover {
+    border-radius: 0px;
 }
 
-input:focus{
+input:focus {
     outline: none;
 }
 
-.submit{
-	margin-top: 10px;
-	border-radius: 50px;
-	padding: 10px 20px;
-	width: 40%;
-	font-size: 20px;
-	font-weight: bolder;
-	background-color: #7cc97c;
-	border: 0px;
+.submit {
+    margin-top: 10px;
+    border-radius: 50px;
+    padding: 10px 20px;
+    width: 40%;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: #7cc97c;
+    border: 0px;
 }
 
-.login_border{
+.login_border {
     margin: auto;
     width: 40%;
     /* height: 50%; */
-	padding: 2%;
-	background: rgb(90, 78, 66);
+    padding: 2%;
+    background: rgb(90, 78, 66);
     border-radius: 50px;
     display: block;
 }
 
-.heading{
-	text-align: center;
-	font-size: 50px;
-	margin-top: 50px;
-	font-weight: bolder;
-	font-family: sans-serif;
+.heading {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+    font-weight: bolder;
+    font-family: "Times New Roman", Times, serif;
+    color: #fff;
 }
 
-.form_input{
-	text-align: center;
-	margin-top: 20px;
+.form_input {
+    text-align: center;
+    margin-top: 20px;
 }
 
-.login_with{
-	text-align: center;
-	margin-top: 30px;
+.login_with {
+    text-align: center;
+    margin-top: 30px;
 }
 
-.or_login_with{
-	font-family: sans-serif;
-	font-size: 15px;
-	color: #d9d9d9;
-	font-weight: bolder;
+.or_login_with {
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #d9d9d9;
+    font-weight: bolder;
 }
 
-.fb{
-	border-radius: 40px;
+.fb {
+    border-radius: 40px;
 }
 
-.signup{
-	text-align: center;
-	font-size: 30px;
-	margin-top:20%;
-	font-weight: bolder;
-	font-family: sans-serif;
+.signup {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20%;
+    font-weight: bolder;
+    font-family: sans-serif;
 }
 
-@media screen and (max-width: 600px){
-	.login_border{
-		width: 90%;
+@media screen and (max-width: 600px) {
+    body {
+        background: #fff;
+    }
+
+    .login_border {
+        width: 90%;
         margin: 0;
         margin-top: 50px;
-		border-radius: 0;
-	}
+        border-radius: 0;
+    }
 
-	input{
-		width: 80%;
-	}
+    input {
+        width: 80%;
+    }
 
-	.submit{
-		width: 40%;
-	}
+    .submit {
+        width: 40%;
+    }
 
-	.login_with{
-		margin-top: 50px;
-	}
-
+    .login_with {
+        margin-top: 50px;
+    }
 }

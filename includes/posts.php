@@ -1,5 +1,5 @@
 <?php
-include_once($_SERVER["DOCUMENT_ROOT"]."/myBlog/conn/conn.php");
+include_once($_SERVER["DOCUMENT_ROOT"]."/conn/conn.php");
 
     $offset = $_POST['offset'];
 

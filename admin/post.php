@@ -5,13 +5,13 @@
 
         }
         else{
-            header('location: /myblog/login.php');
+            header('location: /login.php');
         }
     }else{
-        header('location: /myblog/login.php');
+        header('location: /login.php');
     }
-    include($_SERVER["DOCUMENT_ROOT"]."/myBlog/api/user.api.php");
-    include($_SERVER["DOCUMENT_ROOT"]."/myBlog/conn/conn.php");
+    include($_SERVER["DOCUMENT_ROOT"]."/api/user.api.php");
+    include($_SERVER["DOCUMENT_ROOT"]."/conn/conn.php");
 
     $newUser = new user;
 ?>
@@ -39,12 +39,12 @@
 
       $t = time();
 
-      $target_dir = $_SERVER["DOCUMENT_ROOT"]."/myBlog/assets/images/post/";
+      $target_dir = $_SERVER["DOCUMENT_ROOT"]."/assets/images/post/";
         $extension =  $target_dir . basename($_FILES["image"]["name"]);
         $imageFileType = strtolower(pathinfo($extension, PATHINFO_EXTENSION));
         $target_output = $username.$t.".".$imageFileType;
         $target_file = $target_dir . $username . $t . "." . $imageFileType;
-        $target_output2 = "/myBlog/assets/images/post/".$target_output;
+        $target_output2 = "/assets/images/post/".$target_output;
         if(file_exists($target_file)){
             die("image with same name already exist");
         }

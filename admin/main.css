@@ -1,15 +1,16 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Rouge+Script");
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100%;
     height: 100%;
 }
 
-.sidebar{
+.sidebar {
     display: flex;
     top: 0;
     left: 0;
@@ -20,35 +21,46 @@ body{
     background: black;
 }
 
-.main-content{
+.main-content {
     width: 100%;
     min-height: 100%;
-    background: black;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.main-content .welcome{
+.main-content .welcome {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.main-content .welcome p{
-    padding: 5px auto;
-    font-size: 30px;
-    color: coral;
+.main-content .welcome p {
+    font-size: 50px;
+    color: #000;
+    font-weight: bolder;
+    margin-top: 50px;
+    font-family: "Rouge Script", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    border: 4px solid black;
+    padding: 20px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
-.main-content .welcome p span{
-    color: chartreuse;
+.main-content .welcome p span {
+    font-family: cursive, monospace, serif;
+    color: brown;
     text-transform: uppercase;
 }
 
-.main-content section{
+.main-content section {
     width: 100%;
 }
 
-.main-content section .response{
+.main-content section .response {
     width: 100%;
     min-height: 50vh;
     display: flex;
@@ -57,14 +69,14 @@ body{
     align-items: center;
 }
 
-.main-content section .response .token-display{
+.main-content section .response .token-display {
     width: 80%;
     font-size: 20px;
-    color: darkolivegreen;
+    color: #117b6f;
 }
 
-.main-content section .response #cpy-btn-btn{
-    background: greenyellow;
+.main-content section .response #cpy-btn-btn {
+    background: #117b6f;
     border-radius: 10px;
     padding: 10px;
     border: 1px solid green;
@@ -74,12 +86,11 @@ body{
     outline: none;
 }
 
-.main-content section .response #cpy-btn-btn:hover{
+.main-content section .response #cpy-btn-btn:hover {
     cursor: pointer;
 }
 
-
-.buttons{
+.buttons {
     display: flex;
     width: 100%;
     height: 100%;
@@ -87,11 +98,11 @@ body{
     align-items: center;
 }
 
-.buttons:hover{
-    background: darkgoldenrod;
+.buttons:hover {
+    background: rgb(209, 206, 206);
 }
 
-.buttons a{
+.buttons a {
     height: 100%;
     width: 100%;
     display: flex;
@@ -99,28 +110,28 @@ body{
     align-items: center;
     font-size: 20px;
     text-transform: capitalize;
-    color: brown;
+    color: white;
     cursor: pointer;
 }
 
-.new-post-form{
-    width:50%;
+.new-post-form {
+    width: 50%;
     margin: auto;
     padding: 10px;
 }
 
-.new-post-form label{
+.new-post-form label {
     display: block;
     width: 100%;
     text-align: center;
     font-size: 20px;
     font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     color: darkseagreen;
     margin: 30px auto 0px auto;
 }
 
-.new-post-form input{
+.new-post-form input {
     width: 100%;
     text-align: center;
     border: none;
@@ -131,7 +142,7 @@ body{
     color: white;
 }
 
-.new-post-form input[type=checkbox]{
+.new-post-form input[type="checkbox"] {
     width: auto;
     border-radius: 10px;
     text-align: none;
@@ -140,7 +151,7 @@ body{
     margin: 30px auto;
 }
 
-.new-post-form input[type=submit]{
+.new-post-form input[type="submit"] {
     width: fit-content;
     padding: 5px 10px;
     background-color: greenyellow;
@@ -149,30 +160,32 @@ body{
     border-radius: 10px;
 }
 
-.new-post-form input[type=submit], .new-post-form input[type=file], .new-post-form input[type=checkbox], .new-post-form select{
+.new-post-form input[type="submit"],
+.new-post-form input[type="file"],
+.new-post-form input[type="checkbox"],
+.new-post-form select {
     cursor: pointer;
 }
 
-.new-post-form input:focus{
+.new-post-form input:focus {
     outline: none;
 }
 
-.new-post-form .publish-now{
+.new-post-form .publish-now {
     display: inline;
     margin-left: 10px;
     font-size: 20px;
     font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     color: darkseagreen;
 }
 
-.new-post-form #image{
+.new-post-form #image {
     width: fit-content;
     margin: 0 auto;
 }
 
-
-.post-form{
+.post-form {
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -181,32 +194,35 @@ body{
     padding: 20px 0;
 }
 
-.post-form input{
-    width: 70%;
+.post-form input {
+    width: 50%;
     height: 40px;
     padding: 5px 10px;
     text-align: center;
     font-size: 20px;
     border-radius: 10px;
-    border: none;
+    border: 1px solid black;
     outline: none;
 }
 
-.post-form select{
+.post-form input[type="file"],
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.post-form select {
     height: 40px;
     border: none;
     border-radius: 10px;
     font-size: 20px;
 }
 
-.post-form input[type=submit]{
+.post-form input[type="submit"] {
     width: 40%;
     cursor: pointer;
 }
 
-
-
-.user{
+.user {
     width: 80%;
     height: 100px;
     display: flex;
@@ -220,7 +236,7 @@ body{
     margin: 20px auto;
 }
 
-.user .user-img{
+.user .user-img {
     flex: 1;
     height: 100%;
     display: flex;
@@ -228,28 +244,28 @@ body{
     align-items: center;
 }
 
-.user .user-img img{
+.user .user-img img {
     height: 100px;
     width: 100px;
     border-radius: 50%;
 }
 
-.user .user-about{
+.user .user-about {
     flex: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
     color: white;
     font-size: 20px;
     text-transform: uppercase;
 }
 
-.user .user-about p{
+.user .user-about p {
     margin: 10px auto;
 }
 
-.user .delete{
+.user .delete {
     flex: 1;
     height: 100%;
     display: flex;
@@ -257,7 +273,7 @@ body{
     align-items: center;
 }
 
-.user .delete button{
+.user .delete button {
     padding: 10px 20px;
     background-color: red;
     color: white;
@@ -270,25 +286,20 @@ body{
     cursor: pointer;
 }
 
-
-
 /* mobile media queries */
 
-
-@media only screen and (max-width:750px){
-    .sidebar{
+@media only screen and (max-width: 750px) {
+    .sidebar {
         display: none;
         width: 50%;
     }
 
-    .main-content{
+    .main-content {
         width: 100%;
     }
 }
 
-
-
-.manage-post{
+.manage-post {
     width: 80%;
     height: 100px;
     display: flex;
@@ -298,17 +309,17 @@ body{
     margin-bottom: 50px;
 }
 
-.manage-post .image{
+.manage-post .image {
     flex: 1;
     height: 100%;
 }
 
-.manage-post .image img{
+.manage-post .image img {
     height: 100%;
     width: 100%;
 }
 
-.manage-post .details{
+.manage-post .details {
     flex: 2;
     display: flex;
     justify-content: center;
@@ -316,27 +327,26 @@ body{
     flex-direction: column;
 }
 
-.manage-post .details .title{
+.manage-post .details .title {
     font-size: 20px;
     font-weight: 800;
     letter-spacing: 2px;
     margin: 10px;
 }
 
-.manage-post .delete{
+.manage-post .delete {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.manage-post .delete button{
+.manage-post .delete button {
     padding: 10px;
     border: none;
     background: red;
     border-radius: 20px;
     font-size: 20px;
     cursor: pointer;
-    box-shadow: -2px -2px 5px yellow,
-    2px 2px 5px grey;
+    box-shadow: -2px -2px 5px yellow, 2px 2px 5px grey;
 }

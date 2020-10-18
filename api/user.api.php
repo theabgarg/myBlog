@@ -127,7 +127,8 @@ class user{
 
     function checkEmail($email){
         $sql = "SELECT * FROM users WHERE email = '$email'";
-        if ($result = $GLOBALS['conn']->query($sql)){
+        $result = $GLOBALS['conn']->query($sql);
+        if ($result){
             if ($result->num_rows > 0) {
                 return false;
             }

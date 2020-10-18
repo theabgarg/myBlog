@@ -69,7 +69,7 @@
         console.log("i'm in!")
         $.ajax({
             type:'POST',
-            url: '/myBlog/includes/posts.php',
+            url: '/includes/posts.php',
             data : {offset:offset},
             dataType: 'json',
             success: function(data){

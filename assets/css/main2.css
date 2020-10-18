@@ -1,106 +1,113 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-html, body{
+html,
+body {
     height: 100%;
-    background: greenyellow;
+    /* background: greenyellow; */
     animation: fadein 0.5s;
 }
 
-h1,h2,h3,h4{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-a:hover{
+a:hover {
     color: honeydew;
-    animation: 0.2s shake;
 }
 
-.clearfix::after{
-    content: '';
+.clearfix::after {
+    content: "";
     display: block;
     clear: both;
 }
 
-.btn{
-    padding: .5rem 1rem;
+.btn {
+    padding: 0.5rem 1rem;
     background: maroon;
     color: white;
-    border-radius: .25rem;
+    border-radius: 0.25rem;
 }
 
-  @keyframes fadein {
-    from { opacity: 0;
-    transform: scale(0.1) rotate(0);}
-    to   { opacity: 1;
-    transform: scale(1) rotate(360deg);}
-  }
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: scale(0.1) rotate(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) rotate(360deg);
+    }
+}
 
-  @keyframes shake{
-    0% { transform: translateX(0); }
-    10%,30%,50%,70%,90% { transform: translateX(5px); }
-    20%,40%,60%,80% { transform: translateX(-5px); }
-    100% { transform: translateX(0px); }
-  }
-
-
-
-
-
-
-
-
-
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(5px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
 
 /* header */
 
-
-
-
-
-
-
-header{
-    background: #91e90e;
+header {
+    background: #117b6f;
     height: 66px;
 }
 
-header *{
+header * {
     color: white;
 }
 
-header .logo{
+header .logo {
     float: left;
     height: inherit;
     margin-left: 2em;
     cursor: pointer;
 }
 
-header .logo img{
+header .logo img {
     float: left;
     margin: 9px;
 }
 
-header .logo-text{
+header .logo-text {
     float: left;
     margin: 9px;
     font-family: cursive;
 }
 
-header .logo-text span{
-    color: mediumblue;
-    font-family: 'Courier New', Courier, monospace;
+header .logo-text span {
+    color: burlywood;
+    font-family: "Courier New", Courier, monospace;
 }
 
-header ul{
+header ul {
     float: right;
     margin: 0;
     padding: 0;
@@ -108,12 +115,12 @@ header ul{
     text-align: center;
 }
 
-header ul li{
+header ul li {
     float: left;
     position: relative;
 }
 
-header ul li ul{
+header ul li ul {
     position: absolute;
     top: 66px;
     right: 0;
@@ -121,120 +128,88 @@ header ul li ul{
     display: none;
 }
 
-header ul li:hover ul{
+header ul li:hover ul {
     display: block;
 }
 
-header ul li:active ul{
+header ul li:active ul {
     display: block;
 }
 
-header ul li ul li{
+header ul li ul li {
     width: 100%;
 }
 
-header ul li ul li a{
+header ul li ul li a {
     padding: 10px;
     background: #91e90e;
 }
 
-header ul li ul li a.logout{
+header ul li ul li a.logout {
     color: red;
 }
 
-header ul li a{
+header ul li a {
     display: block;
     padding: 21px;
     font-size: 1.1em;
     text-decoration: none;
 }
 
-header ul li a:hover{
+/* header ul li a:hover {
     background: rgb(100, 3, 3);
-}
+} */
 
-header .menu-toggle{
+header .menu-toggle {
     display: none;
 }
 
-header .menu-close{
+header .menu-close {
     display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* post slider */
 
-
-
-
-.page-wrapper{
+.page-wrapper {
     min-height: 50%;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* card */
 
-.post{
+.post {
     height: 400px;
     width: 300px;
     border: 1px solid red;
     margin: 10px;
 }
 
-.post a .post_image{
+.post a .post_image {
     width: 100%;
     height: 300px;
 }
 
-.post a .post_image img{
+.post a .post_image img {
     width: 100%;
     height: 100%;
 }
 
-.post a .post-preview{
+.post a .post-preview {
     width: 100%;
     text-align: center;
 }
 
-.post a .post-preview h2{
+.post a .post-preview h2 {
     width: 100%;
     text-align: center;
 }
-
-
-
-
-
-
-
-
 
 /* page wrapper */
 
-.page-wrapper{
+.page-wrapper {
     width: 100%;
 }
 
-.page-wrapper .response{
+.page-wrapper .response {
     width: 100%;
 }
 
@@ -247,16 +222,15 @@ header .menu-close{
 
 /* card */
 
-.card-link{
+.card-link {
     display: none;
-    
 }
 
-.card-link:hover{
-    color:black;
+.card-link:hover {
+    color: black;
 }
 
-.card{
+.card {
     width: 300px;
     height: 400px;
     overflow: hidden;
@@ -264,24 +238,17 @@ header .menu-close{
     margin: 10px auto;
 }
 
-.card:hover{
-    box-shadow: 
-    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-  0 12.5px 10px rgba(0, 0, 0, 0.06),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-  0 100px 80px rgba(0, 0, 0, 0.12)
-;
+.card:hover {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
     animation: 0.2s shake;
 }
 
-.card img{
+.card img {
     width: 100%;
     height: 200px;
 }
 
-.card .content{
+.card .content {
     width: 100%;
     text-align: center;
     font-size: 20px;
@@ -290,65 +257,53 @@ header .menu-close{
     background: white;
 }
 
-.card .content .card-title{
+.card .content .card-title {
     text-decoration: underline;
     font-weight: bolder;
 }
 
-.card .content .card-description{
+.card .content .card-description {
     font-size: 16px;
 }
 
-.card .content .author::before{
-    content : "By: ";
+.card .content .author::before {
+    content: "By: ";
     font-weight: bold;
 }
 
-.card .content .category::before{
-    content:"category: ";
+.card .content .category::before {
+    content: "category: ";
     font-weight: bold;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* footer */
 
-
-
-.footer{
+.footer {
     bottom: 0;
     background: #91e90e;
     color: #fff;
     position: relative;
 }
 
-.footer .footer-content{
+.footer .footer-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr) );
-    grid-template-rows: repeat(auto-fit, minmax(300px, 400px) );
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(300px, 400px));
     justify-self: center;
 }
 
-.footer .footer-content .footer-section{
+.footer .footer-content .footer-section {
     justify-self: center;
     align-self: center;
     text-align: start;
 }
 
-.footer .footer-content .about .company-name{
+.footer .footer-content .about .company-name {
     font-size: 30px;
     letter-spacing: 3px;
 }
 
-.footer .footer-content .footer-section p{
+.footer .footer-content .footer-section p {
     text-transform: capitalize;
     font-size: 20px;
     font-weight: 300;
@@ -356,7 +311,7 @@ header .menu-close{
     margin-bottom: 10px;
 }
 
-.footer .footer-bottom{
+.footer .footer-bottom {
     background: #000;
     color: #686868;
     width: 100%;
@@ -368,58 +323,41 @@ header .menu-close{
     padding-top: 20px;
 }
 
-
-
-
-
-
-
-
-
-
 /* media query */
 
-
-
-
-
-
-
-
-@media only screen and (max-width:900px){
-    header ul li a{
+@media only screen and (max-width: 900px) {
+    header ul li a {
         padding: 21px 10px;
     }
 }
 
-@media only screen and (max-width:750px){
-
-    header{
+@media only screen and (max-width: 750px) {
+    header {
         position: relative;
     }
 
-    header ul{
+    header ul {
         width: 100%;
         background: #000;
         display: none;
     }
 
-    header ul li{
+    header ul li {
         width: 100%;
     }
 
-    header ul li ul{
+    header ul li ul {
         position: static;
         display: none;
         width: 100%;
     }
 
-    header ul li ul li a{
-        padding:5px;
+    header ul li ul li a {
+        padding: 5px;
         padding-left: 50px;
     }
 
-    header .menu-toggle{
+    header .menu-toggle {
         display: block;
         position: absolute;
         right: 20px;
@@ -427,7 +365,7 @@ header .menu-close{
         font-size: 1.9em;
     }
 
-    header .menu-close{
+    header .menu-close {
         display: none;
         position: absolute;
         right: 20px;
@@ -435,15 +373,15 @@ header .menu-close{
         font-size: 1.9em;
     }
 
-    header .logo{
+    header .logo {
         margin-left: 0.5em;
     }
 
-    header .logo img{
+    header .logo img {
         margin: 9px 4px;
     }
 
-    header .logo-text{
+    header .logo-text {
         margin: 9px 4px;
     }
 }

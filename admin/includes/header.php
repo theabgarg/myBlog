@@ -8,7 +8,7 @@
         <i class="fa fa-times menu-close"></i>
 
         <ul class="nav">
-            <li><a href="changePassword.php">Edit-profile</a></li>
-            <li><a href="/myBlog/logout.php">LogOut</a></li>
+            <li><a href="changePassword.php">Edit Profile</a></li>
+            <li><a href="/logout.php">Log Out</a></li>
         </ul>
     </header>

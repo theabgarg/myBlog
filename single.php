@@ -48,20 +48,22 @@ include_once('conn/conn.php');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyBlog</title>
-    <link rel="stylesheet" href="/myBlog/assets/css/main.css">
+    <title><?php echo $title;?></title>
+    <meta name="keywords" content="<?php echo $tags;?>">
+    <meta name="author" content="<?php echo $author;?>">
+    <link rel="stylesheet" href="/assets/css/main.css">
     <script src="assets/js/jquery.js"></script>
 </head>
 <body>
 <header>
         <div class="logo">
-            <img src="/myBlog/assets/images/blog.svg" alt="logo">
+            <img src="/assets/images/blog.svg" alt="logo">
             <p>MyBlog</p>
         </div>
         <nav>
             <ul>
-                <li><a href="/myBlog/index.html">home</a></li>
-                <li><a href="/myBlog/login.php">admin login</a></li>
+                <li><a href="/index.html">home</a></li>
+                <li><a href="/login.php">admin login</a></li>
                 <li><a href="#">contact</a></li>
             </ul>
         </nav>

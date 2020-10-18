@@ -9,6 +9,6 @@
 
         <ul class="nav">
             <li><a href="changePassword.php">Edit-profile</a></li>
-            <li><a href="/myBlog/logout.php">LogOut</a></li>
+            <li><a href="/logout.php">LogOut</a></li>
         </ul>
     </header>

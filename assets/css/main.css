@@ -1,14 +1,15 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Rouge+Script");
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
-    background: #ffc;
+body {
+    background: #fff;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
@@ -16,7 +17,7 @@ a{
 
 /* loader */
 
-.loader{
+.loader {
     display: flex;
     position: fixed;
     width: 100%;
@@ -30,14 +31,14 @@ a{
     transition: ease-in-out;
 }
 
-.loader .bar{
+.loader .bar {
     position: relative;
     height: 2px;
     width: 90%;
     background: #fff;
 }
 
-.loader .bar .circle{
+.loader .bar .circle {
     position: absolute;
     top: -30px;
     margin-left: -30px;
@@ -49,7 +50,7 @@ a{
     animation: move 3s infinite;
 }
 
-.loader .bar p{
+.loader .bar p {
     width: 100%;
     top: -30px;
     position: absolute;
@@ -61,33 +62,30 @@ a{
     background: none;
 }
 
-@keyframes move{
-    0%{
+@keyframes move {
+    0% {
         left: 0;
     }
-    50%{
+    50% {
         left: 100%;
         transform: rotate(450deg);
         /* width: 150px;
         height: 150px; */
     }
-    75%{
+    75% {
         left: 100%;
         transform: rotate(450deg);
         /* width: 150px;
         height: 150px; */
     }
-    100%{
+    100% {
         right: 100%;
     }
 }
 
-
 /* header css */
 
-
-
-header{
+header {
     display: flex;
     width: 100%;
     margin: auto;
@@ -102,7 +100,7 @@ header{
 
 /* the logo div */
 
-header .logo{
+header .logo {
     flex: 1;
     display: flex;
     justify-content: start;
@@ -116,7 +114,7 @@ header .logo{
 
 /* logo image */
 
-header .logo img{
+header .logo img {
     width: 50px;
     height: 50px;
     margin-left: 10px;
@@ -125,19 +123,19 @@ header .logo img{
 
 /* logo text */
 
-header .logo p{
+header .logo p {
     margin: 0 0 0 10px;
     background: none;
 }
 
 /* header navigation menu */
 
-header nav{
+header nav {
     flex: 2;
     background: none;
 }
 
-header nav ul{
+header nav ul {
     height: 100%;
     display: flex;
     justify-content: space-around;
@@ -147,22 +145,20 @@ header nav ul{
     background: none;
 }
 
-header nav ul li a{
+header nav ul li a {
     text-decoration: none;
     color: inherit;
     background: none;
 }
 
-header nav ul li{
+header nav ul li {
     list-style-type: none;
     background: none;
 }
 
-
-
 /* header search bar */
 
-header .searchbar{
+header .searchbar {
     flex: 1;
     height: 100%;
     width: 100%;
@@ -173,7 +169,7 @@ header .searchbar{
     background: none;
 }
 
-header .searchbar #search{
+header .searchbar #search {
     height: 50%;
     border: none;
     text-align: center;
@@ -183,7 +179,7 @@ header .searchbar #search{
     outline: none;
 }
 
-header .searchbar .searchbtn{
+header .searchbar .searchbtn {
     display: block;
     overflow: hidden;
     height: 20px;
@@ -195,17 +191,15 @@ header .searchbar .searchbtn{
     cursor: pointer;
 }
 
-header .searchbar .searchbtn img{
+header .searchbar .searchbtn img {
     width: 100%;
     height: 100%;
     background: none;
 }
 
-
-
 /* header End */
 
-.search-response{
+.search-response {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -214,12 +208,12 @@ header .searchbar .searchbtn img{
     align-self: center;
 }
 
-.search-response .card{
+.search-response .card {
     height: 402px;
     width: 300px;
     /* border: 1px solid black; */
     position: relative;
-    background: #ffc;
+    background: #fff;
     transition: ease-in-out 0.2s;
     box-shadow: -3px -3px 5px #fff, 3px 3px 5px grey;
     border-radius: 25px;
@@ -227,7 +221,7 @@ header .searchbar .searchbtn img{
     margin: auto 10px;
 }
 
-.search-response .card .card-img{
+.search-response .card .card-img {
     display: flex;
     width: 300px;
     height: 200px;
@@ -235,12 +229,12 @@ header .searchbar .searchbtn img{
     align-items: center;
 }
 
-.search-response .card .card-img img{
+.search-response .card .card-img img {
     max-height: 100%;
     max-width: 100%;
 }
 
-.search-response .card .card-content{
+.search-response .card .card-content {
     display: grid;
     height: 200px;
     grid-template-columns: 1fr;
@@ -248,7 +242,7 @@ header .searchbar .searchbtn img{
     grid-template-rows: 1fr 1fr 50px;
 }
 
-.search-response .card .card-content .card-title{
+.search-response .card .card-content .card-title {
     justify-self: center;
     align-self: center;
     font-size: 1.5em;
@@ -256,14 +250,14 @@ header .searchbar .searchbtn img{
     text-transform: initial;
 }
 
-.search-response .card .card-content .card-description{
+.search-response .card .card-content .card-description {
     font-weight: 300;
     text-transform: initial;
     justify-self: center;
     align-self: center;
 }
 
-.search-response .container .card .card-content .card-details{
+.search-response .container .card .card-content .card-details {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -271,56 +265,61 @@ header .searchbar .searchbtn img{
     font-size: 20px;
 }
 
-
-
-
-
 /* main area */
-
 
 /* trending section */
 
-.trending{
+main {
+    background: #fff; /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to left, #ffc371, #ff5f6d); /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to left, #ffc371, #ff5f6d); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.trending {
     display: flex;
+    font-family: "Rogue Script";
     min-height: 500px;
     height: 50vh;
     justify-content: center;
     flex-direction: column;
     position: relative;
     padding: 10px;
-    margin-top: 20px;
 }
 
-.trending label{
+.trending label {
     width: 100%;
     top: 0;
     left: 0;
     text-align: center;
-    font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 500;
+    font-size: 50px;
+    font-family: "Rouge Script", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-weight: bolder;
     letter-spacing: 2px;
     border-bottom: 0.5px solid black;
 }
 
-.trending .container{
+.trending .container {
     position: relative;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(/assets/images/WhatsApp\ Image\ 2020-09-28\ at\ 16.53.46.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 /* cards */
 
-.trending .container .card{
+.trending .container .card {
     height: 402px;
     width: 300px;
     /* border: 1px solid black; */
     display: none;
     position: absolute;
-    background: #ffc;
+    background: #fff;
     transition: ease-in-out 0.2s;
     box-shadow: -3px -3px 5px #fff, 3px 3px 5px grey;
     border-radius: 25px;
@@ -329,7 +328,7 @@ header .searchbar .searchbtn img{
 
 /* card image */
 
-.trending .container .card .card-img{
+.trending .container .card .card-img {
     display: flex;
     width: 300px;
     height: 200px;
@@ -337,14 +336,14 @@ header .searchbar .searchbtn img{
     align-items: center;
 }
 
-.trending .container .card .card-img img{
+.trending .container .card .card-img img {
     max-height: 100%;
     max-width: 100%;
 }
 
 /* card content */
 
-.trending .container .card .card-content{
+.trending .container .card .card-content {
     display: grid;
     height: 200px;
     grid-template-columns: 1fr;
@@ -352,7 +351,7 @@ header .searchbar .searchbtn img{
     grid-template-rows: 1fr 1fr 50px;
 }
 
-.trending .container .card .card-content .card-title{
+.trending .container .card .card-content .card-title {
     justify-self: center;
     align-self: center;
     font-size: 1.5em;
@@ -360,14 +359,14 @@ header .searchbar .searchbtn img{
     text-transform: initial;
 }
 
-.trending .container .card .card-content .card-description{
+.trending .container .card .card-content .card-description {
     font-weight: 300;
     text-transform: initial;
     justify-self: center;
     align-self: center;
 }
 
-.trending .container .card .card-content .card-details{
+.trending .container .card .card-content .card-details {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -377,14 +376,14 @@ header .searchbar .searchbtn img{
 
 /* css for active card */
 
-.card.active{
+.card.active {
     display: block !important;
     z-index: 3;
 }
 
 /* css for prev card */
 
-.card.prev{
+.card.prev {
     transform: translateX(-200px) scale(0.9);
     opacity: 0.5;
     display: block !important;
@@ -393,21 +392,20 @@ header .searchbar .searchbtn img{
 
 /* css for next card */
 
-.card.next{
+.card.next {
     transform: translateX(200px) scale(0.9);
     opacity: 0.5;
     display: block !important;
     z-index: 2;
 }
 
-
 /* card nav arrows */
 
-.trending .arrow{
+.trending .arrow {
     position: absolute;
     padding: 10px 20px;
     transform: translateY(-50%);
-    background: #ffc;
+    background: #fff;
     font-size: 20px;
     letter-spacing: 2px;
     font-weight: 300;
@@ -418,60 +416,56 @@ header .searchbar .searchbtn img{
     border-radius: 20px;
 }
 
-.trending .arrow:hover{
+.trending .arrow:hover {
     transform: translateY(calc(-50% + 2px));
     box-shadow: -1px -2px 4px #fff, 1px 2px 4px #000;
 }
 
-.trending .arrow:active{
+.trending .arrow:active {
     transform: translateY(calc(-50% + 4px));
-    box-shadow: inset -1px -2px 4px #fff,inset 1px 2px 4px #000;
+    box-shadow: inset -1px -2px 4px #fff, inset 1px 2px 4px #000;
 }
 
-.trending #left-arrow{
+.trending #left-arrow {
     left: 0;
     top: 50%;
     margin-left: 10px;
     z-index: 99;
 }
 
-.trending #right-arrow{
+.trending #right-arrow {
     right: 0;
     top: 50%;
     margin-right: 10px;
     z-index: 99;
 }
 
-
-
-
 /* trending section end */
-
 
 /* latest section */
 
-.latest{
+.latest {
     display: flex;
     justify-content: center;
     flex-direction: column;
     position: relative;
+    margin: auto 40px;
     margin-top: 20px;
 }
 
-.latest label{
+.latest label {
     width: 100%;
     top: 0;
     left: 0;
     text-align: center;
-    font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 500;
+    font-size: 50px;
+    font-family: "Rouge Script", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-weight: bolder;
     letter-spacing: 2px;
     border-bottom: 0.5px solid black;
 }
 
-
-.latest .container{
+.latest .container {
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
@@ -480,19 +474,19 @@ header .searchbar .searchbtn img{
     align-items: center;
 }
 
-.latest .container .latest-card{
+.latest .container .latest-card {
     margin: 20px;
     height: 402px;
     width: 300px;
     /* border: 1px solid black; */
-    background: #ffc;
+    background: #fff;
     transition: ease-in-out 0.2s;
     box-shadow: -3px -3px 5px #fff, 3px 3px 5px #544;
     border-radius: 20px;
     overflow: hidden;
 }
 
-.latest .container .latest-card .latest-card-img{
+.latest .container .latest-card .latest-card-img {
     display: flex;
     width: 300px;
     height: 200px;
@@ -500,14 +494,14 @@ header .searchbar .searchbtn img{
     align-items: center;
 }
 
-.latest .container .latest-card .latest-card-img img{
+.latest .container .latest-card .latest-card-img img {
     max-height: 100%;
     max-width: 100%;
 }
 
 /* card content */
 
-.latest .container .latest-card .latest-card-content{
+.latest .container .latest-card .latest-card-content {
     display: grid;
     height: 200px;
     grid-template-columns: 1fr;
@@ -515,7 +509,7 @@ header .searchbar .searchbtn img{
     grid-template-rows: 1fr 1fr 50px;
 }
 
-.latest .container .latest-card .latest-card-title{
+.latest .container .latest-card .latest-card-title {
     justify-self: center;
     align-self: center;
     font-size: 1.5em;
@@ -523,14 +517,14 @@ header .searchbar .searchbtn img{
     text-transform: initial;
 }
 
-.latest .container .latest-card .latest-card-content .latest-card-description{
+.latest .container .latest-card .latest-card-content .latest-card-description {
     font-weight: 300;
     text-transform: initial;
     justify-self: center;
     align-self: center;
 }
 
-.latest .container .latest-card .latest-card-content .latest-card-details{
+.latest .container .latest-card .latest-card-content .latest-card-details {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -538,10 +532,10 @@ header .searchbar .searchbtn img{
     font-size: 20px;
 }
 
-.latest .container .latest-read-more{
+.latest .container .latest-read-more {
     grid-column: 1/4;
     padding: 10px 30px;
-    background: #ffc;
+    background: #fff;
     font-size: 20px;
     letter-spacing: 2px;
     font-weight: 300;
@@ -552,26 +546,23 @@ header .searchbar .searchbtn img{
     border-radius: 20px;
 }
 
-.latest .container .latest-read-more:hover{
+.latest .container .latest-read-more:hover {
     box-shadow: -1px -2px 4px #fff, 1px 2px 4px #000;
     transform: translateY(2px);
 }
 
-.latest .container .latest-read-more:active{
+.latest .container .latest-read-more:active {
     box-shadow: inset -1px -2px 4px #fff, inset 1px 2px 4px #000;
     transform: translateY(4px);
 }
 
 /* latest section end */
 
-
 /* main section end */
-
 
 /* footer */
 
-
-footer{
+footer {
     width: 100%;
     height: 500px;
     display: grid;
@@ -584,24 +575,25 @@ footer{
     margin-top: 5px;
 }
 
-footer .info{
+footer .info {
     font-size: 30px;
     text-transform: capitalize;
     text-align: center;
     background: none;
 }
 
-footer .info p,i{
+footer .info p,
+i {
     background: none;
 }
 
-footer .contact-form{
+footer .contact-form {
     display: flex;
     flex-direction: column;
     background: none;
 }
 
-footer .contact-form label{
+footer .contact-form label {
     text-align: center;
     font-size: 17px;
     text-transform: uppercase;
@@ -610,7 +602,7 @@ footer .contact-form label{
     background: none;
 }
 
-footer .contact-form input{
+footer .contact-form input {
     padding: 5px;
     border-radius: 20px;
     border: 1px solid black;
@@ -621,7 +613,7 @@ footer .contact-form input{
     background: none;
 }
 
-footer .contact-form input[type=submit]{
+footer .contact-form input[type="submit"] {
     font-weight: 500;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -629,7 +621,7 @@ footer .contact-form input[type=submit]{
     padding: 5px 20px;
 }
 
-footer .sub-footer{
+footer .sub-footer {
     grid-column: 1/3;
     font-size: 30px;
     color: grey;
@@ -638,8 +630,8 @@ footer .sub-footer{
     background: none;
 }
 
-@media (max-width:1100px){
-    .latest .container{
+@media (max-width: 1100px) {
+    .latest .container {
         display: flex;
         width: 100%;
         flex-direction: row;
@@ -648,34 +640,34 @@ footer .sub-footer{
         align-items: center;
         position: relative;
     }
-    
-    .latest .container .latest-read-more{
+
+    .latest .container .latest-read-more {
         position: relative;
         bottom: 0;
     }
-    footer{
+    footer {
         margin-top: 20px;
     }
 }
 
-@media (max-width:800px){
-    .card.prev{
-        display:none !important;
-    }
-    
-    /* css for next card */
-    
-    .card.next{
+@media (max-width: 800px) {
+    .card.prev {
         display: none !important;
     }
 
-    header nav{
-        display:none;
+    /* css for next card */
+
+    .card.next {
+        display: none !important;
+    }
+
+    header nav {
+        display: none;
     }
 }
 
-@media (max-width:600px){
-    .trending .arrow{
+@media (max-width: 600px) {
+    .trending .arrow {
         width: 20%;
         height: 100%;
         padding: none;
@@ -686,23 +678,22 @@ footer .sub-footer{
         color: transparent;
     }
 
-    .trending .arrow:hover{
+    .trending .arrow:hover {
         box-shadow: none;
-
     }
 
-    .trending .arrow:active{
-        border:none;
+    .trending .arrow:active {
+        border: none;
     }
 
-    footer{
+    footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    footer .info{
+    footer .info {
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -710,7 +701,7 @@ footer .sub-footer{
         align-items: center;
     }
 
-    footer .contact-form{
+    footer .contact-form {
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -718,45 +709,54 @@ footer .sub-footer{
         align-items: center;
     }
 
-    footer .sub-footer{
+    footer .sub-footer {
         font-size: 20px;
         letter-spacing: 2px;
         word-spacing: 4px;
     }
-
 }
-
-
 
 /* single page */
 
-.title{
-    width:100%;
+.title {
+    width: 100%;
     text-align: center;
     /* color:white; */
-    font-size:50px;
+    font-size: 50px;
     text-transform: capitalize;
 }
-.image{
-    width:500px;
-    height: 500px;
-    margin:20px auto;
+
+.page-wrapper {
+    width: 100%;
 }
 
-.image img{
-    height:100%;
-    width:100%;
+@media screen and (max-width: 600px) {
+    .image,
+    .image img {
+        max-width: 100vh;
+        width: 100%;
+        height: auto;
+    }
 }
-.content{
+
+.image {
+    /* max-width: 500px; */
+    margin: 20px auto;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+}
+.content {
     /* color:white ; */
-    font-size:30px;
-    margin-bottom:50px;
+    font-size: 30px;
+    margin-bottom: 50px;
 }
-
 
 /* user section */
 
-.user-section{
+.user-section {
     margin: 100px 0;
     width: 100%;
     display: flex;
@@ -767,7 +767,7 @@ footer .sub-footer{
     transition: ease-in-out 1s;
 }
 
-.user-section .like{
+.user-section .like {
     border-right: 1px solid black;
     flex: 1;
     cursor: pointer;
@@ -776,11 +776,11 @@ footer .sub-footer{
     align-items: center;
 }
 
-.user-section .like p:hover{
+.user-section .like p:hover {
     transform: scale(2);
 }
 
-.user-section .share{
+.user-section .share {
     flex: 1;
     cursor: pointer;
     display: flex;
@@ -789,11 +789,11 @@ footer .sub-footer{
     border-right: 1px solid black;
 }
 
-.user-section .share p:hover{
+.user-section .share p:hover {
     transform: scale(2);
 }
 
-.user-section .report{
+.user-section .report {
     flex: 1;
     cursor: pointer;
     display: flex;
@@ -801,21 +801,19 @@ footer .sub-footer{
     align-items: center;
 }
 
-.user-section .report p:hover{
+.user-section .report p:hover {
     transform: scale(2);
 }
-
 
 /* comment section */
 
-
-.comment-section{
+.comment-section {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.comments{
+.comments {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -824,7 +822,7 @@ footer .sub-footer{
     margin-bottom: 50px;
 }
 
-.comments .comment{
+.comments .comment {
     padding: 20px 0;
     width: 90%;
     background: white;
@@ -835,7 +833,7 @@ footer .sub-footer{
     margin-bottom: 20px;
 }
 
-.comments .comment .comment-name{
+.comments .comment .comment-name {
     flex: 1;
     width: 100%;
     font-size: 20px;
@@ -845,21 +843,20 @@ footer .sub-footer{
     padding: 0 20px;
 }
 
-.comments .comment .comment-message{
+.comments .comment .comment-message {
     flex: 2;
     width: 100%;
     padding: 10px 20px;
     text-transform: capitalize;
 }
 
-.comments .comment .comment-date{
+.comments .comment .comment-date {
     flex: 1;
     width: 100%;
     padding: 0 20px;
-
 }
 
-.submit-comment{
+.submit-comment {
     flex: 1;
     width: 100%;
     display: flex;
@@ -868,7 +865,9 @@ footer .sub-footer{
     align-items: center;
 }
 
-.submit-comment input[type=text], input[type=email], textarea{
+.submit-comment input[type="text"],
+input[type="email"],
+textarea {
     width: 70%;
     margin: 10px auto;
     padding: 10px;
@@ -877,7 +876,7 @@ footer .sub-footer{
     outline: none;
 }
 
-.submit-comment input[type=submit]{
+.submit-comment input[type="submit"] {
     width: 30%;
     padding: 10px;
     border-radius: 10px;
